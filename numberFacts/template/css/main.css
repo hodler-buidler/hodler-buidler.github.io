@@ -1,0 +1,112 @@
+/*** Main settings ***/
+
+body {
+	background: url('../images/bg.png');
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	color: #3d3d3d;
+	font-family: 'Open Sans', Arial;
+	align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Patua One', 'Times New Roman';
+	color: #ebb30c;
+	margin: 0;
+}
+
+.input {
+	padding: 10px 10px;
+	border: none;
+	font-size: 100%;
+	color: #3d3d3d;
+	margin: 0;
+}
+
+/*** Get fact block ***/
+
+.wrapperContent {
+	background: url('../images/bg2.png');
+	padding: 30px 40px;
+	border-radius: 10px;
+	margin: 0 20px;
+}
+
+header {
+	text-align: center;
+}
+
+.getFact {margin-top: 30px;}
+
+/* Inputs */
+
+.form {
+	display: flex;
+	justify-content: center;
+}
+
+.numInput {
+	width: 70%;
+	border-left: 2px solid #ebb30c;
+	border-top: 2px solid #ebb30c;
+	border-bottom: 2px solid #ebb30c;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	font-size: 120%;
+	font-family: 'Patua One', 'Times New Roman';
+}
+
+.btn {
+	width: 20%;
+	cursor: pointer;
+	border-right: 2px solid #ebb30c;
+	border-top: 2px solid #ebb30c;
+	border-bottom: 2px solid #ebb30c;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background: linear-gradient(135deg, #bef574, #edff21);
+	font-weight: bold;
+	color: rgba(19, 136, 8, 0.8);
+	transition: 0.4s all;
+}
+
+.btn:hover {
+	background: linear-gradient(45deg, #d1e231, #edff21);
+	text-shadow: 2px 3px 3px rgba(0,0,0,0.3);
+}
+
+.btn:active {
+	opacity: 0.7;
+}
+
+/* Fact */
+
+.factResult {
+	display: flex; align-items: center; justify-content: center;
+	margin-top: 30px;
+}
+
+#fact {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.typedNumber {
+	font-size: 400%;
+	font-family: 'Patua One', 'Times New Roman';
+	color: #bf814e;
+	margin-right: 15px;
+}
+
+.factText {
+	max-width: 400px;
+
+}
+
+.exmp {
+	color: #f34723;
+	font-weight: bold;
+}
