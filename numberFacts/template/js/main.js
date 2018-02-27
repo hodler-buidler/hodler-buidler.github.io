@@ -83,15 +83,12 @@ function getFactByNumber(num, isExmp) {
 		// A get request to take a fact
 		fetch(url)
 		.then((result) => {
-			// If its not exmp, so print fact (bcs I dont get promise here, I get value, bcs the Fetch has been started yet)
-			if (!isExmp) printFact(num, result, isExmp);
-			/* Checking status and if it's ok return the response(fact)
-			 if (result.status == 200 && isExmp) return result.text(); */
-			else if (result.status == 200) return result.text();
+			// Checking status and if it's ok return the response(fact)
+			if (result.status == 200) return result.text();
 		})
 		.then((fact) => {
 			// Just printing the fact and number in HTML.
-			if (isExmp) printFact(num, fact, isExmp);
+			printFact(num, fact, isExmp);
 		})
 		.catch((e) => {
 			// IF something went wrong, print error message
