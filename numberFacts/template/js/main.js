@@ -20,7 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
 window.addEventListener('resize', setBodyRelevantHeight); // when window change it size, so I change height of body
 document.getElementById("number").addEventListener("input", validateInput); // validate input
 document.getElementById("getFact").addEventListener("click", getFact); // get and post fact
+document.getElementById("browsers").addEventListener("click", showGuide); // shows a guide to user to how to enable the fetch
+document.querySelector("body").addEventListener("click", removeBubble); // removes bubble(makes it invisible)
 
+// STARTER FUNCTIONS
 /* 
 	A function that sets current window height to body to center container with fact searching
 	It works in couple with event listener(window resize) to make body height relevant all the time
@@ -30,6 +33,46 @@ document.getElementById("getFact").addEventListener("click", getFact); // get an
 function setBodyRelevantHeight() {
 	let windowHeightPx = window.innerHeight;
 	document.querySelector('body').style.height = windowHeightPx+"px"; // setting the height to body
+}
+
+// EVENT FUNCTIONS
+
+// A function which shows guide on how to enable a fetch request in users browser
+function showGuide(event) {
+	if (event.target.classList.contains('browserName')) {
+		/* Its type of bubble(id attribute), I made it to save opportunity to create other bubbles 
+		with different css*/
+		const bubbleType = "#bubbleOne";
+		/* Here I get a browser name(which is pointed in element) and concat to it a word "Guide" to make a bubble header
+		In different bubbles, u have to define it's own header by something(here its text in .browserName class)*/
+		const bubbleHeader = event.target.innerText + " Guide";
+		// Just open bubble and set header, nothing special
+		openBubble(bubbleType);
+		setBubbleHeader(bubbleType, bubbleHeader);
+
+		/* Here I define two varriables, first one(browserNavChildren) contains children of .browser class(done for more flexibility)
+		and (guideImg) is empty, but it will contain a guide with img(which is invisible, but still inside .browser)*/
+		let browserNavChildren = event.target.parentNode.children, guideImg;
+		// Finding this img by its class name
+		for (let i = 0; i < browserNavChildren.length; i++) {
+			// browserNavChildren[i] - child
+			if (browserNavChildren[i].classList.contains('browserGuide')) {
+				guideImg = browserNavChildren[i];
+				break; // break to save resources
+			}
+		}
+		// removing class .browserGuide, bcs it has display: none
+		guideImg.classList.remove('browserGuide');
+
+		// Creating an element which will contain img with guide
+		let guideImgWrapper = document.createElement("div");
+		// Setting a class name to it
+		guideImgWrapper.className = "guideImg";
+		// And put guide img into this element
+		guideImgWrapper.appendChild(guideImg);
+		// Finally, append everything(only an element with guide img) to main content of bubble
+		appendBubbleContent(bubbleType, guideImgWrapper);
+	}
 }
 
 // A function that validates input (ONLY INTEGER)
@@ -65,6 +108,8 @@ function getFact(event) {
 		getFactByNumber(+value);
 	}
 }
+
+// HELPER FUNCTIONS
 
 // A function that print get fact by request and print it
 function getFactByNumber(num, isExmp) {
@@ -156,6 +201,50 @@ function printFact(num, fact, isExmp) {
 	// Finaly put created elements to HTML to container with id #fact, which is created in advance
 	container.appendChild(numContainer);
 	container.appendChild(factContainer);
+}
+
+/***
+	BUBBLE FUNCTIONS
+	typeID - Its type of bubble(id attribute), I made it to save opportunity to create other bubbles 
+		with different css.
+	header - bubble header
+	content - all bubble content which is a purpose of creating this bubble
+***/
+
+// Opens bubble, and clear its content
+function openBubble(typeID) {
+	let bubble = document.querySelector(typeID); // getting bubble
+	// Clear all content
+	clearElement(`${typeID} .bubbleContent`);
+	// Making bubble visible
+	bubble.style.display = "flex";
+}
+
+function setBubbleHeader(typeID, header) {
+	let bubble = document.querySelector(typeID); // getting bubble
+	// Setting header
+	document.querySelector(`${typeID} .bubbleHeader`).innerText = header;
+}
+
+function appendBubbleContent(typeID, content) {
+	let bubble = document.querySelector(typeID); // getting bubble
+	// Appending content
+	document.querySelector(`${typeID} .bubbleContent`).appendChild(content);
+}
+
+// Removing(hiding) the bubble
+function removeBubble(event) {
+	// Check if user clicked on removeBubbleBtn
+	if (event.target.classList.contains('removeBubble')) {
+		// Getting first parrent of btn
+		let bubbleWrapper = event.target.parentNode;
+		// Than a loop which will finally take a main parent(bubble wrapper)
+		while (!bubbleWrapper.classList.contains('bubble_w')) {
+			bubbleWrapper = bubbleWrapper.parentNode;
+		}
+		// And then just make it invisible
+		bubbleWrapper.style.display = "none";
+	}
 }
 
 // Removes all children from element by selector

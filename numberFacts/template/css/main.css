@@ -6,6 +6,7 @@ body {
 	padding: 0;
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
 	color: #3d3d3d;
 	font-family: 'Open Sans', Arial;
 	align-items: center;
@@ -110,4 +111,92 @@ header {
 .exmp {
 	color: #f34723;
 	font-weight: bold;
+}
+
+/*** Instruction ***/
+
+.instruction {
+	max-width: 500px;
+	font-size: 80%;
+	text-align: center;
+	margin: 5px;
+}
+
+#browsers {
+	display: flex;
+	justify-content: space-around;
+	margin: 5px;
+}
+
+.browserName {
+	font-size: 120%;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.browserName:hover {
+	text-decoration: underline;
+}
+
+.browserName:active {
+	color: #fff;
+}
+
+.browser .browserGuide {
+	display: none;
+}
+
+/*** Bubble ***/
+
+.bubble_w {
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: rgba(0,0,0,0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.bubble {
+	width: 500px;
+	background: url('../images/bg2.png');
+	height: 350px;
+	border-radius: 10px;
+	padding: 20px;
+	overflow: auto;
+}
+
+.bubblePanel {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bubbleHeader {
+	font-size: 180%;
+	color: #ebb30c;
+	font-family: 'Patua One', 'Times New Roman';
+	word-wrap: break-word;
+}
+
+.removeBubble {
+	width: 32px;
+	height: 32px;
+	background: url('../images/delete.png') center center no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.bubbleContent {
+	word-wrap: break-word;
+	margin-top: 30px;
+}
+
+.guideImg {
+	text-align: center;
 }
