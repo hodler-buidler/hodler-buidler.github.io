@@ -10,6 +10,13 @@ setBodyRelevantHeight();
 const factCategory = [false, 'year', 'date', 'math']; // its all categories of facts from http://numbersapi.com
 const siteURL = "http://numbersapi.com/"; // site which contains facts
 const errorMessage = "Oops, Something went wrong, error!"; // error message (if smth went wrong)
+// A map which contains guides(images) of how to enable fetch in browsers
+// !!!IMORTANT!!! KEY here is VALUE of ATTRIBUTE guideType which must contain every .browser element
+const browserGuidesImg = new Map([
+	["chrome", "<img src='template/images/chrome.png' alt='' />"],
+	["firefox", "<img src='template/images/firefox.png' alt='' />"],
+	["opera", "<img src='template/images/opera.png' alt='' />"]
+	]); 
 
 // Event Listeners
 // Generating a random example of fact at start, when page loaded
@@ -50,26 +57,18 @@ function showGuide(event) {
 		openBubble(bubbleType);
 		setBubbleHeader(bubbleType, bubbleHeader);
 
-		/* Here I define two varriables, first one(browserNavChildren) contains children of .browser class(done for more flexibility)
-		and (guideImg) is empty, but it will contain a guide with img(which is invisible, but still inside .browser)*/
-		let browserNavChildren = event.target.parentNode.children, guideImg;
-		// Finding this img by its class name
-		for (let i = 0; i < browserNavChildren.length; i++) {
-			// browserNavChildren[i] - child
-			if (browserNavChildren[i].classList.contains('browserGuide')) {
-				guideImg = browserNavChildren[i];
-				break; // break to save resources
-			}
-		}
-		// removing class .browserGuide, bcs it has display: none
-		guideImg.classList.remove('browserGuide');
+		/* Here I define varriable (browserGuideTypeAttrValue) which contains an parrent attribute (.browser) called guideType
+		It will help me, to get the img from haystack created above*/
+		let browserGuideTypeAttrValue = event.target.parentNode.getAttribute('guideType');
+		// Getting img from its Map by key(attr guideType)
+		let guideImg = browserGuidesImg.get(browserGuideTypeAttrValue);
 
 		// Creating an element which will contain img with guide
 		let guideImgWrapper = document.createElement("div");
 		// Setting a class name to it
 		guideImgWrapper.className = "guideImg";
 		// And put guide img into this element
-		guideImgWrapper.appendChild(guideImg);
+		guideImgWrapper.innerHTML += guideImg;
 		// Finally, append everything(only an element with guide img) to main content of bubble
 		appendBubbleContent(bubbleType, guideImgWrapper);
 	}
