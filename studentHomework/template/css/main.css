@@ -1,0 +1,300 @@
+/*** Main(common) styles ***/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #f5f5f5;
+	color: #191919;
+	font-family: Arial;
+}
+
+body, html {
+	height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+textarea, input, button {
+	border: 0;
+	padding: 0;
+	outline: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #191919;
+}
+
+video {
+	width: 50%;
+	min-width: 350px;
+}
+
+a:hover {
+	text-decoration: underline;
+	opacity: 0.9;
+}
+
+a:active {
+	opacity: 0.7;
+}
+
+.active, .question {
+	font-weight: bold;
+	opacity: 0.7;
+}
+
+.white {
+	color: #f5f5f5;
+}
+
+.clear {
+	clear: both;
+}
+
+.fire {
+	color: #ff1133;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.marked {
+	color: green;
+	font-style: italic;
+}
+
+.centered {
+	text-align: center;
+}
+
+.input {
+	width: 250px;
+	padding: 10px 20px;
+	font-size: 100%;
+	font-weight: bold;
+}
+
+.btn {
+	background: #ccc;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.3s all;
+}
+
+.btn:hover {
+	opacity: 0.6;
+}
+.btn:active {
+	opacity: 0.4;
+}
+
+/*** Header ***/
+
+.headerWrapper {
+	background: #000;
+	padding: 25px;
+}
+
+.logo, .headerSearch {
+	display: inline-block;
+	margin: 10px;
+}
+
+/*** Upper Search ***/
+
+.headerSearch {
+	float: right;
+}
+
+.searchUpBtn {
+	padding: 10px 10px;
+	font-size: 100%;
+	margin-left: -4px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.searchUpInput {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+/*** Upper main menu ***/
+
+.navbarWrapper {
+	background: #ccc;
+}
+
+.nav {
+	margin: auto;
+	display: table;
+}
+
+.nav li {
+	display: inline-block;
+	margin: 15px 10px;
+}
+
+.nav li a {
+	background: #f5f5f5;
+	border: 1px solid #191919;
+	border-radius: 3px;
+	padding: 5px 10px;
+}
+
+/*** Content and Right menu ***/
+
+.main {
+	margin-top: 20px;
+	padding: 0 10px;
+	padding-bottom: 120px;
+}
+
+.mainContent, .rightNavbar {
+	display: inline-block;
+}
+
+.mainContent {
+	width: 70%;
+}
+
+.rightNavbar {
+	float: right;
+	background: #ddd;
+	width: 25%;
+	text-align: center;
+}
+
+.rightNavbar h2 {
+	background: #bbb;
+}
+
+/*** Right Navbar ***/
+
+/*** Menu ***/
+
+.verticle a {
+	display: block;
+	border-bottom: 1px solid #aaa;
+	padding: 10px 5px;
+}
+
+.verticle li:first-child a {
+	border-top: 1px solid #aaa;
+}
+
+.verticle a:hover {
+	background: #eee;
+}
+
+
+/*** Survey ***/
+
+.rightSurvey {
+	margin: 10px 0;
+}
+
+.answer  {
+	margin-top: 10px;
+}
+
+/*** Ask form ***/
+
+.ask {
+	text-align: center;
+}
+
+.ask .input {
+	margin: 5px;
+	width: 40%;
+	min-width: 200px;
+	border: 1px solid #ccc;
+}
+
+/*** Subscribe ***/
+
+.subscribe .input {
+	width: 80%;
+	height: 60px;
+	font-size: 170%;
+}
+
+/*** Main Search ***/
+
+.mainSearch {
+	text-align: center;
+}
+
+.mainSearch .input, .mainSearch .btn {
+	font-size: 150%;
+}
+
+.mainSearch .input {
+	width: 60%;
+}
+
+.mainSearch .btn {
+	width: 20%;
+}
+
+/** Pagination ***/
+
+.pagination {
+	text-align: center;
+	margin: 30px 0;
+}
+
+.pagination a {
+	font-size: 150%;
+	font-weight: bold;
+	padding: 5px 10px;
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+	text-align: center;
+}
+
+/*** Footer ***/
+
+.footer {
+	background: #000;
+	color: #f5f5f5;
+	text-align: center;
+	padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 840px) {
+	.header {
+		display: table;
+		margin: auto;
+		text-align: center;
+	}
+
+	.logo, .headerSearch {
+		display: block;
+		float: none;
+		margin: 10px;
+	}
+
+	.navbarWrapper {
+		font-size: 90%;
+	}
+}

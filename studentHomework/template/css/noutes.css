@@ -1,0 +1,113 @@
+/*** Category bar ***/
+
+.categories li {
+	display: inline-block;
+	font-size: 90%;
+}
+
+.categories li a {
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+	border: 1px solid #000;
+	padding: 5px;
+}
+
+.cats select {
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+	cursor: pointer;
+}
+
+/*** Last Noutes ***/
+
+.lastNoutes {
+	margin-top: 40px;
+}
+
+.noute {
+	border-bottom: 2px solid #000;
+	margin: 10px 0;
+}
+
+.noute:last-child {
+	border: none;
+}
+
+.nouteH {
+	color: #c0c40c;
+}
+
+.nouteImg {
+	float: left;
+	margin-right: 10px;
+}
+
+.nouteImg img {
+	max-width: 250px;
+}
+
+.readMore {
+	text-align: right;
+}
+
+.readMore a {
+	color: #c00ccc;
+	font-weight: bold;
+	font-style: italic;
+}
+
+/*** Catalog ***/
+
+.catalog {
+	text-align: center;
+	padding: 0;
+	margin: 30px 30px;
+	transition: 0.3s all;
+}
+
+.hover {transition: 0.3s all;}
+
+.catalog h3 {
+	margin: 10px 0;
+}
+
+.filled {
+	background: #eee;
+}
+
+.hover:hover, .catalog a:hover {
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+.catImg img {
+	width: 90%;
+}
+
+/*** Staff ***/
+
+.staffPanel div {
+	display: inline-block;
+	text-align: center;
+}
+
+.price {
+	font-weight: bold;
+}
+
+.buy {
+	background: green;
+	padding: 10px 20px;
+	color: #fff;
+}
+
+/*** FAQ ***/
+
+.faq {
+	padding: 10px 0;
+	border-bottom: 1px solid #000;
+}
+
+.faq:first-child {
+	border-top: 1px solid #000;
+}
