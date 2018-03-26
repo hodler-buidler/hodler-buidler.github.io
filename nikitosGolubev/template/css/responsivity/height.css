@@ -8,7 +8,7 @@
 	}
 }
 
-@media screen and (max-height: 290px) {
+@media screen and (max-height: 300px) {
 
 	.headerContent .below {
 		display: none;
