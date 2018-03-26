@@ -1,0 +1,80 @@
+@media screen and (max-width: 932px) {
+	body {
+		font-size: 13pt;
+	}
+
+	.menu {
+		margin: auto;
+		font-size: 16pt;
+	}
+
+	.h1 {
+		font-size: 350%;
+		line-height: 0.75;
+	}
+
+	.h2_5 {
+		font-size: 300%;
+		line-height: 0.75;
+	}
+
+	.h2 {
+		font-size: 270%;
+		line-height: 0.75;
+	}
+
+	.h3 {
+		font-size: 215%;
+		line-height: 0.75;
+	}
+
+	.logoText {
+		font-size: 600%;
+	}
+
+	.textPreview {
+		line-height: 1.25;
+	}
+
+	.presentText {
+		line-height: 1.7;
+		margin: 20px 0;
+	}
+
+	.dog, .nigga {
+		display: none;
+	}
+
+	.niggaText {
+		max-width: 90%;
+	}
+
+	.dogText {
+		max-width: 90%;
+	}
+
+	.articlesPreviewWrap {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.verticalHeader {
+		-webkit-writing-mode: horizontal-tb;
+		writing-mode: horizontal-tb;
+	}
+
+	.socialMediaFooter {
+		width: 50%;
+		display: flex;
+		flex-direction: column
+	}
+
+	.verticalLineFooter {
+		width: 80%;
+		height: 1px;
+		margin: 15px 0;
+	}
+
+}
