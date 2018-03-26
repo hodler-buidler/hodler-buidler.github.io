@@ -1,0 +1,9 @@
+@media screen and (max-height: 390px) {
+	.headerContent .quote {
+		display: none;
+	}
+
+	#showDataAboutMe {
+		margin: 25px 0;
+	}
+}
