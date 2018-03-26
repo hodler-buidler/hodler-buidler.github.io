@@ -7,3 +7,14 @@
 		margin: 25px 0;
 	}
 }
+
+@media screen and (max-height: 290px) {
+
+	.headerContent .below {
+		display: none;
+	}
+
+	#showDataAboutMe {
+		margin-top: 20px;
+	}
+}
