@@ -118,7 +118,7 @@
 						<a class='light defaultFont' href='#'>
 							<div class='opacity'>
 								<div class='previewHeader'>
-									<span class='h3 light'>Заголовок статьи</span>
+									<span class='h3 light'>Заголовок статьи 1</span>
 								</div>
 							</div>
 						</a>
@@ -163,7 +163,7 @@
 						<a class='light defaultFont' href='#'>
 							<div class='opacity'>
 								<div class='previewHeader'>
-									<span class='h3 light'>Заголовок статьи</span>
+									<span class='h3 light'>Заголовок статьи 2</span>
 								</div>
 							</div>
 						</a>
@@ -210,7 +210,7 @@
 						<a class='light defaultFont' href='#'>
 							<div class='opacity'>
 								<div class='previewHeader'>
-									<span class='h3 light'>Заголовок статьи</span>
+									<span class='h3 light'>Заголовок статьи 3</span>
 								</div>
 							</div>
 						</a>
@@ -255,7 +255,7 @@
 						<a class='light defaultFont' href='#'>
 							<div class='opacity'>
 								<div class='previewHeader'>
-									<span class='h3 light'>Заголовок статьи</span>
+									<span class='h3 light'>Заголовок статьи 4</span>
 								</div>
 							</div>
 						</a>
@@ -354,7 +354,9 @@
 	<script type="text/javascript" src="template/js/slider.js"></script>
 	<script type="text/javascript">
 		// Activating slider
-		slider('lastArticlesSlider', 'fadeInLeft', "block", true);
+		let animationType = "fadeInLeft";
+		if (window.innerWidth <= 414) animationType = "fadeIn";
+		slider('lastArticlesSlider', animationType, "block", true);
 	</script>
 </body>
 </html>
