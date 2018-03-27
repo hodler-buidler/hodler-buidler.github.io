@@ -38,13 +38,9 @@
 	.menu {
 		font-size: 11pt;
 	}
-
+	
 	.menuList li {
 		margin: 5px 0;
-	}
-
-	.menuList a {
-		font-size: 110%;
 	}
 
 }
