@@ -344,14 +344,14 @@ button, input, textarea {
 	border-radius: 50%;
 	min-width: 40px;
 	min-height: 40px;
-	background: #faf4d0 url("../images/arrowDown.png") center center no-repeat;
-	background-size: 24px 27px;
-	transition: 0.4s all;
+	background: #faf4d0 url("../images/downArrow.png") center center no-repeat;
+	background-position: 4px 6px;
+	transition: 0.4s background-color;
 	cursor: pointer;
 }
 .below:hover {
-	background: #703b3b url("../images/arrowDownH.png") center center no-repeat;
-	background-size: 24px 27px;
+	background: #703b3b url("../images/downArrow.png") center center no-repeat;
+	background-position: -33px 6px;
 	opacity: 0.9;
 }
 .below:active {
