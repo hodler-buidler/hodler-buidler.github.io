@@ -77,4 +77,17 @@
 		margin: 15px 0;
 	}
 
+	.articlesPreview {
+		max-width: 100%;
+		min-width: 0px;
+		margin-right: 0;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.coverImg {
+		width: 130px;
+		height: 130px;
+	}
 }

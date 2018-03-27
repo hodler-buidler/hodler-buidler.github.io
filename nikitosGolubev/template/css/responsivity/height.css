@@ -9,7 +9,7 @@
 }
 
 @media screen and (max-height: 340px) {
-
+	
 	.headerContent .below {
 		display: none;
 	}
