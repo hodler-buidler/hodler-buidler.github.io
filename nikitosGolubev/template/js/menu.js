@@ -13,7 +13,7 @@ document.getElementById('body').addEventListener("click", (event) => {
 });
 // when user wants to shut menu(make it invisible with display: none;)
 // Look at main.js to get more about event func
-document.getElementById('mainMenu').addEventListener("click", () => makeInvisibleSmth("#mainMenu", "delete"));
+document.getElementById('mainMenu').addEventListener("click", (event) => makeInvisibleSmth(event.target, "#mainMenu", "delete"));
 
 /* --------- */
 

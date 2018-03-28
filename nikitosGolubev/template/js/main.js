@@ -17,10 +17,11 @@ function makeVisibleFlex(selector) {
 }
 
 // Makes some elemnt insisible after clicking on some delete btn
-// You should pass into this func delete btn class name and a selector of element that should be hidden
-function makeInvisibleSmth(toRemoveElementSelector, deleteBtnClassName) {
+// You should pass into this func delete btn class name and a selector of element that should be hidden 
+// and an elem that should contain certain class
+function makeInvisibleSmth(obj, toRemoveElementSelector, deleteBtnClassName) {
 	// Check if elem contains a class of delete btn
-	if (event.target.classList.contains(deleteBtnClassName)) 
+	if (obj.classList.contains(deleteBtnClassName)) 
 		document.querySelector(toRemoveElementSelector).style.display = "none";
 }
 
