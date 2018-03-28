@@ -1,11 +1,11 @@
 @media screen and (max-width: 932px) {
 	body {
-		font-size: 13pt;
+		font-size: 110%;
 	}
 
 	.menu {
 		margin: auto;
-		font-size: 16pt;
+		font-size: 120%;
 	}
 
 	.h1 {

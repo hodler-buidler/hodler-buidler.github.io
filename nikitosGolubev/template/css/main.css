@@ -11,7 +11,7 @@ body {
 	color: #703b3b;
 	background: #faf4d0 url('../images/mainBg.png');
 	font-family: 'Times New Roman';
-	font-size: 15pt;
+	font-size: 120%;
 }
 
 body, ul {
