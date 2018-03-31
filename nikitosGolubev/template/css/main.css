@@ -47,9 +47,13 @@ h1, h2, h3 {
 	font-family: 'Lobster', 'Comic Sans';
 }
 
-button, input, textarea {
+button, input, textarea, select {
 	border: none;
 	outline: none;
+}
+
+select {
+	
 }
 
 /*** Common classes ***/
@@ -150,6 +154,14 @@ button, input, textarea {
 	font-family: 'Times New Roman';
 	font-style: normal;
 	font-weight: normal;
+}
+
+.subscribersOnly {
+	font-weight: bold;
+	font-size: 110%;
+	font-style: italic;
+	color: #ea4c4c;
+	white-space: nowrap;
 }
 
 /* Common sizes */

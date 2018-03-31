@@ -22,3 +22,54 @@
 .borderedTab .below {
 	margin-top: 35px;
 }
+
+/* REMOVES ON 800px */
+.sovetPepe {
+	width: 40%;
+	margin-right: 25px;
+}
+
+.sovetPepe img {
+	width: 100%;
+}
+
+.sovetPepeText {
+	text-align: center;
+	max-width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.lastArticlesList {
+	margin-top: -20px;
+}
+
+.lastArticlesList a {
+	color: #703b3b;
+	text-decoration: underline;
+}
+
+.lastArticlesList a:hover {
+	font-weight: bold;
+	color: #703b3b;
+}
+
+.lastArticlesList li {
+	margin: 10px 0;
+}
+
+.lastArticlesList li:first-child {
+	margin-top: 0;
+}
+
+.lastArticlesList li:last-child {
+	margin-bottom: 0;
+}
+
+.textSign {
+	background: url('../../images/textSign.png') center center no-repeat;
+	background-size: 100% 100%;
+	width: 300px;
+	height: 80px;
+}
