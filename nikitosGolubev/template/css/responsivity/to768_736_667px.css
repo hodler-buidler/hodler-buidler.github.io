@@ -63,6 +63,7 @@
 	.verticalHeader {
 		-webkit-writing-mode: horizontal-tb;
 		writing-mode: horizontal-tb;
+		max-width: 100%;
 	}
 
 	.socialMediaFooter {

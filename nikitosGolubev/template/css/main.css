@@ -156,6 +156,7 @@ button, input, textarea {
 .rotated90degText {
 	-webkit-writing-mode: vertical-rl;
 	writing-mode:tb-rl;
+	max-width: 50px;
 }
 
 .redGradientBg {
