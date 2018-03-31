@@ -1,0 +1,24 @@
+.borderedTabWrap {
+	background: #ea4c4c;
+}
+
+.borderedTab {
+	border: 15px solid #faf4d0;
+	position: relative;
+	height: 100%;
+	margin: 17px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.littleFixedLogo {
+	position: absolute;
+	bottom: 10px;
+	left: 15px;
+	font-size: 130%;
+}
+
+.borderedTab .below {
+	margin-top: 35px;
+}
