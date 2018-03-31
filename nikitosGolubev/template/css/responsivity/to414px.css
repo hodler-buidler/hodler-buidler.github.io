@@ -1,43 +1,20 @@
 @media screen and (max-width: 667px) {
 
-	.logoText {
-		font-size: 500%;
-		line-height: 0.9;
-	}
+	.logoText {font-size: 500%; line-height: 0.9;}
 
-	.headerContent .quote {
-		margin-top: 20px;
-	}
+	.headerContent .quote {margin-top: 20px;}
 
-	.coverImgWrap {
-		display: none;
-	}
+	.coverImgWrap {display: none;}
 
-	.verticalHeader {
-		text-align: center;
-	}
+	.verticalHeader {text-align: center;}
+	.verticalHeader span {white-space: normal;}
 
-	.verticalHeader span {
-		white-space: normal;
-	}
+	#myPhoto {display: none; width: 0%;}
 
-	#myPhoto {
-		display: none;
-		width: 0%;
-	}
+	#aboutData {width: 100%;}
 
-	#aboutData {
-		width: 100%;
-	}
-
-	#closeAbout {
-		opacity: 0.4;
-		top: 70%;
-	}
-
-	#closeAbout:hover {
-		opacity: 1;
-	}
+	#closeAbout {opacity: 0.4; top: 70%;}
+	#closeAbout:hover {opacity: 1;}
 
 	.size-big {
 		width: 35px;
@@ -66,11 +43,7 @@
 		margin: 9px 0;
 	}
 
-	.fixedMenuLogoWrap .smallNavbar, #footer .smallNavbar {
-		display: none;
-	}
+	.fixedMenuLogoWrap .smallNavbar, #footer .smallNavbar {display: none;}
 
-	.aboutWrap {
-		margin: 0 20px;
-	}
+	.aboutWrap {margin: 0 20px;}
 }

@@ -1,57 +1,23 @@
 @media screen and (max-width: 932px) {
-	body {
-		font-size: 110%;
-	}
+	body {font-size: 110%;}
 
-	.menu {
-		margin: auto;
-		font-size: 120%;
-	}
+	.menu {margin: auto; font-size: 120%;}
 
-	.h1 {
-		font-size: 350%;
-		line-height: 0.75;
-	}
+	.h1, .h2_5, .h2, .h3 {line-height: 0.75;}
+	.h1 {font-size: 350%;}
+	.h2_5 {font-size: 300%;}
+	.h2 {font-size: 270%;}
+	.h3 {font-size: 215%;}
 
-	.h2_5 {
-		font-size: 300%;
-		line-height: 0.75;
-	}
+	.logoText {font-size: 600%;}
 
-	.h2 {
-		font-size: 270%;
-		line-height: 0.75;
-	}
+	.textPreview {line-height: 1.25;}
 
-	.h3 {
-		font-size: 215%;
-		line-height: 0.75;
-	}
+	.presentText {line-height: 1.7; margin: 20px 0;}
 
-	.logoText {
-		font-size: 600%;
-	}
-
-	.textPreview {
-		line-height: 1.25;
-	}
-
-	.presentText {
-		line-height: 1.7;
-		margin: 20px 0;
-	}
-
-	.dog, .nigga {
-		display: none;
-	}
-
-	.niggaText {
-		max-width: 90%;
-	}
-
-	.dogText {
-		max-width: 90%;
-	}
+	.dog, .nigga {display: none;}
+	.niggaText {max-width: 90%;}
+	.dogText {max-width: 90%;}
 
 	.articlesPreviewWrap {
 		display: flex;
@@ -87,8 +53,5 @@
 }
 
 @media screen and (max-width: 768px) {
-	.coverImg {
-		width: 130px;
-		height: 130px;
-	}
+	.coverImg {width: 130px; height: 130px;}
 }

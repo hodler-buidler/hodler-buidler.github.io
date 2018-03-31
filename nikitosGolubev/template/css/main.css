@@ -47,58 +47,6 @@ h1, h2, h3 {
 	font-family: 'Lobster', 'Comic Sans';
 }
 
-.h1 {
-	margin: 0;
-	color: #ea4c4c;
-	font-size: 400%;
-	font-family: "Lobster";
-	line-height: 0.9;
-}
-
-.h2_5 {
-	font-size: 350%;
-	font-family: "Lobster";
-	line-height: 0.9;
-	margin: 0;
-	color: #ea4c4c;
-}
-
-.h2 {
-	margin: 0;
-	color: #ea4c4c;
-	font-size: 320%;
-	font-family: "Lobster";
-	line-height: 0.9;
-}
-
-.h3 {
-	margin: 0;
-	color: #ea4c4c;
-	font-size: 250%;
-	font-family: "Lobster";
-	line-height: 0.9;
-}
-
-.verticalLobster {
-	line-height: 1.3;
-}
-
-.lightHref {
-	color: #faf4d0;
-	text-decoration: underline;
-	font-size: 80%;
-	transition: 0.4s opacity
-	margin: 0;;
-}
-
-.lightHref:hover {
-	font-weight: bold;
-}
-
-.lightHref:active {
-	opacity: 0.6;
-}
-
 button, input, textarea {
 	border: none;
 	outline: none;
@@ -118,6 +66,29 @@ button, input, textarea {
 .brownHoverBg:hover {background-color: #703b3b;}
 .brownHover:active, .brownHoverBg:active {opacity: 0.5;}
 
+.h1, .h2_5, .h2, .h3 {
+	margin: 0;
+	color: #ea4c4c;
+	font-family: "Lobster";
+	line-height: 0.9;
+}
+.h1 {font-size: 400%;}
+.h2_5 {font-size: 350%;}
+.h2 {font-size: 320%;}
+.h3 {font-size: 250%;}
+
+.verticalLobster {line-height: 1.3;}
+
+.lightHref {
+	color: #faf4d0;
+	text-decoration: underline;
+	font-size: 80%;
+	transition: 0.4s opacity
+	margin: 0;;
+}
+.lightHref:hover {font-weight: bold;}
+.lightHref:active {opacity: 0.6;}
+
 .tabPaddings {padding: 30px 20px;}
 
 .noWrap {white-space: nowrap;}
@@ -132,15 +103,8 @@ button, input, textarea {
 	color: #703b3b;
 	transition: 0.4s all;
 }
-
-.input:focus {
-	opacity: 0.7;
-}
-
-.dynamicTextInput {
-	width: 30%;
-	min-width: 140px;
-}
+.input:focus {opacity: 0.7;}
+.dynamicTextInput {width: 30%; min-width: 140px;}
 
 .twoColumnFlexCentered {
 	display: flex;
@@ -148,10 +112,7 @@ button, input, textarea {
 	justify-content: center;
 }
 
-.presentText {
-	line-height: 2;
-	margin: 20px 0;
-}
+.presentText {line-height: 2; margin: 20px 0;}
 
 .rotated90degText {
 	-webkit-writing-mode: vertical-rl;
@@ -159,9 +120,7 @@ button, input, textarea {
 	max-width: 50px;
 }
 
-.redGradientBg {
-	background: linear-gradient(90deg, #ea4c4c 50%, #c14545 50%);
-}
+.redGradientBg {background: linear-gradient(90deg, #ea4c4c 50%, #c14545 50%);}
 
 .btn {
 	padding: 10px 20px;
@@ -175,11 +134,7 @@ button, input, textarea {
 }
 .btn:hover {opacity: 0.9;}
 .btn:active {opacity: 0.7;}
-
-.borderBtn {
-	border: 2px solid #703b3b;
-	padding: 8px 18px;
-}
+.borderBtn {border: 2px solid #703b3b; padding: 8px 18px;}
 
 .quote {
 	font-family: "Open Sans Light";
@@ -214,9 +169,7 @@ button, input, textarea {
 
 /*** Social media ***/
 
-.socialMedia {
-	display: flex;
-}
+.socialMedia {display: flex;}
 
 .social {
 	cursor: pointer;
@@ -225,77 +178,29 @@ button, input, textarea {
 .social:hover {opacity: 0.9;}
 .social:active {opacity: 0.7;}
 
-.vk {
-	background: url("../images/socialMedia/vk.png") center center no-repeat;
-	background-size: cover;
-}
-.vk:hover {
-	background: url("../images/socialMedia/vkH.png") center center no-repeat;
-	background-size: cover;
-}
+.vk {background: url("../images/socialMedia/vk.png") center center no-repeat; background-size: cover;}
+.vk:hover {background: url("../images/socialMedia/vkH.png") center center no-repeat; background-size: cover;}
 
-.instagram {
-	background: url("../images/socialMedia/instagram.png") center center no-repeat;
-	background-size: cover;
-}
-.instagram:hover {
-	background: url("../images/socialMedia/instagramH.png") center center no-repeat;
-	background-size: cover;
-}
+.instagram {background: url("../images/socialMedia/instagram.png") center center no-repeat; background-size: cover;}
+.instagram:hover {background: url("../images/socialMedia/instagramH.png") center center no-repeat; background-size: cover;}
 
-.facebook {
-	background: url("../images/socialMedia/facebook.png") center center no-repeat;
-	background-size: cover;
-}
-.facebook:hover {
-	background: url("../images/socialMedia/facebookH.png") center center no-repeat;
-	background-size: cover;
-}
+.facebook {background: url("../images/socialMedia/facebook.png") center center no-repeat; background-size: cover;}
+.facebook:hover {background: url("../images/socialMedia/facebookH.png") center center no-repeat; background-size: cover;}
 
-.twitter {
-	background: url("../images/socialMedia/twitter.png") center center no-repeat;
-	background-size: cover;
-}
-.twitter:hover {
-	background: url("../images/socialMedia/twitterH.png") center center no-repeat;
-	background-size: cover;
-}
+.twitter {background: url("../images/socialMedia/twitter.png") center center no-repeat; background-size: cover;}
+.twitter:hover { background: url("../images/socialMedia/twitterH.png") center center no-repeat; background-size: cover;}
 
-.youtube {
-	background: url("../images/socialMedia/youtube.png") center center no-repeat;
-	background-size: cover;
-}
-.youtube:hover {
-	background: url("../images/socialMedia/youtubeH.png") center center no-repeat;
-	background-size: cover;
-}
+.youtube {background: url("../images/socialMedia/youtube.png") center center no-repeat; background-size: cover;}
+.youtube:hover {background: url("../images/socialMedia/youtubeH.png") center center no-repeat; background-size: cover;}
 
-.telegram {
-	background: url("../images/socialMedia/telegram.png") center center no-repeat;
-	background-size: cover;
-}
-.telegram:hover {
-	background: url("../images/socialMedia/telegramH.png") center center no-repeat;
-	background-size: cover;
-}
+.telegram {background: url("../images/socialMedia/telegram.png") center center no-repeat; background-size: cover;}
+.telegram:hover {background: url("../images/socialMedia/telegramH.png") center center no-repeat; background-size: cover;}
 
-.gitHub {
-	background: url("../images/socialMedia/github.png") center center no-repeat;
-	background-size: cover;
-}
-.gitHub:hover {
-	background: url("../images/socialMedia/githubH.png") center center no-repeat;
-	background-size: cover;
-}
+.gitHub {background: url("../images/socialMedia/github.png") center center no-repeat; background-size: cover;}
+.gitHub:hover {background: url("../images/socialMedia/githubH.png") center center no-repeat; background-size: cover;}
 
-.linkedIn {
-	background: url("../images/socialMedia/linkedin.png") center center no-repeat;
-	background-size: cover;
-}
-.linkedIn:hover {
-	background: url("../images/socialMedia/linkedinH.png") center center no-repeat;
-	background-size: cover;
-}
+.linkedIn {background: url("../images/socialMedia/linkedin.png") center center no-repeat; background-size: cover;}
+.linkedIn:hover {background: url("../images/socialMedia/linkedinH.png") center center no-repeat; background-size: cover;}
 
 /*** First Tab - introduction ***/
 .tab {
@@ -355,17 +260,11 @@ button, input, textarea {
 	background-size: 24px 27px;
 	opacity: 0.9;
 }
-.below:active {
-	opacity: 0.7;
-}
+.below:active {opacity: 0.7;}
 
-.headerContent .quote {
-	margin-top: 5px;
-}
+.headerContent .quote {margin-top: 5px;}
 
-#showDataAboutMe {
-	margin: 35px 0 35px 0;
-}
+#showDataAboutMe {margin: 35px 0 35px 0;}
 
 /*** Menu ***/
 .menuWrap {
@@ -382,25 +281,15 @@ button, input, textarea {
 .delete:hover {background: url("../images/deleteH.png") center center no-repeat;opacity: 0.9;}
 .delete:active {opacity: 0.7;}
 
-.menu {
-	margin: auto;
-}
-
-.menuList li {
-	margin: 10px 0;
-}
-
+.menu {margin: auto;}
+.menuList li {margin: 10px 0;}
 .menuList a {
 	color: #faf4d0;
 	font-style: normal;
 	font-size: 115%;
 	font-family: 'Open Sans Light';
 }
-
-.menuList a:hover {
-	font-family: 'Open Sans';
-}
-
+.menuList a:hover {font-family: 'Open Sans';}
 .menuList a:active, .activeMenuElem {
 	font-family: 'Open Sans' !important;
 	opacity: 0.7;
@@ -429,7 +318,6 @@ button, input, textarea {
 	justify-content: center;
 	align-items: center;
 }
-
 .fixedMenuLogo {margin-right: 20px;}
 
 /*** About me ***/
@@ -463,19 +351,10 @@ button, input, textarea {
 	padding-top: 20px;
 }
 
-.aboutWrap {
-	margin: 0 35px;
-}
+.aboutWrap {margin: 0 35px;}
 
-#aboutData::-webkit-scrollbar {
-    width: 8px;
-    background-color: #703b3b;
-}
-
-#aboutData::-webkit-scrollbar-thumb {
-    width: 8px;
-    background-color: #faf4d0;
-}
+#aboutData::-webkit-scrollbar {width: 8px; background-color: #703b3b;}
+#aboutData::-webkit-scrollbar-thumb {width: 8px; background-color: #faf4d0;}
 
 #closeAbout {
 	height: 75px;
@@ -502,11 +381,7 @@ button, input, textarea {
 }
 
 /*** Second tab ***/
-.dog img {
-	width: 90%;
-	min-width: 400px;
-}
-
+.dog img {width: 90%; min-width: 400px;}
 .dogText {
 	text-align: center;
 	max-width: 50%;
@@ -539,10 +414,7 @@ button, input, textarea {
 	margin-top: 25px;
 }
 
-.opacity {
-	transition: 0.4s all;
-	cursor: pointer;
-}
+.opacity {transition: 0.4s all; cursor: pointer;}
 .opacity:hover {opacity: 0.7;}
 .opacity:active {opacity: 0.3;}
 
@@ -557,10 +429,7 @@ button, input, textarea {
 	transition: 0.4s all;
 	margin-right: 15px;
 }
-
-.coverImgWrap:hover {
-	opacity: 0.7;
-}
+.coverImgWrap:hover {opacity: 0.7;}
 
 .coverImg {
 	width: 170px;
@@ -568,10 +437,7 @@ button, input, textarea {
 	overflow: hidden;
 	border-radius: 50%;
 }
-
-.coverImg img {
-	height: 100%;
-}
+.coverImg img {height: 100%;}
 
 .minReading {
 	width: 50px;
@@ -588,13 +454,9 @@ button, input, textarea {
 	right: 5px;
 }
 
-.textPreview {
-	line-height: 1.4;
-}
+.textPreview {line-height: 1.4;}
 
-.previewHeader {
-	margin: 5px 0;
-}
+.previewHeader {margin: 5px 0;}
 
 .postedDate {
 	display: flex;
@@ -602,10 +464,7 @@ button, input, textarea {
 	margin-top: 25px;
 }
 
-.date {
-	font-size: 85%;
-	white-space: nowrap;
-}
+.date {font-size: 85%; white-space: nowrap;}
 
 .whiteLine {
 	height: 1px;
@@ -622,9 +481,7 @@ button, input, textarea {
 	align-items: center;
 }
 
-.sliderTypePagination {
-	margin-top: 10px;
-}
+.sliderTypePagination {margin-top: 10px;}
 
 .controls {
 	height: 40px;
@@ -635,29 +492,13 @@ button, input, textarea {
 	transition: 0.4s all;
 }
 
-.sliderTypePagination .left {
-	background: #faf4d0 url('../images/arrowLeft.png') center center no-repeat;
-	background-size: 70%;
-}
+.sliderTypePagination .left {background: #faf4d0 url('../images/arrowLeft.png') center center no-repeat; background-size: 70%;}
+.sliderTypePagination .right {background: #faf4d0 url('../images/arrowRight.png') center center no-repeat; background-size: 70%;}
 
-.sliderTypePagination .right {
-	background: #faf4d0 url('../images/arrowRight.png') center center no-repeat;
-	background-size: 70%;
-}
+.sliderTypePagination .left:hover {background: #c14545 url('../images/arrowLeftH.png') center center no-repeat; background-size: 70%;}
+.sliderTypePagination .right:hover {background: #c14545 url('../images/arrowRightH.png') center center no-repeat; background-size: 70%;}
 
-.sliderTypePagination .left:hover {
-	background: #c14545 url('../images/arrowLeftH.png') center center no-repeat;
-	background-size: 70%;
-}
-
-.sliderTypePagination .right:hover {
-	background: #c14545 url('../images/arrowRightH.png') center center no-repeat;
-	background-size: 70%;
-}
-
-.sliderTypePagination .left:active, .sliderTypePagination .right:active {
-	opacity: 0.5;
-}
+.sliderTypePagination .left:active, .sliderTypePagination .right:active {opacity: 0.5;}
 
 /*** Fourth tab ***/
 #tabSubscribe {
@@ -667,27 +508,15 @@ button, input, textarea {
 	align-content: center;
 }
 
-.niggaText {
-	max-width: 50%;
-}
+.niggaText {max-width: 50%;}
+.nigga {width: 50%;}
+.nigga img {width: 100%;}
 
-.nigga {
-	width: 50%;
-}
-
-.nigga img {
-	width: 100%;
-}
-
-.subscribeBtn {
-	margin-top: 30px;
-}
+.subscribeBtn {margin-top: 30px;}
 
 /*** Footer ***/
 
-#footer {
-	display: flex;
-}
+#footer {display: flex;}
 
 .copyright, .socialMediaFooter {
 	width: 50%;
@@ -697,14 +526,9 @@ button, input, textarea {
 	padding: 15px 0;
 }
 
-.copyright {
-	background: #ea4c4c;
-	text-align: center;
-}
+.copyright {background: #ea4c4c; text-align: center;}
 
-.socialMediaFooter {
-	background: #c14545;
-}
+.socialMediaFooter {background: #c14545;}
 
 .verticalLineFooter {
 	width: 1px;
@@ -714,14 +538,8 @@ button, input, textarea {
 
 /*** Small navbar ***/
 
-.smallNavbar {
-	font-size: 65%;
-	color: #faf4d0;
-}
+.smallNavbar {font-size: 65%; color: #faf4d0;}
 
-.smallNavbar a {
-	color: #faf4d0;
-	text-decoration: underline;
-}
+.smallNavbar a {color: #faf4d0;	text-decoration: underline;}
 .smallNavbar a:hover {font-weight: bold;}
 .smallNavbar a:active {opacity: 0.7;}

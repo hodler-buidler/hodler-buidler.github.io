@@ -1,31 +1,17 @@
 @media screen and (max-width: 413px) {
-	body {
-		font-size: 95%;
-	}
+	body {font-size: 95%;}
 
-	.niggaText {
-		max-width: 98%;
-	}
+	.niggaText {max-width: 98%;}
 
-	.dogText {
-		max-width: 98%;
-	}
+	.dogText {max-width: 98%;}
 }
 
 @media screen and (max-width: 374px) {
-	body {
-		font-size: 91%;
-	}
+	body {font-size: 91%;}
 
-	.niggaText {
-		max-width: 99%;
-	}
+	.niggaText {max-width: 99%;}
 
-	.dogText {
-		max-width: 99%;
-	}
+	.dogText {max-width: 99%;}
 
-	#showDataAboutMe {
-		margin: 25px 0;
-	}
+	#showDataAboutMe {margin: 25px 0;}
 }
