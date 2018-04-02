@@ -14,6 +14,10 @@ body {
 	font-size: 120%;
 }
 
+::selection {background: #ffb7b7;}
+::-moz-selection {background: #ffb7b7;}
+::-ms-selection {background: #ffb7b7;}
+
 body, ul {
 	margin: 0;
 	padding: 0;
@@ -50,10 +54,6 @@ h1, h2, h3 {
 button, input, textarea, select {
 	border: none;
 	outline: none;
-}
-
-select {
-	
 }
 
 /*** Common classes ***/
@@ -126,6 +126,29 @@ select {
 .btn:hover {opacity: 0.9;}
 .btn:active {opacity: 0.7;}
 .borderBtn {border: 2px solid #703b3b; padding: 8px 18px;}
+
+.lightInput, .lightSelect {
+	color: rgba(112, 59, 59, 0.7);
+	font-family: 'Lobster';
+	background: #faf4d0;
+	padding: 4px 7px;
+	border-radius: 7px;
+	font-size: 110%;
+	transition: 0.4s all;
+}
+
+.lightSelect {
+	background: #faf4d0 url("../images/select.png") no-repeat 95% center;
+	background-size: 13px;
+	cursor: pointer;
+	padding-right: 30px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+.lightInput:focus, .lightSelect:focus {opacity: 0.8;}
 
 .quote {
 	font-family: "Open Sans Light";
