@@ -127,8 +127,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 75px;
-	height: 75px;
+	min-width: 75px;
+	min-height: 75px;
 	font-size: 300%;
 	margin-right: 15px;
 	position: relative;
@@ -139,7 +139,7 @@
 	cursor: pointer;
 	border-radius: 50px;
 	transition: 0.4s all;
-	padding-right: 20px;
+	padding-right: 15px;
 }
 .categoryList .circleListLi:hover {background: #ea4c4c;}
 .categoryList .circleListLi:hover .circleDecoration {background: #faf4d0; color: #ea4c4c;}
@@ -147,4 +147,64 @@
 .catListName {transition: 0.4s all;}
 .categoryList .circleListLi:hover .catListName {
 	color: #faf4d0;
+}
+
+@media screen and (max-width: 800px) {
+	.sovetPepe {
+		display: none;
+	}
+
+	.sovetPepeText {
+		max-width: 90%;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.categoryList {
+		font-size: 85%;
+	}
+
+	.articlesFilter {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.articlesFilter .articleSearch {
+		margin-top: 20px;
+	}
+
+	.categoryList .circleDecoration {
+		min-width: 60px;
+		min-height: 60px;
+	}
+
+	.borderedTab {
+		border: 8px solid #faf4d0;
+		position: relative;
+		height: 100%;
+		margin: 12px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 413px) {
+	.categoryList {
+		font-size: 80%;
+	}
+
+	.categoryList .circleDecoration {
+		min-width: 45px;
+		min-height: 45px;
+	}
+
+	.categoryList .circleDecoration {
+		margin-right: 7px;
+	}
+
+	.textSign {
+		width: 200px;
+		height: 60px;
+	}
 }

@@ -84,6 +84,8 @@ button, input, textarea, select {
 
 .noWrap {white-space: nowrap;}
 
+.centered {text-align: center;}
+
 .input {
 	border: 3px solid #703b3b;
 	padding: 8px 20px;
