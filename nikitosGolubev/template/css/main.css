@@ -129,6 +129,8 @@ button, input, textarea, select {
 .btn:active {opacity: 0.7;}
 .borderBtn {border: 2px solid #703b3b; padding: 8px 18px;}
 
+.marginBtn {margin-top: 15px;}
+
 .lightInput, .lightSelect {
 	color: rgba(112, 59, 59, 0.7);
 	font-family: 'Lobster';
@@ -354,7 +356,7 @@ button, input, textarea, select {
 	width: calc(100% - 60px); /* Minus right & left paddings */
 	display: none;
 	padding: 10px 30px;
-	z-index: 1;
+	z-index: 10;
 	justify-content: space-between;
 	-webkit-animation-duration: 0.75s;
  	 animation-duration: 0.75s;
@@ -423,3 +425,65 @@ button, input, textarea, select {
 .smallNavbar a {color: #faf4d0;	text-decoration: underline;}
 .smallNavbar a:hover {font-weight: bold;}
 .smallNavbar a:active {opacity: 0.7;}
+
+/*** Common thing for other pages(not index) ***/
+
+/* Another type of header tab */
+
+.borderedTabWrap {background: #ea4c4c;}
+
+.borderedTabWrap .logoText {
+	
+}
+
+.borderedTab {
+	border: 15px solid #faf4d0;
+	position: relative;
+	height: 100%;
+	margin: 17px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.littleFixedLogo {
+	position: absolute;
+	bottom: 10px;
+	left: 15px;
+	font-size: 130%;
+}
+
+.borderedTab .below {margin-top: 35px;}
+
+/* Decorative text sign */
+
+.textSign {
+	background: url('../images/textSign.png') center center no-repeat;
+	background-size: 100% 100%;
+	width: 300px;
+	height: 80px;
+}
+
+/* Special  type of list */
+
+.circleListLi {
+	display: flex;
+	align-items: center;
+	margin: 20px 10px;
+}
+
+.circleDecoration {
+	background: #ea4c4c;
+	color: #faf4d0;
+	font-family: 'Lobster';
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 75px;
+	min-height: 75px;
+	font-size: 300%;
+	margin-right: 15px;
+	position: relative;
+	transition: 0.4s all;
+}

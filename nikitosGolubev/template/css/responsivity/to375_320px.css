@@ -4,6 +4,8 @@
 	.niggaText {max-width: 98%;}
 
 	.dogText {max-width: 98%;}
+
+	.textSign {width: 200px; height: 60px;}
 }
 
 @media screen and (max-width: 374px) {

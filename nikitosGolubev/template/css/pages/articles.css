@@ -1,37 +1,6 @@
-.borderedTabWrap {
-	background: #ea4c4c;
-}
-
-.borderedTab {
-	border: 15px solid #faf4d0;
-	position: relative;
-	height: 100%;
-	margin: 17px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.littleFixedLogo {
-	position: absolute;
-	bottom: 10px;
-	left: 15px;
-	font-size: 130%;
-}
-
-.borderedTab .below {
-	margin-top: 35px;
-}
-
 /* REMOVES ON 800px */
-.sovetPepe {
-	width: 40%;
-	margin-right: 25px;
-}
-
-.sovetPepe img {
-	width: 100%;
-}
+.sovetPepe {width: 40%; margin-right: 25px;}
+.sovetPepe img {width: 100%;}
 
 .sovetPepeText {
 	text-align: center;
@@ -41,38 +10,12 @@
 	align-items: center;
 }
 
-.lastArticlesList {
-	margin-top: -20px;
-}
-
-.lastArticlesList a {
-	color: #703b3b;
-	text-decoration: underline;
-}
-
-.lastArticlesList a:hover {
-	font-weight: bold;
-	color: #703b3b;
-}
-
-.lastArticlesList li {
-	margin: 10px 0;
-}
-
-.lastArticlesList li:first-child {
-	margin-top: 0;
-}
-
-.lastArticlesList li:last-child {
-	margin-bottom: 0;
-}
-
-.textSign {
-	background: url('../../images/textSign.png') center center no-repeat;
-	background-size: 100% 100%;
-	width: 300px;
-	height: 80px;
-}
+.lastArticlesList {margin-top: -20px;}
+.lastArticlesList a {color: #703b3b;text-decoration: underline;}
+.lastArticlesList a:hover {font-weight: bold; color: #703b3b;}
+.lastArticlesList li {margin: 10px 0;}
+.lastArticlesList li:first-child {margin-top: 0;}
+.lastArticlesList li:last-child {margin-bottom: 0;}
 
 /*** Articles filter Tab ***/
 
@@ -84,14 +27,8 @@
 	align-items: center;
 }
 
-.articleSearch {
-	display: flex;
-}
-
-.searchInput {
-	border-bottom-right-radius: 0px;
-	border-top-right-radius: 0px;
-}
+.articleSearch {display: flex;}
+.searchInput {border-bottom-right-radius: 0px; border-top-right-radius: 0px;}
 
 .searchBtn {
 	background: #703b3b url("../../images/search.png") no-repeat center center;
@@ -113,28 +50,6 @@
 	align-items: center;
 }
 
-.circleListLi {
-	display: flex;
-	align-items: center;
-	margin: 20px 10px;
-}
-
-.circleDecoration {
-	background: #ea4c4c;
-	color: #faf4d0;
-	font-family: 'Lobster';
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-width: 75px;
-	min-height: 75px;
-	font-size: 300%;
-	margin-right: 15px;
-	position: relative;
-	transition: 0.4s all;
-}
-
 .categoryList .circleListLi {
 	cursor: pointer;
 	border-radius: 50px;
@@ -145,38 +60,20 @@
 .categoryList .circleListLi:hover .circleDecoration {background: #faf4d0; color: #ea4c4c;}
 
 .catListName {transition: 0.4s all;}
-.categoryList .circleListLi:hover .catListName {
-	color: #faf4d0;
-}
+.categoryList .circleListLi:hover .catListName {color: #faf4d0;}
 
 @media screen and (max-width: 800px) {
-	.sovetPepe {
-		display: none;
-	}
-
-	.sovetPepeText {
-		max-width: 90%;
-	}
+	.sovetPepe {display: none;}
+	.sovetPepeText {max-width: 90%;}
 }
 
 @media screen and (max-width: 620px) {
-	.categoryList {
-		font-size: 85%;
-	}
+	.categoryList {font-size: 85%;}
 
-	.articlesFilter {
-		flex-direction: column;
-		justify-content: center;
-	}
+	.articlesFilter {flex-direction: column; justify-content: center;}
+	.articlesFilter .articleSearch {margin-top: 20px;}
 
-	.articlesFilter .articleSearch {
-		margin-top: 20px;
-	}
-
-	.categoryList .circleDecoration {
-		min-width: 60px;
-		min-height: 60px;
-	}
+	.categoryList .circleDecoration {min-width: 60px; min-height: 60px;}
 
 	.borderedTab {
 		border: 8px solid #faf4d0;
@@ -190,21 +87,8 @@
 }
 
 @media screen and (max-width: 413px) {
-	.categoryList {
-		font-size: 80%;
-	}
+	.categoryList {font-size: 80%;}
 
-	.categoryList .circleDecoration {
-		min-width: 45px;
-		min-height: 45px;
-	}
-
-	.categoryList .circleDecoration {
-		margin-right: 7px;
-	}
-
-	.textSign {
-		width: 200px;
-		height: 60px;
-	}
+	.categoryList .circleDecoration {min-width: 45px; min-height: 45px;}
+	.categoryList .circleDecoration {margin-right: 7px;}
 }
