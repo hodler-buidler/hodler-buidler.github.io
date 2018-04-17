@@ -3,11 +3,12 @@
 
 	.menu {margin: auto; font-size: 120%;}
 
-	.h1, .h2_5, .h2, .h3 {line-height: 0.75;}
+	.h1, .h2_5, .h2, .h3, .h4_5 {line-height: 0.75;}
 	.h1 {font-size: 350%;}
 	.h2_5 {font-size: 300%;}
 	.h2 {font-size: 270%;}
 	.h3 {font-size: 215%;}
+	.h4_5 {font-size: 180%;}
 
 	.logoText {font-size: 600%;}
 

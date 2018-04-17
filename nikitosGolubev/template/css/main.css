@@ -18,7 +18,7 @@ body {
 ::-moz-selection {background: #ffb7b7;}
 ::-ms-selection {background: #ffb7b7;}
 
-body, ul {
+body, ul, ol {
 	margin: 0;
 	padding: 0;
 }
@@ -57,7 +57,7 @@ button, input, textarea, select {
 }
 
 /*** Common classes ***/
-.h1, .h2_5, .h2, .h3 {
+.h1, .h2_5, .h2, .h3, .h4_5 {
 	margin: 0;
 	color: #ea4c4c;
 	font-family: "Lobster";
@@ -67,6 +67,7 @@ button, input, textarea, select {
 .h2_5 {font-size: 350%;}
 .h2 {font-size: 320%;}
 .h3 {font-size: 250%;}
+.h4_5 {font-size: 200%;}
 
 .verticalLobster {line-height: 1.3;}
 
