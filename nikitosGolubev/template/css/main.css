@@ -165,6 +165,7 @@ button, input, textarea, select {
 }
 
 .dark {color: #703b3b;} .darkBg {background-color: #703b3b;}
+.lightRed {color: #ea4c4c;} .lightRedBg {background-color: #ea4c4c;}
 .darkHover:hover {color: #703b3b;} .darkBgHover:hover {background-color: #703b3b;}
 .light {color: #faf4d0;} .lightBg {background-color: #faf4d0;}
 .lightHover:hover {color: #faf4d0;} .lightBgHover:hover {background-color: #faf4d0;}
