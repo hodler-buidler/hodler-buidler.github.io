@@ -12,11 +12,11 @@
 
 @media screen and (max-height: 340px) {	
 	.headerContent .below {display: none;}
-
+	.menu {font-size: 11pt;}
 	#showDataAboutMe {margin-top: 20px;}
 }
 
 @media screen and (max-height: 320px) {
-	.menu {font-size: 11pt;}
+	.menu {font-size: 10pt;}
 	.menuList li {margin: 5px 0;}
 }

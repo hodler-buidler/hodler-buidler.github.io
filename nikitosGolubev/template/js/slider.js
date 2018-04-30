@@ -159,10 +159,24 @@ function changeSlide(event, sliderId, action) {
 	// Makes new slide visible
 	slides[sliderCounter].classList.add(activeSlideClass);
 
-	// Change points if needed
+	// Change classes of points (from active to common and conversly)
 	if (needPoints) {
-		document.querySelector("."+sliderId+"_controls [slideNumber='"+oldSlideIndex+"']").classList.remove('activePoint');
-		document.querySelector("."+sliderId+"_controls [slideNumber='"+sliderCounter+"']").classList.add('activePoint');
+		// Getting all point blocks related to slider
+		let pointsBlock = document.querySelectorAll("."+sliderId+"_controls .points");
+		if (pointsBlock.length === 1) {
+			document.querySelector("."+sliderId+"_controls [slideNumber='"+oldSlideIndex+"']").classList.remove('activePoint');
+			document.querySelector("."+sliderId+"_controls [slideNumber='"+sliderCounter+"']").classList.add('activePoint');
+		}
+		// If the amount of point blocks a greater than 1, so we have to use loop to make changes in each block
+		else {
+			// A variable which will help to create a condition to run loop through all point blocks
+			// Based on that slider index is unique, and can't be repeated in single point block
+			let c = document.querySelectorAll("."+sliderId+"_controls [slideNumber='"+oldSlideIndex+"']").length;
+			for (let i = 0; i < c; i++) {
+				document.querySelectorAll("."+sliderId+"_controls [slideNumber='"+oldSlideIndex+"']")[i].classList.remove('activePoint');
+				document.querySelectorAll("."+sliderId+"_controls [slideNumber='"+sliderCounter+"']")[i].classList.add('activePoint');
+			}
+		}
 	}
 	
 	// Updating slider counter(current active index) in storage
@@ -175,29 +189,47 @@ slides - slider children
 sliderId - a slider
 */
 function setNecessaryClassesAndCreatePoints(slides, sliderId, needPoints) {
-	// Getting a block where points are contained
-	let pointsBlock = document.querySelector("."+sliderId+"_controls .points");
+	// Getting a block(-s) where points are contained
+	let pointsBlock = document.querySelectorAll("."+sliderId+"_controls .points");
+	// A variable that will help to realise if I need to run a loop to work with more than 1 point blocks
+	let pb = false;
+	if (pointsBlock.length === 1) pb = pointsBlock[0]; 
 
 	slides.forEach((slide, index) => {
 		// Filtering slides(.notSlide elem doesn't have to possess further classes)
 		if (!slide.classList.contains('notSlide')) {
 			// Creating points if needed
 			if (needPoints) {
-				// Creating point
-				let point = document.createElement("div");
-
-				point.className = 'point'; // set a basic class name
-				// set a SLIDE NUMBER attribute which value is equals to slide index in haystack
-				point.setAttribute('slideNumber', index);
-				pointsBlock.appendChild(point);
+				if (pb) createPoint(index, pb);
+				// Looping through all point blocks
+				else pointsBlock.forEach((block) => createPoint(index, block));
 			}
 
 			slide.classList.add('animated'); // animate.css basic class
 			slide.classList.add('slide'); // a class which defines a slide
 		}
 	});
-	// Set a class(if needed) which makes a first point active(due to first slide is active too)
-	if (needPoints) pointsBlock.firstElementChild.classList.add('activePoint');
+	// Set a class(if needed) which makes a first point active(because of first slide is active too)
+	if (needPoints) {
+		if (pb) pb.firstElementChild.classList.add('activePoint');
+		// Looping through all point blocks
+		else pointsBlock.forEach((block) => block.firstElementChild.classList.add('activePoint'));
+	}
+}
+
+// A function which creates a point, which is responsible to a particular slide
+/*
+	index - a slide number (from 0 - N)
+	pointsBlc - a HTML element which will contains points
+*/
+function createPoint(index, pointsBlc) {
+	// Creating point
+	let point = document.createElement("div");
+
+	point.className = 'point'; // set a basic class name
+	// set a SLIDE NUMBER attribute which value is equals to slide index in haystack
+	point.setAttribute('slideNumber', index);
+	pointsBlc.appendChild(point);
 }
 
 /* A function which gets a unique slider ID by controls panel */

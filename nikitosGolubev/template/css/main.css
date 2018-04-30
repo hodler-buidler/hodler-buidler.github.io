@@ -130,6 +130,9 @@ button, input, textarea, select {
 .btn:active {opacity: 0.7;}
 .borderBtn {border: 2px solid #703b3b; padding: 8px 18px;}
 
+.redBtn {background: #c14545;color: #faf4d0;}
+.redBtn:hover {background: #ea4c4c;}
+
 .marginBtn {margin-top: 15px;}
 
 .lightInput, .lightSelect {
@@ -281,6 +284,8 @@ button, input, textarea, select {
 	opacity: 0.9;
 }
 .burger:active {opacity: 0.7;}
+.redBurger {background: url("../images/burgerRed.png") center center no-repeat;}
+.redBurger:hover {background: url("../images/burgerRedH.png") center center no-repeat;}
 
 .headerContent {
 	margin: auto;
