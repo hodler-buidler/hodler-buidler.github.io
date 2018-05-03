@@ -19,8 +19,8 @@
 .redPoints, .whitePoints {flex-direction: column;}
 
 .redPoints .point, .whitePoints .point {
-	width: 10px;
-	height: 10px;
+	width: 20px;
+	height: 20px;
 	margin: 3px 0px;
 }
 .redPoints .activePoint {background: #c14545;}
