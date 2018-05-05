@@ -6,6 +6,28 @@
 	#c14545 - main href color(also used as red gradient colors)
 */
 
+/*** Including fonts ***/
+
+@font-face {
+	font-family: "Lobster";
+	src: url("../fonts/lobster.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/OpenSans.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "Open Sans Light";
+	src: url("../fonts/OpenSans-Light.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "Open Sans Semibold";
+	src: url("../fonts/OpenSans-SemiBold.ttf") format("ttf");
+}
+
 /*** Main settings ***/
 body {
 	color: #703b3b;
@@ -376,6 +398,16 @@ button, input, textarea, select {
 }
 .fixedMenuLogo {margin-right: 20px;}
 
+.specialLink:before, .specialLink:after {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url('../images/crown.png') no-repeat;
+	background-size: contain;
+	margin: 0 4px;
+}
+
 /*Slider type pagination */
 
 .sliderTypePagination {
@@ -514,13 +546,3 @@ button, input, textarea, select {
 
 .stew {width: 50%;max-width: 550px;}
 .stew img {width: 100%;}
-
-.specialLink:before, .specialLink:after {
-	content: '';
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	background: url('../images/crown.png') no-repeat;
-	background-size: contain;
-	margin: 0 4px;
-}
