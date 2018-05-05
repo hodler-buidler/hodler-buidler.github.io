@@ -6,6 +6,8 @@
 	.dogText {max-width: 98%;}
 
 	.textSign {width: 200px; height: 60px;}
+
+	.stewText input, .stewText textarea {min-width: 200px;}
 }
 
 @media screen and (max-width: 374px) {

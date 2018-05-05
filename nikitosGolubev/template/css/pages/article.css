@@ -1,20 +1,14 @@
-.articleContent .h1, .h2_5, .h2, .h3, .h4_5 {
-	color: #703b3b;
-}
+.articleContent {line-height: 1.6; padding: 15px 7%;}
+.articleContent h2 {margin: 20px 0;}
+.articleContent h3 {margin: 15px 0;}
 
-.articleContent ol, .articleContent ul {
-	margin: 10px 0;
-	margin-left: 50px;
-}
+.articleContent .h1, .h2_5, .h2, .h3, .h4_5 {color: #703b3b;}
 
-.articleContent ul li {
-	list-style: disc;
-}
+.articleContent ol, .articleContent ul {margin: 10px 0; margin-left: 50px;}
+.articleContent ul li {list-style: disc;}
 .articleContent ol li {list-style: upper-roman;}
 
-.articleContent p {
-	margin: 20px 0;
-}
+.articleContent p {margin: 20px 0;}
 
 .articleCover {
 	width: 100%;
@@ -22,9 +16,7 @@
 	opacity: 0.5;
 }
 
-.headerContent {
-	z-index: 1;
-}
+.headerContent {z-index: 1;}
 
 .articleTitle {
 	font-size: 400%;
@@ -33,32 +25,14 @@
 	line-height: 1;
 }
 
-.below {
-	margin-top: 20px;
-}
+.below {margin-top: 20px;}
 
-.articleContent {line-height: 1.6; padding: 15px 7%;}
-.articleContent h2 {margin: 20px 0;}
-.articleContent h3 {margin: 15px 0;}
+.img {max-width: 45%; min-width: 300px;}
+.img img {width: 100%; margin-top: 10px;}
 
-.img {
-	max-width: 45%;
-	min-width: 300px;
-}
+.img img:first-child {margin-top: 0;}
 
-.img img {
-	width: 100%;
-	margin-top: 10px;
-}
-
-.img img:first-child {
-	margin-top: 0;
-}
-
-.rightImg {
-	margin-left: 10px;
-	float: right;
-}
+.rightImg {margin-left: 10px; float: right;}
 
 .leftImg {
 	margin-right: 12px;
@@ -72,9 +46,7 @@
 	font-size: 90%;
 }
 
-.clear {
-	clear: both;
-}
+.clear {clear: both;}
 
 .importantInfo {
 	border: 5px dashed #ea4c4c;
@@ -102,16 +74,8 @@
 	font-style: italic;
 }
 
-.code::-webkit-scrollbar {
-    width: 12px;
-    background-color: #ea4c4c;
-}
-
-.code::-webkit-scrollbar-thumb {
-    width: 12px;
-    background-color: #703b3b;
-}
-
+.code::-webkit-scrollbar {width: 12px; background-color: #ea4c4c;}
+.code::-webkit-scrollbar-thumb {width: 12px; background-color: #703b3b;}
 
 .codeLine {
 	display: flex;
@@ -120,19 +84,11 @@
 	margin-top: -16px;
 }
 
-.codeLine:first-child {
-	margin-top: 0;
-}
+.codeLine:first-child {margin-top: 0;}
 
-.Num {
-	font-weight: bold;
-	color: #c14545;
-}
+.Num {font-weight: bold; color: #c14545;}
 
-.codeComment {
-	font-style: normal;
-	color: #c14545;
-}
+.codeComment {font-style: normal; color: #c14545;}
 
 .codeLine:hover *, .codeLine:hover {
 	color: #faf4d0;
@@ -149,27 +105,15 @@
 }
 
 @media screen and (max-width: 1024px) {
-	.articleTitle {
-		font-size: 320%;
-	}
+	.articleTitle {font-size: 320%;}
 }
 
 @media screen and (max-width: 768px) {
-	.articleTitle {
-		font-size: 250%;
-		max-width: 90%;
-	}
+	.articleTitle {font-size: 250%; max-width: 90%;}
 
-	.img {
-		max-width: 600px;
-		min-width: 250px;
-	}
+	.img {max-width: 600px; min-width: 250px;}
 
-
-	.rightImg, .leftImg {
-		float: none;
-		margin: auto;
-	}
+	.rightImg, .leftImg {float: none; margin: auto;}
 
 	.importantInfo {
 		font-size: 140%;
@@ -177,28 +121,17 @@
 		margin: 10px 0;
 	}
 
-	.code {
-		font-size: 90%;
-	}
+	.code {font-size: 90%;}
 }
 
 @media screen and (max-width: 600px) {
-	.articleTitle {
-		font-size: 200%;
-		max-width: 90%;
-	}
+	.articleTitle {font-size: 200%; max-width: 90%;}
 
-	.quote {
-		font-size: 100%;
-	}
+	.quote {font-size: 100%;}
 
-	.code {
-		font-size: 80%;
-	}
+	.code {font-size: 80%;}
 }
 
 @media screen and (max-width: 413px) {
-	.code {
-		font-size: 90%;
-	}
+	.code {	font-size: 90%;}
 }

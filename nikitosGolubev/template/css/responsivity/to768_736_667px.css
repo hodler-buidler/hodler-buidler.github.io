@@ -53,6 +53,16 @@
 
 }
 
+@media screen and (max-width: 800px) {
+	.stew {display: none;}
+
+	.stewText {
+		width: 98%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.coverImg {width: 130px; height: 130px;}
 }

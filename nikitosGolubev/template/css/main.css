@@ -494,3 +494,23 @@ button, input, textarea, select {
 	position: relative;
 	transition: 0.4s all;
 }
+
+/*** Tab with form to ask question or suggest idea with stew from The Family Guy ***/
+
+.stewText {
+	width: 50%;
+	text-align: center;
+	margin-right: 20px;
+}
+
+.stewText input, .stewText textarea {
+	width: 60%;
+	min-width: 250px;
+}
+
+.stewText textarea {
+	height: 100px;
+}
+
+.stew {width: 50%;max-width: 550px;}
+.stew img {width: 100%;}
