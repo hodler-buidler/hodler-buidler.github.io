@@ -514,3 +514,13 @@ button, input, textarea, select {
 
 .stew {width: 50%;max-width: 550px;}
 .stew img {width: 100%;}
+
+.specialLink:before, .specialLink:after {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url('../images/crown.png') no-repeat;
+	background-size: contain;
+	margin: 0 4px;
+}
