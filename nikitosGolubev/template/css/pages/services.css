@@ -1,5 +1,4 @@
 .servicesContent {line-height: 1.6; padding: 15px 7%;}
-
 .servicesContent p {margin: 20px 0;}
 
 .techHeader {
@@ -10,10 +9,5 @@
 	transition: 0.4s all;
 }
 
-.techHeader:hover {
-	font-weight: bold;
-}
-
-.techHeader:active {
-	opacity: 0.7;
-}
+.techHeader:hover {font-weight: bold;}
+.techHeader:active {opacity: 0.7;}
