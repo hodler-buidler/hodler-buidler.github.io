@@ -2,7 +2,7 @@
 
 .tabPaginationFixed {
 	position: absolute;
-	right: 30px;
+	right: 25px;
 	top: 45%;
 }
 
@@ -68,6 +68,9 @@
 .authTools a:hover {text-decoration: underline;}
 .authTools a:active {font-weight: bold;}
 
+.logForm .getMoreAboutVip {display: none;}
+.logForm .getMoreAboutVip .btn {padding: 5px; margin-top: 5px;}
+
 #accountInfo {background: #c14545;}
 
 #accountInfo .headerContent {
@@ -94,10 +97,10 @@
 	}
 }
 
-
 @media screen and (max-width: 768px) {
 	.headerQuestion {font-size: 220%;}
 	.regText {display: none;}
+	.logForm .getMoreAboutVip {display: block;}
 	.logForm {padding: 30px;}
 	.logForm input {margin-top: 20px;}
 	.logForm .lightInput {padding: 10px; font-size: 130%;}
@@ -118,6 +121,10 @@
 	.logForm .lightInput {padding: 7px; font-size: 115%;}
 }
 
+@media screen and (max-width: 410px) {
+	.tabPaginationFixed {right: 20px;}
+}
+
 @media screen and (max-width: 380px) {
 	.logForm input {margin-top: 10px;}
 	.logForm .lightInput {padding: 4px; font-size: 110%; width: 150px;}
@@ -125,9 +132,23 @@
 }
 
 @media screen and (max-height: 450px) {
-	.logForm {padding: 15px 15px;}
+	.logForm {padding: 15px;}
 	.logForm input {margin-top: 15px;}
 	.authTools, .authTools a {margin-top: 8px;}
 	.regText {font-size: 90%;}
 	.getMoreAboutVip .btn {padding: 8px;}
+}
+
+@media screen and (max-height: 400px) and (min-width: 541px) {
+	.headerQuestion {font-size: 170%;}
+}
+
+@media screen and (max-height: 390px){
+	.logForm {padding: 10px;}
+}
+
+@media screen and (max-height: 370px) {
+	.logForm input {margin-top: 10px;}
+	.authTools, .authTools a {margin-top: 5px; font-size: 90%;}
+	.logForm .lightInput {padding: 8px; font-size: 100%;}
 }

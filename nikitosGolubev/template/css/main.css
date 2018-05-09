@@ -256,6 +256,30 @@ button, input, textarea, select {
 .linkedIn {background: url("../images/socialMedia/linkedin.png") center center no-repeat; background-size: cover;}
 .linkedIn:hover {background: url("../images/socialMedia/linkedinH.png") center center no-repeat; background-size: cover;}
 
+.darkSocialOpacity .vk {background: url("../images/socialMedia/vkH.png") center center no-repeat; background-size: cover;}
+.darkSocialOpacity .vk:hover {background: url("../images/socialMedia/vkH.png") center center no-repeat; opacity: 0.6; background-size: cover;}
+
+.darkSocialOpacity .instagram {background: url("../images/socialMedia/instagramH.png") center center no-repeat; background-size: cover;}
+.darkSocialOpacity .instagram:hover {background: url("../images/socialMedia/instagramH.png") center center no-repeat; opacity: 0.6; background-size: cover;}
+
+.darkSocialOpacity .facebook {background: url("../images/socialMedia/facebookH.png") center center no-repeat; background-size: cover;}
+.darkSocialOpacity .facebook:hover {background: url("../images/socialMedia/facebookH.png") center center no-repeat; opacity: 0.6; background-size: cover;}
+
+.darkSocialOpacity .twitter {background: url("../images/socialMedia/twitterH.png") center center no-repeat; background-size: cover;}
+.darkSocialOpacity .twitter:hover {background: url("../images/socialMedia/twitterH.png") center center no-repeat; opacity: 0.6; background-size: cover;}
+
+.darkSocialOpacity .youtube {background: url("../images/socialMedia/youtubeH.png") center center no-repeat; background-size: cover;}
+.darkSocialOpacity .youtube:hover {background: url("../images/socialMedia/youtubeH.png") center center no-repeat; opacity: 0.6; background-size: cover;}
+
+.darkSocialOpacity .telegram {background: url("../images/socialMedia/telegramH.png") center center no-repeat; background-size: cover;}
+.darkSocialOpacity .telegram:hover {background: url("../images/socialMedia/telegramH.png") center center no-repeat; opacity: 0.6; background-size: cover;}
+
+.darkSocialOpacity .gitHub {background: url("../images/socialMedia/githubH.png") center center no-repeat; background-size: cover;}
+.darkSocialOpacity .gitHub:hover {background: url("../images/socialMedia/githubH.png") center center no-repeat; opacity: 0.6; background-size: cover;}
+
+.darkSocialOpacity .linkedIn {background: url("../images/socialMedia/linkedinH.png") center center no-repeat; background-size: cover;}
+.darkSocialOpacity .linkedIn:hover {background: url("../images/socialMedia/linkedinH.png") center center no-repeat; opacity: 0.6; background-size: cover;}
+
 /*** First Tab - introduction ***/
 .tab {
 	text-align: center;
@@ -287,6 +311,9 @@ button, input, textarea, select {
 .burger:active {opacity: 0.7;}
 .redBurger {background: url("../images/burgerRed.png") center center no-repeat;}
 .redBurger:hover {background: url("../images/burgerRedH.png") center center no-repeat;}
+.whiteBurgerOpacity:hover {background: url("../images/burger.png") center center no-repeat; opacity: 0.4;}
+.darkBurgerOpacity {background: url("../images/burgerH.png") center center no-repeat;}
+.darkBurgerOpacity:hover {background: url("../images/burgerH.png") center center no-repeat; opacity: 0.4;}
 
 .headerContent {
 	margin: auto;

@@ -15,6 +15,7 @@
 		---Not Required
 		Navigate points, there container should contain .points class
 		Every point would be automaticly specified as .point
+		.gotoSlide blocks which will change slide on some particular one if user would click on them
 	}
 	3) Include slider.js, slider.css and animate.css files
 	4) You have to run a slider function below including slider.js file
@@ -99,6 +100,31 @@ document.querySelector('body').addEventListener('click', (event) => {
 		let currentSliderId = getSliderIdByControlsBlock(event);
 		changeSlide(event, currentSliderId, "point")
 	}
+
+	// If there any elements with class .gotoSlide (created to not to run useless cycles)
+	if (document.querySelector('.gotoSlide')) {
+		// If user click on some element that should change slide on some particular one(number of the slide should be passed in attribute: sid)
+		if (event.target.classList.contains('gotoSlide')) {
+			let currentSliderId = getSliderIdByControlsBlock(event);
+			changeSlide(event, currentSliderId, "gotoSlide")
+		}
+		// If user clicked to directly on .gotoSlide element, but on its child
+		else {
+			let parentElem = event.target.parentNode; // getting the first parent element
+			// looping through all parents trying to find .gotoSlide element
+			while (!parentElem.classList.contains('gotoSlide')) {
+				if (parentElem.tagName === "BODY") break; // If nothing found, so break
+				parentElem = parentElem.parentNode; // Next parent
+			}
+			// If during looping, .gotoSlide was found
+			if (parentElem.classList.contains('gotoSlide')) {
+				// So we change slide
+				// Its important to pass TRUE as $noTarget param to each func, bcs we deal not with event object
+				let currentSliderId = getSliderIdByControlsBlock(parentElem, true);
+				changeSlide(parentElem, currentSliderId, "gotoSlide", true)
+			}
+		}
+	}
 });
 
 /* A function which replies to event which imply a slide changing 
@@ -106,8 +132,10 @@ document.querySelector('body').addEventListener('click', (event) => {
 event - current event action
 sliderId - UNIQUE slider id, which defines the data location in storage]
 action - type of slide changing
+$noTarget - if event is not an eventObject from eventListener, so we can't use event.target bcs it's a common
+DOM element, so in this occasion you need to pass $noTarget = true; to function
 */
-function changeSlide(event, sliderId, action) {
+function changeSlide(event, sliderId, action, $noTarget = false) {
 	// Getting data from storage
 	let currentSliderData = slidersStorage[sliderId];
 
@@ -153,6 +181,10 @@ function changeSlide(event, sliderId, action) {
 	*/
 	else if (action === 'point') 
 		sliderCounter = event.target.getAttribute('slideNumber');
+	else if (action === 'gotoSlide') {
+		if ($noTarget) sliderCounter = event.getAttribute('sid');
+		else sliderCounter = event.target.getAttribute('sid');
+	}
 
 	// Add an animation which will be implemented after every slide showing
 	slides[sliderCounter].classList.add(sliderAnimationType);
@@ -233,10 +265,15 @@ function createPoint(index, pointsBlc) {
 }
 
 /* A function which gets a unique slider ID by controls panel */
-function getSliderIdByControlsBlock(event) {
+/* $noTarget - if event is not an eventObject from eventListener, so we can't use event.target bcs it's a common
+DOM element, so in this occasion you need to pass $noTarget = true; to function */
+function getSliderIdByControlsBlock(event, $noTarget = false) {
 	// Looping through all sliders Ids
 	for (let sliderId in slidersStorage) {
-		let findControlsMainParent = event.target.parentNode; // getting first parent
+		let findControlsMainParent; // a variable which will contains first parent
+		// Getting first parent node depend on type of event varriable
+		if ($noTarget) findControlsMainParent = event.parentNode; // If its not event object
+		else findControlsMainParent = event.target.parentNode; // if its event object
 		// creating a class which should contain a controls panel
 		let controlsClassName = sliderId+"_controls";
 
