@@ -104,6 +104,20 @@
 	font-size: 80%;
 }
 
+.articleNav ul, .articleNav {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.navHeader {
+	font-family: 'Open Sans';
+	font-size: 90%;
+	color: #c14545;
+	cursor: pointer;
+}
+.navHeader:hover {text-decoration: underline;}
+.navHeader:active {font-weight: bold;}
+
 @media screen and (max-width: 1024px) {
 	.articleTitle {font-size: 320%;}
 }

@@ -551,3 +551,7 @@ button, input, textarea, select {
 
 .stew {width: 50%;max-width: 550px;}
 .stew img {width: 100%;}
+
+.noPaddingTop {
+	padding-top: 0px;
+}
