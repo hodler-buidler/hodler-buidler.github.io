@@ -6,6 +6,23 @@
 	#c14545 - main href color(also used as red gradient colors)
 */
 
+/*** Fonts ***/
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Regular.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: 'Open Sans Light';
+	src: url('../fonts/OpenSans-Light.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: 'Lobster';
+	src: url('../fonts/Lobster-Regular.ttf') format("truetype");
+}
+
 /*** Main settings ***/
 body {
 	color: #703b3b;

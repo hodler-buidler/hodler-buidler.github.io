@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>NikitosGolubev - Вход.</title>
+	<title>Личный кабинет - главная.</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="template/css/animate.css" />
 	<link rel="stylesheet" type="text/css" href="template/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="template/css/pages/login.css" />
 	<!-- RESPONSIVITY -->
 	<link rel="stylesheet" type="text/css" href="template/css/responsivity/to932px.css" />
 	<link rel="stylesheet" type="text/css" href="template/css/responsivity/to768_736_667px.css" />
@@ -14,12 +14,15 @@
 	<link rel="stylesheet" type="text/css" href="template/css/responsivity/height.css" />
 </head>
 <body id='body'>
+	<header class='cabHeader' id='cabHeaderTab'>
+
+	</header>
 	<nav id='mainMenu' class='menuWrap tab'>
 		<div class='delete'></div>
 		<div class='menu'>
 			<span class='h1 light'>Меню</span>
 			<ul class='menuList'>
-				<li><a href='index.html'>Главная</a></li>
+				<li><a class='activeMenuElem' href='index.html'>Главная</a></li>
 				<li><a href='articles.html'>Статьи</a></li>
 				<li><a href='reg.html' class='specialLink'>Стать особенным</a></li>
 				<li><a href='login.html' class='specialLink'>Войти</a></li>
@@ -31,25 +34,38 @@
 			</ul>
 		</div>
 	</nav>
-	<section class='fullscreen tab' id='mainContent'>
-		<div class='burger fixedBurger'></div>
-		<div class='headerContent'>
-			<div class='elephantDec'>
-				<img src="template/images/elephant.png" alt='Красивые цветочки' />
-			</div>
-			<div class='form'>
-				<form name="login" action="#" method="post">
-					<div><input type='text' name='email' placeholder="Email" class='oneBorderInput' /></div>
-					<div><input type='submit' name='send' value="Восстановить пароль" class='oneBorderBtn' /></div>
-					<div class='authNav'>
-						<a href='#'>Вход</a>/<a href="#">Зарегистрироваться</a>
-					</div>
-				</form>
+	<footer id='footer'>
+		<div class='copyright'>
+			<div>
+				<span class='normalLobster light'>
+					&copy;2018 Голубев Никита - Блог NikitosGolubev
+				</span>
+				<div class='smallNavbar'>
+					<a href='#'>Заказ рекламы</a>
+					/
+					<a href='#'>Правила и соглашения</a>
+					/
+					<a href='#'>Приватность</a>
+				</div>
 			</div>
 		</div>
-		<div class='littleFixedLogo'><a class='normalLobster light' href='#'>NikitosGolubev</a></div>
-	</section>
+		<div class='socialMediaFooter'>
+			<div class='socialMedia'>
+				<a class='targetBlank' href='#'><div class='social vk size-medium'></div></a>
+				<a class='targetBlank' href='#'><div class='social instagram size-medium'></div></a>
+				<a class='targetBlank' href='#'><div class='social gitHub size-medium'></div></a>
+				<a class='targetBlank' href='#'><div class='social linkedIn size-medium'></div></a>
+			</div>
+			<div class="verticalLineFooter lightBg"></div>
+			<div class='socialMedia'>
+				<a class='targetBlank' href='#'><div class='social youtube size-medium'></div></a>
+				<a class='targetBlank' href='#'><div class='social facebook size-medium'></div></a>
+				<a class='targetBlank' href='#'><div class='social twitter size-medium'></div></a>
+				<a class='targetBlank' href='#'><div class='social telegram size-medium'></div></a>
+			</div>
+		</div>
+	</footer>
 	<script type="text/javascript" src="template/js/main.js"></script>
-	<script type="text/javascript" src="template/js/menu.js"></script>
+	<script type="text/javascript" src="template/js/scroll.js"></script>
 </body>
 </html>
