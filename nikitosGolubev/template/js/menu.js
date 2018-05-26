@@ -21,24 +21,29 @@ document.getElementById('mainMenu').addEventListener("click", (event) => makeInv
 // Check if user scrolled enough to show or hide top menu
 window.addEventListener('scroll', topMenu);
 // Remove animation close classes(to prevent their repeating further) and set dsplay none
-document.getElementById("fixedMenu").addEventListener('animationend', fixTopMenu);
+// Checking if #fixedMenu exists
+if (document.getElementById('fixedMenu'))
+	document.getElementById("fixedMenu").addEventListener('animationend', fixTopMenu);
 
 /* Event functions */
 
 // A function which checks current scroll position and decides if its needed to show or hide top menu
 function topMenu(event) {
-	// a checker which determines on how much has to be scrolled to show or hide top menu
-	let showAndCloseBorderPx = 200; 
+	// Checking if #fixedMenu exists
+	if (document.getElementById('fixedMenu')) {
+		// a checker which determines on how much has to be scrolled to show or hide top menu
+		let showAndCloseBorderPx = 200; 
 
-	if (window.pageYOffset > showAndCloseBorderPx) {
-		// Show menu (animation is already set in HTML)
-		makeVisibleFlex("#fixedMenu") // look main.js to find a comment to this func
-		live = true;
-	}
-	if (window.pageYOffset < showAndCloseBorderPx) {
-		// Bind an animation an visually hide menu (if its opened)
-		if (live) document.getElementById('fixedMenu').classList.add("fadeOutUpBig");
-		live = false;
+		if (window.pageYOffset > showAndCloseBorderPx) {
+			// Show menu (animation is already set in HTML)
+			makeVisibleFlex("#fixedMenu") // look main.js to find a comment to this func
+			live = true;
+		}
+		if (window.pageYOffset < showAndCloseBorderPx) {
+			// Bind an animation an visually hide menu (if its opened)
+			if (live) document.getElementById('fixedMenu').classList.add("fadeOutUpBig");
+			live = false;
+		}
 	}
 }
 
