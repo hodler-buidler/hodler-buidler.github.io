@@ -557,18 +557,44 @@ button, input, textarea, select {
 	margin-right: 20px;
 }
 
-.stewText input, .stewText textarea {
-	width: 60%;
-	min-width: 250px;
-}
-
-.stewText textarea {
-	height: 100px;
-}
+.stewText input, .stewText textarea {width: 60%; min-width: 250px;}
+.stewText textarea {height: 100px;}
 
 .stew {width: 50%;max-width: 550px;}
 .stew img {width: 100%;}
 
-.noPaddingTop {
-	padding-top: 0px;
+.noPaddingTop {padding-top: 0px;}
+
+/*** Pagination ***/
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+
 }
+.pagination div {margin: 0 5px;}
+
+.toStart, .previous, .next, .toEnd, .pagNumber {cursor: pointer; transition: 0.4s all;}
+.toStart, .previous, .next, .toEnd {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+
+.toStart {background: #703b3b url('../images/doubleArrowLeftH.png') center center no-repeat; background-size: 28px 28px;}
+.toEnd {background: #703b3b url('../images/doubleArrowRightH.png') center center no-repeat; background-size: 28px 28px;}
+.previous {background: #703b3b url('../images/arrowLeftH.png') center center no-repeat; background-size: 28px 28px;}
+.next {background: #703b3b url('../images/arrowRightH.png') center center no-repeat; background-size: 28px 28px;}
+
+.pagNumber {
+	color: #faf4d0;
+	padding: 7px 12px;
+	font-family: 'Lobster';
+	font-size: 80%;
+	background: #703b3b;
+}
+
+.toStart:hover, .previous:hover, .next:hover, .toEnd:hover, .pagNumber:hover {background-color: #ea4c4c;}
+.toStart:active, .previous:active, .next:active, .toEnd:active, .pagNumber:active, .activePag {background-color: #c14545; opacity: 0.9;}

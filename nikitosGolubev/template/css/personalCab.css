@@ -22,15 +22,9 @@
 	z-index: 1;
 }
 
-.logoAndCabNavBtn {
-	display: flex;
-	align-items: center;
-}
+.logoAndCabNavBtn {display: flex; align-items: center;}
 
-.mainMenuBtn .burger {
-	width: 32px;
-	height: 32px;
-}
+.mainMenuBtn .burger {width: 32px; height: 32px;}
 
 .cabNavBtn {
 	width: 32px;
@@ -78,18 +72,9 @@
 	transition: 0.4s all;
 }
 
-.cabMenu li:first-child a div {
-	border-top: 1px solid #ea4c4c;
-}
-
-.cabMenu li a div:hover, .activeCabLink {
-	background: #ea4c4c;
-	color: #faf4d0;
-}
-
-.cabMenu li a div:active, .activeCabLink {
-	opacity: 0.8;
-}
+.cabMenu li:first-child a div {border-top: 1px solid #ea4c4c;}
+.cabMenu li a div:hover, .activeCabLink {background: #ea4c4c; color: #faf4d0;}
+.cabMenu li a div:active, .activeCabLink {opacity: 0.8;}
 
 .cabMenu li a {
 	color: #ea4c4c;
@@ -101,29 +86,17 @@
 
 /*** Main Content ***/
 
-.cabMainContentWrapper {
-	width: calc(100% - 250px);
-	margin-left: 30px;
-}
-
+.cabMainContentWrapper {width: calc(100% - 250px); margin-left: 30px;}
 
 /*** Footer ***/
 
-#footer {
-	flex: 0 0 auto;
-}
+#footer {flex: 0 0 auto;}
 
 /*** Responsivity css ***/
 
 @media screen and (max-width: 768px) {
-	.cabMenu {
-		display: none;
-	}
-
-	.cabMainContentWrapper {
-		width: 100%;
-		margin-left: 0;
-	}
+	.cabMenu {display: none;}
+	.cabMainContentWrapper {width: 100%; margin-left: 0;}
 
 	.cabMenuVisible {opacity: 1;}
 }
