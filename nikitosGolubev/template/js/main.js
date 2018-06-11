@@ -34,3 +34,8 @@ function fullscreen() {
 		value.style.height = window.innerHeight+"px";
 	});
 }
+
+// Function that cut double spaces by reg exp
+function trim(str) {
+	return str.replace(/\s\s+/g, " ");
+}

@@ -380,6 +380,9 @@ button, input, textarea, select {
 .delete {background: url("../images/delete.png") center center no-repeat;}
 .delete:hover {background: url("../images/deleteH.png") center center no-repeat;opacity: 0.9;}
 .delete:active {opacity: 0.7;}
+.darkDeleteOpacity {background: url("../images/deleteH.png") center center no-repeat;}
+.darkDeleteOpacity:hover {opacity: 0.4;}
+.darkDeleteOpacity:active {opacity: 0.7;}
 
 .menu {margin: auto;}
 .menuList li {margin: 10px 0;}
