@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="template/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="template/css/personalCab.css" />
 	<link rel="stylesheet" type="text/css" href="template/css/personalCab/challanges.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/slider.css" />
 	<!-- RESPONSIVITY -->
 	<link rel="stylesheet" type="text/css" href="template/css/responsivity/to932px.css" />
 	<link rel="stylesheet" type="text/css" href="template/css/responsivity/to768_736_667px.css" />
@@ -66,7 +67,53 @@
 			<div class='delete darkDeleteOpacity'></div>
 			<form name="createChallange" action="#" method="post">
 				<div class='challangeCreationForm'>
-					<div class='h3 dark'>Создание нового челленджа</div>
+					<div class='creationFormName'>
+						<span class='h3 dark'>Создание нового челленджа</span>
+					</div>
+					<div class='userNote'>
+						<div class='invitationToLook'>
+							Примечание к созданию челленджа! (README)
+						</div>
+						<div class='noteInnerWrap'>
+							<div class='noteInner'>
+								<div class='noteControls'>
+									<a href='#' class='noteLogo'>NikitosGolubev</a>
+									<div class='closeNote'></div>
+								</div>
+								<div class='noteContent'>
+									<p>Здравствуй, перед тобой особенности и ограничения создания челленджей:</p>
+									<p><b><i>Одновременно можно учавствовать максимум в 7 челленджах!</i></b></p>
+									<p>
+										<ul>
+											<li><b>Название челленджа:</b></li>
+											<li>-) Не меньше 8 символов.</li>
+											<li>-) Не больше 100 символов.</li>
+											<li>-) Пробелы, ставящиеся подряд в количестве больше 2х - вырезаются.</li>
+										</ul>
+									</p>
+									<p>
+										<ul>
+											<li><b>Продолжительность челленджа:</b></li>
+											<li>-) Не меньше 3х дней.</li>
+											<li>-) Не больше 365 дней.</li>
+											<li>-) Только целые дни, дробные варианты не принимаются.</li>
+										</ul>
+									</p>
+									<p>
+										<ul>
+											<li><b>Дата начала и конца челленджа:</b></li>
+											<li>-) Челлендж будет начат в день даты начала, а закончен в 00:00 даты конца</li>
+											<li>-) Минимальная разница между ними - 3 дня.</li>
+											<li>-) Максимальная разница между ними - 365 дней.</li>
+										</ul>
+									</p>
+									<p>
+										<i>Спасибо вам за проявленное внимание, дорогие пользователи. Пользуйтесь данной функцией и <b>достигайте своих целей!</b></i>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class='setChallangeName'>
 						<input id='challangeName' class='oneBorderInput' type="text" name='challangeName' placeholder="Название челленджа:" />
 					</div>
@@ -123,7 +170,12 @@
 						<div class='progress' style='width: 40%;'></div>
 					</div>
 					<div class='challangeContent'>
-						<div class='challangeData'>
+						<div class='challangeControls challangeShlider_1_controls'>
+							<div class='challangeNav gotoSlide' sid='0'>Описание</div>
+							<div class='challangeNav gotoSlide' sid='1'>Прогресс</div>
+							<div class='challangeNav gotoSlide' sid='2'>Дневник записей</div>
+						</div>
+						<div class='challangeData' id='challangeShlider_1'>
 							<div class='challangeDesc'>
 								<div class='challangeSubHeader'>Описание:</div>
 								<div class='linkToArticleOfChallange'>
@@ -173,33 +225,33 @@
 									<div class='statValue'>88%</div>
 								</div>
 							</div>
-						</div>
-						<div class='challangeDiaryWrapper'>
-							<div class='challangeSubHeader centered'>Дневник записей:</div>
-							<div class='challangeDiary'>
-								<div class='diaryNote'>
-									<div class='noteHeader'>День 1. Начало пути!</div>
-									<div class='noteDate'>22.12.2018</div>
-								</div>
-								<div class='diaryNote'>
-									<div class='noteHeader'>День 2. Начало пути!</div>
-									<div class='noteDate'>23.12.2018</div>
-								</div>
-								<div class='diaryNote'>
-									<div class='noteHeader'>День 3. Какой-то специально выдуманный длинный заголовок!</div>
-									<div class='noteDate'>24.12.2018</div>
-								</div>
-								<div class='diaryNote'>
-									<div class='noteHeader'>День 4. Какой-то специально выдуманный длинный заголовок!</div>
-									<div class='noteDate'>25.12.2018</div>
-								</div>
-								<div class='diaryNote'>
-									<div class='noteHeader'>День 5. Начало пути!</div>
-									<div class='noteDate'>26.12.2018</div>
-								</div>
-								<div class='diaryNote'>
-									<div class='noteHeader'>День 6. Начало пути!</div>
-									<div class='noteDate'>27.12.2018</div>
+							<div class='challangeDiaryWrapper'>
+								<div class='challangeSubHeader centered'>Дневник записей:</div>
+								<div class='challangeDiary'>
+									<div class='diaryNote'>
+										<div class='noteHeader'>День 1. Начало пути!</div>
+										<div class='noteDate'>22.12.2018</div>
+									</div>
+									<div class='diaryNote'>
+										<div class='noteHeader'>День 2. Начало пути!</div>
+										<div class='noteDate'>23.12.2018</div>
+									</div>
+									<div class='diaryNote'>
+										<div class='noteHeader'>День 3. Какой-то специально выдуманный длинный заголовок!</div>
+										<div class='noteDate'>24.12.2018</div>
+									</div>
+									<div class='diaryNote'>
+										<div class='noteHeader'>День 4. Какой-то специально выдуманный длинный заголовок!</div>
+										<div class='noteDate'>25.12.2018</div>
+									</div>
+									<div class='diaryNote'>
+										<div class='noteHeader'>День 5. Начало пути!</div>
+										<div class='noteDate'>26.12.2018</div>
+									</div>
+									<div class='diaryNote'>
+										<div class='noteHeader'>День 6. Начало пути!</div>
+										<div class='noteDate'>27.12.2018</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -207,6 +259,105 @@
 					<div class='startChallangeBtnWrap'>
 						<button class='challangeBtn startSimilarChallange'>Начать такой же челлендж</button>
 					</div>
+				</div>
+				<div days='365' maxLostDays='365' challangeName='Какое-то очень длинное название, специально напечатанное для проверки того, как всё будет выглядеть.' class='challange'>
+					<div class='challangeHeader'>Какое-то очень длинное название, специально напечатанное для проверки того, как всё будет выглядеть.</div>
+					<div class='progressBar'>
+						<div class='progress' style='width: 10%;'></div>
+					</div>
+					<div class='challangeContent'>
+						<div class='challangeControls challangeShlider_2_controls'>
+							<div class='challangeNav gotoSlide' sid='0'>Описание</div>
+							<div class='challangeNav gotoSlide' sid='1'>Прогресс</div>
+							<div class='challangeNav gotoSlide' sid='2'>Дневник записей</div>
+						</div>
+						<div class='challangeData' id='challangeShlider_2'>
+							<div class='challangeDesc'>
+								<div class='challangeSubHeader'>Описание:</div>
+								<div class='linkToArticleOfChallange'>
+									Статью, предваряющую данный челлендж, можно прочитать по <a href='#'>этой ссылке.</a>
+								</div>
+								<div class='stats'>
+									<div class='statTitle'>Всего дней:</div>
+									<div class='statValue'>365</div>
+								</div>
+								<div class='stats'>
+									<div class='statTitle'>Max возможное кол-во пропусков:</div>
+									<div class='statValue'>365</div>
+								</div>
+								<div class='stats'>
+									<div class='statTitle'>Дата начала:</div>
+									<div class='statValue statDate'>22.12.2018</div>
+								</div>
+								<div class='stats'>
+									<div class='statTitle'>Дата конца:</div>
+									<div class='statValue statDate'>22.12.2018</div>
+								</div>
+							</div>
+							<div class='challangeProgress'>
+								<div class='challangeSubHeader'>Прогресс:</div>
+								<div class='stats'>
+									<div class='statTitle'>Завершено на:</div>
+									<div class='statValue'>81%</div>
+									</div>
+								<div class='stats'>
+									<div class='statTitle'>Успешно пройденных дней:</div>
+									<div class='statValue'>13</div>
+								</div>
+								<div class='stats'>
+									<div class='statTitle'>Провальных дней:</div>
+									<div class='statValue'>1</div>
+								</div>
+								<div class='stats'>
+									<div class='statTitle'>Дней до завершения:</div>
+									<div class='statValue'>2</div>
+								</div>
+								<div class='stats'>
+									<div class='statTitle'>Max возможный процент выполнения:</div>
+									<div class='statValue'>94%</div>
+								</div>
+								<div class='stats'>
+									<div class='statTitle'>Min возможный процент выполнения:</div>
+									<div class='statValue'>88%</div>
+								</div>
+							</div>
+							<div class='challangeDiaryWrapper'>
+								<div class='challangeSubHeader centered'>Дневник записей:</div>
+								<div class='challangeDiary'>
+									<div class='diaryNote'>
+										<div class='noteHeader'>День 1. Начало пути!</div>
+										<div class='noteDate'>22.12.2018</div>
+									</div>
+									<div class='diaryNote'>
+										<div class='noteHeader'>День 2. Начало пути!</div>
+										<div class='noteDate'>23.12.2018</div>
+									</div>
+									<div class='diaryNote'>
+										<div class='noteHeader'>День 3. Какой-то специально выдуманный длинный заголовок!</div>
+										<div class='noteDate'>24.12.2018</div>
+									</div>
+									<div class='diaryNote'>
+										<div class='noteHeader'>День 4. Какой-то специально выдуманный длинный заголовок!</div>
+										<div class='noteDate'>25.12.2018</div>
+									</div>
+									<div class='diaryNote'>
+										<div class='noteHeader'>День 5. Начало пути!</div>
+										<div class='noteDate'>26.12.2018</div>
+									</div>
+									<div class='diaryNote'>
+										<div class='noteHeader'>День 6. Начало пути!</div>
+										<div class='noteDate'>27.12.2018</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='startChallangeBtnWrap'>
+						<button class='challangeBtn startSimilarChallange'>Начать такой же челлендж</button>
+					</div>
+				</div>
+				<div class='centered'>
+					<button class='loadMoreBtn'>Загрузить ещё</button>
 				</div>
 			</div>
 		</section>
@@ -244,9 +395,15 @@
 	</div>
 	<script type="text/javascript" src="template/js/main.js"></script>
 	<script type="text/javascript" src="template/js/menu.js"></script>
+	<script type="text/javascript" src="template/js/slider.js"></script>
 	<script type="text/javascript" src="template/js/personalCabMenu.js"></script>
 	<script type="text/javascript" src="template/js/dateFuncs.js"></script>
 	<script type="text/javascript" src="template/js/startChallange.js"></script>
 	<script type="text/javascript" src="template/js/createChallange.js"></script>
+	<script type="text/javascript" src="template/js/userNotes.js"></script>
+	<script type="text/javascript">
+		slider('challangeShlider_1', 'jackInTheBox', "flex");
+		slider('challangeShlider_2', 'jackInTheBox', "flex");
+	</script>
 </body>
 </html>

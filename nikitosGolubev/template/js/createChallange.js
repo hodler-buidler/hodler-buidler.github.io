@@ -1,3 +1,9 @@
+/*
+	---READ BEFORE USE---
+	1) All date functions are located in dateFuncs.js
+	2) Functions: isError(), showError(), removeErrorMessage() are located in startChallange.js
+*/
+
 /*** Variables, constants, objects ***/
 
 const minLengthChallangeName = 8; // Min length of challange name(characters)
@@ -158,22 +164,6 @@ function validateCreateForm(event) {
 	let daysLengthValidation = validateChallangeDaysLength();
 	let startDateValidation = validateChallangeStartDate();
 	let endDateValidation = validateChallangeEndDate();
-}
-
-/* 
-	Removing error state from input
-	obj - event or dom obj
-	$isEvent - if its not event, this param should be false
-*/
-function removeErrorMessage(obj, $isEvent = true) {
-	let input = obj;
-	if ($isEvent) input = obj.target;
-	// if input in error state currently
-	if (isError(input)) {
-		input.style.background = 'transparent'; // Making bg normal
-		input.value = ''; // Removing error message value
-		event.target.setAttribute('error', '0'); // Changing value on error attribute
-	}
 }
 
 /*** Helper functions ***/
@@ -349,6 +339,7 @@ function validateChallangeName() {
 	return !isError(challangeNameInput);
 }
 
+// Validation of challange amount of days length
 function validateChallangeDaysLength() {
 	let challangeDaysLengthInput = challangeInputs.days; // getting input
 	let challangeDaysLength = challangeInputs.days.value; // getting value of input
@@ -360,6 +351,7 @@ function validateChallangeDaysLength() {
 	return !isError(challangeDaysLengthInput);
 }
 
+// Validation of challange start date
 function validateChallangeStartDate() {
 	let challangeStartDateInput = challangeInputs.startDate; // getting input
 	let challangeStartDate = challangeInputs.startDate.value; // getting value of input
@@ -372,6 +364,7 @@ function validateChallangeStartDate() {
 	return !isError(challangeStartDateInput);
 }
 
+// Validation of challange end date
 function validateChallangeEndDate() {
 	let challangeEndDateInput = challangeInputs.endDate; // getting input
 	let challangeEndDate = challangeInputs.endDate.value; // getting value of input
@@ -382,19 +375,4 @@ function validateChallangeEndDate() {
 	if (challangeEndDate.length !== 10) return showError(challangeEndDateInput, 'Дата несоответствует формату!');
 	// If user sent not an error back(with error message), so will be returned - true
 	return !isError(challangeEndDateInput);
-}
-
-// Function that turn input into error state
-function showError(input, errorMessage) { 
-	input.style.background = 'rgba(255, 0, 0, 0.3)'; // painting bg into light red
-	input.value = errorMessage; // changing value into error message
-	input.setAttribute('error', '1'); // setting 1 to error attribute (show that its error input)
-	return false;
-}
-
-// Defines if input is in error state
-function isError(input) {
-	// If its error input, so return true, otherwise - false
-	if (input.getAttribute('error') === '1') return true;
-	return false;
 }

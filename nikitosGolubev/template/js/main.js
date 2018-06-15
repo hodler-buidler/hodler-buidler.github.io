@@ -39,3 +39,17 @@ function fullscreen() {
 function trim(str) {
 	return str.replace(/\s\s+/g, " ");
 }
+
+// Finding particular parent by its className and its child
+function findParentByClassName(childElement, parentClassName) {
+	let parentResult = childElement.parentNode; // Getting first parent of child
+	// Starting loop
+	// If element doesnt contain needed className so loop next
+	while (!parentResult.classList.contains(parentClassName)) {
+		// If body is our parent so its something wrong here, = nothing found
+		if (parentResult.tagName === "BODY") return false;
+		// Getting next parent element
+		parentResult = parentResult.parentNode;
+	}
+	return parentResult;
+}

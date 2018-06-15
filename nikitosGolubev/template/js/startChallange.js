@@ -25,7 +25,7 @@ function startSimilarChallange(event) {
 	// Check if user clicked on needed btn
 	if (event.target.classList.contains('startSimilarChallange')) {
 		// Getting current challange
-		let currentChallange = findParentByClassName(event.target, 'challange');
+		let currentChallange = findParentByClassName(event.target, 'challange'); // look main.js
 		// If challange was found
 		if (currentChallange) {
 			// Getting data about challange which is contained in special attributes
@@ -57,21 +57,45 @@ function showCreateChallangeTab(event) {
 
 // Hides create challange tab
 function hideCreateChallangeTab(event) {
+	// If user clicked on delete btn
+	if (event.target.classList.contains('delete')) {
+		// Removing error states from inputs (otherwise they'll be visible on the next opening)
+		for (let input in challangeInputs) {
+			removeErrorMessage(challangeInputs[input], false);
+		}
+	}
 	makeInvisibleSmth(event.target, '.createChallange', 'delete'); // look at main.js
+}
+
+/* 
+	Removing error state from input
+	obj - event or dom obj
+	$isEvent - if its not event, this param should be false
+*/
+function removeErrorMessage(obj, $isEvent = true) {
+	let input = obj;
+	if ($isEvent) input = obj.target;
+	// if input in error state currently
+	if (isError(input)) {
+		input.style.background = 'transparent'; // Making bg normal
+		input.value = ''; // Removing error message value
+		event.target.setAttribute('error', '0'); // Changing value on error attribute
+	}
 }
 
 /*** Helper functions ***/
 
-// Finding particular parent by its className and its child
-function findParentByClassName(childElement, parentClassNmae) {
-	let parentResult = childElement.parentNode; // Getting first parent of child
-	// Starting loop
-	// If element doesnt contain needed className so loop next
-	while (!parentResult.classList.contains(parentClassNmae)) {
-		// If body is our parent so its something wrong here, = nothing found
-		if (parentResult.tagName === "BODY") return false;
-		// Getting next parent element
-		parentResult = parentResult.parentNode;
-	}
-	return parentResult;
+// Function that turn input into error state
+function showError(input, errorMessage) { 
+	input.style.background = 'rgba(255, 0, 0, 0.3)'; // painting bg into light red
+	input.value = errorMessage; // changing value into error message
+	input.setAttribute('error', '1'); // setting 1 to error attribute (show that its error input)
+	return false;
+}
+
+// Defines if input is in error state
+function isError(input) {
+	// If its error input, so return true, otherwise - false
+	if (input.getAttribute('error') === '1') return true;
+	return false;
 }
