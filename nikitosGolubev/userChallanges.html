@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Личный кабинет - Текущие авторские челленджи - NikitosGolubev</title>
+	<title>Личный кабинет - Мои текущие челленджи - NikitosGolubev</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" type="text/css" href="template/css/animate.css" />
@@ -55,8 +55,8 @@
 					<li><a href='news.html'>Новости</a></li>
 					<li><a href='savedArticles.html'>Отложенные статьи(3)</a></li>
 					<li><a href='readArticles.html'>Прочитанные статьи(11)</a></li>
-					<li><a class='activeMenuElem' href='authorChallanges.html'>Авторские челленджи(4)</a></li>
-					<li><a href='#'>Личные челленджи(15)</a></li>
+					<li><a href='authorChallanges.html'>Авторские челленджи(4)</a></li>
+					<li><a class='activeMenuElem' href='userChallanges.html'>Личные челленджи(15)</a></li>
 					<li><a href='#'>Профиль</a></li>
 					<li><a href='#'>Продление подписки</a></li>
 					<li><a href='#'>Выйти</a></li>
@@ -136,10 +136,64 @@
 						</div>
 					</div>
 					<div class='startChallangeBtnWrap'>
-						<input type="button" name="createChallange" id='createChallange' class='challangeBtn' value='Создать челлендж' />
+						<input type="submit" name="createChallange" id='createChallange' class='challangeBtn' value='Создать челлендж' />
 					</div>
 				</div>
 			</form>
+		</section>
+		<section id='confirmationTab' aim=''>
+			<div class='confirm'>
+				<div class='confirmationQuestion'>Вы действительно хотите совершить<br /> данное действие?</div>
+				<div class='confirmationControls'>
+					<button class='yes'>Да</button>
+					<button class='no'>Нет</button>
+				</div>
+			</div>
+		</section>
+		<section id='pointProgressTab'>
+			<div class="delete darkDeleteOpacity"></div>
+			<div class='pointProgressContent'>
+				<div class='progressPointHeader'>
+					<span class='h4_5 dark'>Отметить прогресс в челлендже</span>
+				</div>
+				<div class='progressHelperDangerText'>
+					<span class='danger progressDanger'>ВНИМАНИЕ! После отметки прогресса, его нельзя будет отменить!</span>
+				</div>
+				<div class='progressQuestion'>Как закончился сегодняшний день?</div>
+				<form name='pointProgress' action="#" method="post">
+					<div>
+						<label>
+							<input class='radio dayResult' type="radio" name="dayResult" value='1' checked="checked" />
+							<span class="radioCustom"></span>
+							<span class='label progressLabel'>Успех :)</span>
+						</label>
+						<label>
+							<input class='radio dayResult' type="radio" name="dayResult" value='0' />
+							<span class="radioCustom leftMarginRadio"></span>
+							<span class='label progressLabel'>Провал :(</span>
+						</label>
+					</div>
+					<div>
+						<div class='cancelWritingDiaryNote'>
+							<label>
+								<input id='needToMakeDiaryNote' class='checkbox' type="checkbox" name='needNote' value='1' />
+								<span class="checkboxCustom"></span>
+								<span class='label'>НЕ хочу делать заметку</span>
+							</label>
+						</div>
+						<div>
+							<input id='diaryNoteHeader' class='progressInput' type="text" name='diaryNoteHeader' placeholder="Заголовок" />
+						</div>
+						<div>
+							<textarea id='diaryNoteText' name='diaryNoteText' class='progressTextarea' placeholder="Заметка о даном рубеже(min 100 символов):"></textarea>
+							<input id='challangeIdHiddenInput' type='hidden' name='challangeId' value='' />
+						</div>
+					</div>
+					<div class='startChallangeBtnWrap'>
+						<input type="submit" name="pointProgress" id='pointProgress' class='challangeBtn' value='Отметить прогресс!' />
+					</div>
+				</form>
+			</div>
 		</section>
 		<section class='diaryNoteWindow'>
 			<div class='delete'></div>
@@ -149,22 +203,6 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis ultrices neque at porttitor. In posuere sapien interdum vestibulum mollis. Nam egestas nisi id nisi fermentum bibendum. In non dapibus velit. Maecenas imperdiet facilisis lectus fermentum mollis. Quisque non molestie odio. Morbi consectetur gravida lacus. Cras euismod dui id aliquam pretium. Ut ut ultrices est, id sollicitudin mi. Nunc gravida risus porta hendrerit pharetra. Ut aliquet, mi volutpat aliquet cursus, dolor ligula dignissim augue, id pretium dui elit vitae tellus. In porta fringilla tellus vitae sodales.</p>
 
 				<p>Vivamus luctus pulvinar malesuada. Praesent vestibulum nec mauris quis aliquet. Praesent efficitur nisl felis. Curabitur sodales molestie luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras libero tortor, lobortis sit amet sollicitudin ut, euismod ut sem. Phasellus posuere metus nec semper ornare. Donec et nunc ut turpis dignissim fringilla vitae at mauris. Mauris condimentum, diam et egestas pretium, diam ipsum maximus diam, et condimentum quam justo at ante. Curabitur rhoncus, nunc sit amet fringilla tempor, mi libero efficitur nunc, in maximus risus mi et velit. Pellentesque semper elit vitae ante accumsan viverra. Nunc in purus vitae dui fermentum consectetur.</p>
-
-				<p>Ut in arcu nec massa condimentum laoreet. Vestibulum leo magna, ultrices consectetur tincidunt hendrerit, blandit ac leo. Curabitur consequat nec sem a viverra. Vivamus congue magna et augue laoreet, sed fermentum libero dignissim. Nullam tempus maximus justo, eu rhoncus tortor porta eu. In porta pulvinar enim in facilisis. Duis et eros vitae est dignissim malesuada ut ac nisl. Mauris interdum, erat a tristique egestas, erat urna pellentesque mauris, feugiat laoreet lorem urna non purus. Morbi non libero sit amet arcu dignissim pharetra. Vivamus id nisi odio. Sed consequat condimentum sollicitudin. Fusce eros lacus, blandit at mi et, lobortis efficitur turpis. Nullam tincidunt nisl ac urna pellentesque ullamcorper. Donec congue ante a felis aliquet, et luctus lorem finibus. Nulla interdum vel risus a consequat. Suspendisse non ipsum porta, blandit ex vel, iaculis sapien.</p>
-
-				<p>Donec rutrum risus a volutpat mollis. Nam velit ante, venenatis sit amet viverra id, iaculis non purus. Donec in sem sed nisl varius pharetra in id nisi. Suspendisse tempor, augue id ornare pretium, lectus arcu pellentesque mauris, quis porttitor est augue quis neque. Nullam ullamcorper, risus et dapibus aliquam, dolor tellus consequat mi, id eleifend dui magna sed ligula. Nam metus nisi, pretium in tristique at, fringilla a libero. Nulla facilisi. Mauris non efficitur ex, ut feugiat risus.</p>
-
-				<p>Nam sagittis efficitur odio a volutpat. Maecenas at eros bibendum, malesuada felis ut, imperdiet arcu. Vivamus tristique vulputate enim id ornare. Sed lorem odio, rutrum eget nisi non, consectetur tempor lectus. Donec sodales dictum leo, in pulvinar elit luctus et. Quisque ultricies dapibus sagittis. Maecenas ultrices sapien leo, eu vulputate leo ultricies a.</p>
-
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis ultrices neque at porttitor. In posuere sapien interdum vestibulum mollis. Nam egestas nisi id nisi fermentum bibendum. In non dapibus velit. Maecenas imperdiet facilisis lectus fermentum mollis. Quisque non molestie odio. Morbi consectetur gravida lacus. Cras euismod dui id aliquam pretium. Ut ut ultrices est, id sollicitudin mi. Nunc gravida risus porta hendrerit pharetra. Ut aliquet, mi volutpat aliquet cursus, dolor ligula dignissim augue, id pretium dui elit vitae tellus. In porta fringilla tellus vitae sodales.</p>
-
-				<p>Vivamus luctus pulvinar malesuada. Praesent vestibulum nec mauris quis aliquet. Praesent efficitur nisl felis. Curabitur sodales molestie luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras libero tortor, lobortis sit amet sollicitudin ut, euismod ut sem. Phasellus posuere metus nec semper ornare. Donec et nunc ut turpis dignissim fringilla vitae at mauris. Mauris condimentum, diam et egestas pretium, diam ipsum maximus diam, et condimentum quam justo at ante. Curabitur rhoncus, nunc sit amet fringilla tempor, mi libero efficitur nunc, in maximus risus mi et velit. Pellentesque semper elit vitae ante accumsan viverra. Nunc in purus vitae dui fermentum consectetur.</p>
-
-				<p>Ut in arcu nec massa condimentum laoreet. Vestibulum leo magna, ultrices consectetur tincidunt hendrerit, blandit ac leo. Curabitur consequat nec sem a viverra. Vivamus congue magna et augue laoreet, sed fermentum libero dignissim. Nullam tempus maximus justo, eu rhoncus tortor porta eu. In porta pulvinar enim in facilisis. Duis et eros vitae est dignissim malesuada ut ac nisl. Mauris interdum, erat a tristique egestas, erat urna pellentesque mauris, feugiat laoreet lorem urna non purus. Morbi non libero sit amet arcu dignissim pharetra. Vivamus id nisi odio. Sed consequat condimentum sollicitudin. Fusce eros lacus, blandit at mi et, lobortis efficitur turpis. Nullam tincidunt nisl ac urna pellentesque ullamcorper. Donec congue ante a felis aliquet, et luctus lorem finibus. Nulla interdum vel risus a consequat. Suspendisse non ipsum porta, blandit ex vel, iaculis sapien.</p>
-
-				<p>Donec rutrum risus a volutpat mollis. Nam velit ante, venenatis sit amet viverra id, iaculis non purus. Donec in sem sed nisl varius pharetra in id nisi. Suspendisse tempor, augue id ornare pretium, lectus arcu pellentesque mauris, quis porttitor est augue quis neque. Nullam ullamcorper, risus et dapibus aliquam, dolor tellus consequat mi, id eleifend dui magna sed ligula. Nam metus nisi, pretium in tristique at, fringilla a libero. Nulla facilisi. Mauris non efficitur ex, ut feugiat risus.</p>
-
-				<p>Nam sagittis efficitur odio a volutpat. Maecenas at eros bibendum, malesuada felis ut, imperdiet arcu. Vivamus tristique vulputate enim id ornare. Sed lorem odio, rutrum eget nisi non, consectetur tempor lectus. Donec sodales dictum leo, in pulvinar elit luctus et. Quisque ultricies dapibus sagittis. Maecenas ultrices sapien leo, eu vulputate leo ultricies a.</p>
 			</div>
 		</section>
 		<section class='mainCabWrapper' id='mainCabWrapperTab'>
@@ -174,8 +212,8 @@
 					<li><a href='news.html'><div>Новости</div></a></li>
 					<li><a href='savedArticles.html'><div>Отложенные статьи(3)</div></a></li>
 					<li><a href='readArticles.html'><div>Прочитанные статьи(11)</div></a></li>
-					<li><a href='authorChallanges.html'><div class='activeCabLink'>Авторские челленджи(4)</div></a></li>
-					<li><a href='#'><div>Личные челленджи(15)</div></a></li>
+					<li><a href='authorChallanges.html'><div>Авторские челленджи(4)</div></a></li>
+					<li><a href='userChallanges.html'><div class='activeCabLink'>Личные челленджи(15)</div></a></li>
 					<li><a href='#'><div>Профиль</div></a></li>
 					<li><a href='#'><div>Продление подписки</div></a></li>
 					<li><a href='#'><div>Выйти</div></a></li>
@@ -185,18 +223,30 @@
 				<div class="cabMainContent">
 					<div class='challangesMenu'>
 						<ul>
-							<li><a href='authorChallanges.html' class='activeChallangeMenuLink'>Текущие(2)</a></li>
-							<li><a href='authorChallangesCompleted.html'>Завершённые(2)</a></li>
+							<li><a href='userChallanges.html' class='activeChallangeMenuLink'>Текущие(2)</a></li>
+							<li><a href='userChallangesPlanned.html'>Запланированные(2)</a></li>
+							<li>
+								<a href='userChallangesCompleted.html'>Завершённые(2)</a>
+								<div class="startChallange">+</div>
+							</li>
 						</ul>
 					</div>
 				</div>
-				<div id="challanagesContainer">
-					<div challangeId='1' days='16' maxLostDays='2' challangeName='Пить только воду 16 дней' class='challange'>
+				<div id='challanagesContainer'>
+					<div challangeId='34' days='16' maxLostDays='2' challangeName='Пить только воду 16 дней' class='challange'>
 						<div class='challangeHeader'>Пить только воду 16 дней</div>
 						<div class='progressBar'>
 							<div class='progress' style='width: 40%;'></div>
 						</div>
 						<div class='challangeContent'>
+							<div class='personalChallangeControls'>
+								<div class='pointProgressBtnWrap'>
+									<button class='pointProgressBtn'>Отметить прогресс</button>
+								</div>
+								<div class='endChallangeBtnWrap'>
+									<button class='endChallangeBtn'>Досрочно завершить</button>
+								</div>
+							</div>
 							<div class='challangeControls challangeShlider_1_controls'>
 								<div class='challangeNav gotoSlide' sid='0'>Описание</div>
 								<div class='challangeNav gotoSlide' sid='1'>Прогресс</div>
@@ -287,105 +337,6 @@
 							<button class='challangeBtn startSimilarChallange'>Начать такой же челлендж</button>
 						</div>
 					</div>
-					<div challangeId='2' days='365' maxLostDays='365' challangeName='Какое-то очень длинное название, специально напечатанное для проверки того, как всё будет выглядеть.' class='challange'>
-						<div class='challangeHeader'>Какое-то очень длинное название, специально напечатанное для проверки того, как всё будет выглядеть.</div>
-						<div class='progressBar'>
-							<div class='progress' style='width: 10%;'></div>
-						</div>
-						<div class='challangeContent'>
-							<div class='challangeControls challangeShlider_2_controls'>
-								<div class='challangeNav gotoSlide' sid='0'>Описание</div>
-								<div class='challangeNav gotoSlide' sid='1'>Прогресс</div>
-								<div class='challangeNav gotoSlide' sid='2'>Дневник записей</div>
-							</div>
-							<div class='challangeData' id='challangeShlider_2'>
-								<div class='challangeDesc'>
-									<div class='challangeSubHeader'>Описание:</div>
-									<div class='linkToArticleOfChallange'>
-										Статью, предваряющую данный челлендж, можно прочитать по <a href='#'>этой ссылке.</a>
-									</div>
-									<div class='stats'>
-										<div class='statTitle'>Всего дней:</div>
-										<div class='statValue'>365</div>
-									</div>
-									<div class='stats'>
-										<div class='statTitle'>Max возможное кол-во пропусков:</div>
-										<div class='statValue'>365</div>
-									</div>
-									<div class='stats'>
-										<div class='statTitle'>Дата начала:</div>
-										<div class='statValue statDate'>22.12.2018</div>
-									</div>
-									<div class='stats'>
-										<div class='statTitle'>Дата конца:</div>
-										<div class='statValue statDate'>22.12.2018</div>
-									</div>
-								</div>
-								<div class='challangeProgress'>
-									<div class='challangeSubHeader'>Прогресс:</div>
-									<div class='stats'>
-										<div class='statTitle'>Завершено на:</div>
-										<div class='statValue'>81%</div>
-										</div>
-									<div class='stats'>
-										<div class='statTitle'>Успешно пройденных дней:</div>
-										<div class='statValue'>13</div>
-									</div>
-									<div class='stats'>
-										<div class='statTitle'>Провальных дней:</div>
-										<div class='statValue'>1</div>
-									</div>
-									<div class='stats'>
-										<div class='statTitle'>Дней до завершения:</div>
-										<div class='statValue'>2</div>
-									</div>
-									<div class='stats'>
-										<div class='statTitle'>Max возможный процент выполнения:</div>
-										<div class='statValue'>94%</div>
-									</div>
-									<div class='stats'>
-										<div class='statTitle'>Min возможный процент выполнения:</div>
-										<div class='statValue'>88%</div>
-									</div>
-								</div>
-								<div class='challangeDiaryWrapper'>
-									<div class='challangeSubHeader centered'>Дневник записей:</div>
-									<div class='challangeDiary'>
-										<div class='diaryNote'>
-											<div class='noteHeader'>День 1. Начало пути!</div>
-											<div class='noteDate'>22.12.2018</div>
-										</div>
-										<div class='diaryNote'>
-											<div class='noteHeader'>День 2. Начало пути!</div>
-											<div class='noteDate'>23.12.2018</div>
-										</div>
-										<div class='diaryNote'>
-											<div class='noteHeader'>День 3. Какой-то специально выдуманный длинный заголовок!</div>
-											<div class='noteDate'>24.12.2018</div>
-										</div>
-										<div class='diaryNote'>
-											<div class='noteHeader'>День 4. Какой-то специально выдуманный длинный заголовок!</div>
-											<div class='noteDate'>25.12.2018</div>
-										</div>
-										<div class='diaryNote'>
-											<div class='noteHeader'>День 5. Начало пути!</div>
-											<div class='noteDate'>26.12.2018</div>
-										</div>
-										<div class='diaryNote'>
-											<div class='noteHeader'>День 6. Начало пути!</div>
-											<div class='noteDate'>27.12.2018</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class='startChallangeBtnWrap'>
-							<button class='challangeBtn startSimilarChallange'>Начать такой же челлендж</button>
-						</div>
-					</div>
-				</div>
-				<div class='centered'>
-					<button class='loadMoreBtn'>Загрузить ещё</button>
 				</div>
 			</div>
 		</section>
@@ -430,9 +381,11 @@
 	<script type="text/javascript" src="template/js/createChallange.js"></script>
 	<script type="text/javascript" src="template/js/userNotes.js"></script>
 	<script type="text/javascript" src="template/js/diaryNote.js"></script>
+	<script type="text/javascript" src="template/js/confirmation.js"></script>
+	<script type="text/javascript" src="template/js/challanges.js"></script>
+	<script type="text/javascript" src="template/js/pointProgress.js"></script>
 	<script type="text/javascript">
 		slider('challangeShlider_1', 'jackInTheBox', "flex");
-		slider('challangeShlider_2', 'jackInTheBox', "flex");
 	</script>
 </body>
 </html>

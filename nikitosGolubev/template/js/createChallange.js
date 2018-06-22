@@ -1,7 +1,7 @@
 /*
 	---READ BEFORE USE---
 	1) All date functions are located in dateFuncs.js
-	2) Functions: isError(), showError(), removeErrorMessage() are located in startChallange.js
+	2) Functions: isError(), showError(), removeErrorMessage() are located in main.js
 */
 
 /*** Variables, constants, objects ***/
@@ -164,6 +164,10 @@ function validateCreateForm(event) {
 	let daysLengthValidation = validateChallangeDaysLength();
 	let startDateValidation = validateChallangeStartDate();
 	let endDateValidation = validateChallangeEndDate();
+
+	// If there anything wrong with validation so, I don't send the form to server
+	if (!nameValidation || !daysLengthValidation || !startDateValidation || !endDateValidation)
+		event.preventDefault();
 }
 
 /*** Helper functions ***/

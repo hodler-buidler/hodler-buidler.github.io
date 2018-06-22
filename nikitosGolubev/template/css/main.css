@@ -74,7 +74,7 @@ button, input, textarea, select {
 }
 
 /*** Common classes ***/
-.h1, .h2_5, .h2, .h3, .h4_5 {
+.h1, .h2_5, .h2, .h3, .h4, .h4_5 {
 	margin: 0;
 	color: #ea4c4c;
 	font-family: "Lobster";
@@ -84,6 +84,7 @@ button, input, textarea, select {
 .h2_5 {font-size: 350%;}
 .h2 {font-size: 320%;}
 .h3 {font-size: 250%;}
+.h4 {font-size: 230%;}
 .h4_5 {font-size: 200%;}
 
 .verticalLobster {line-height: 1.3;}
@@ -93,7 +94,7 @@ button, input, textarea, select {
 	text-decoration: underline;
 	font-size: 80%;
 	transition: 0.4s opacity
-	margin: 0;;
+	margin: 0;
 }
 .lightHref:hover {font-weight: bold;}
 .lightHref:active {opacity: 0.6;}
@@ -103,7 +104,10 @@ button, input, textarea, select {
 .noWrap {white-space: nowrap;}
 
 .centered {text-align: center;}
+.lefted {text-align: left;}
+.righted {text-align: right;}
 
+.disabled {opacity: 0.5;}
 .input {
 	border: 3px solid #703b3b;
 	padding: 8px 20px;
@@ -116,6 +120,31 @@ button, input, textarea, select {
 }
 .input:focus {opacity: 0.7;}
 .dynamicTextInput {width: 30%; min-width: 140px;}
+
+.radio, .checkbox {display: none;}
+.radioCustom, .checkboxCustom {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	border: 2px solid #ea4c4c;
+	border-radius: 3px;
+	position: relative;
+}
+.radioCustom, .label, .checkboxCustom {display: inline-block; vertical-align: middle;}
+
+.radio:checked + .radioCustom::before, .checkbox:checked + .checkboxCustom::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	bottom: 2px;
+	left: 2px;
+	background: #703b3b;
+	border-radius: 2px;
+}
+.radioCustom, .radio:checked + .radioCustom::before {border-radius: 50%;}
+.checkbox:checked + .checkboxCustom::before {background: #c14545;}
 
 .twoColumnFlexCentered {
 	display: flex;
@@ -601,3 +630,14 @@ button, input, textarea, select {
 
 .toStart:hover, .previous:hover, .next:hover, .toEnd:hover, .pagNumber:hover {background-color: #ea4c4c;}
 .toStart:active, .previous:active, .next:active, .toEnd:active, .pagNumber:active, .activePag {background-color: #c14545; opacity: 0.9;}
+
+/*** Nothing block ***/
+
+.nothing {
+	display: flex;
+	margin: 15px auto;
+	height: 280px;
+	width: 280px;
+	background: url('../images/nothing.png') center center no-repeat;
+	background-size: contain;
+}

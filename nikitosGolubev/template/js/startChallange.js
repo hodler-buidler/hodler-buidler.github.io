@@ -62,40 +62,10 @@ function hideCreateChallangeTab(event) {
 		// Removing error states from inputs (otherwise they'll be visible on the next opening)
 		for (let input in challangeInputs) {
 			removeErrorMessage(challangeInputs[input], false);
+			challangeInputs[input].value = ''; // and empty its value to not to see old ones if user click on simple create btn
 		}
 	}
 	makeInvisibleSmth(event.target, '.createChallange', 'delete'); // look at main.js
 }
 
-/* 
-	Removing error state from input
-	obj - event or dom obj
-	$isEvent - if its not event, this param should be false
-*/
-function removeErrorMessage(obj, $isEvent = true) {
-	let input = obj;
-	if ($isEvent) input = obj.target;
-	// if input in error state currently
-	if (isError(input)) {
-		input.style.background = 'transparent'; // Making bg normal
-		input.value = ''; // Removing error message value
-		event.target.setAttribute('error', '0'); // Changing value on error attribute
-	}
-}
-
 /*** Helper functions ***/
-
-// Function that turn input into error state
-function showError(input, errorMessage) { 
-	input.style.background = 'rgba(255, 0, 0, 0.3)'; // painting bg into light red
-	input.value = errorMessage; // changing value into error message
-	input.setAttribute('error', '1'); // setting 1 to error attribute (show that its error input)
-	return false;
-}
-
-// Defines if input is in error state
-function isError(input) {
-	// If its error input, so return true, otherwise - false
-	if (input.getAttribute('error') === '1') return true;
-	return false;
-}

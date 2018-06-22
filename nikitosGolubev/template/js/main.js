@@ -3,6 +3,9 @@ fullscreen(); // setting a height to some tabs which has to be fullscreen
 
 /* Important varriables and constants */
 
+// A block that says, that there no content on the page
+const nothingBlc = "<div class='nothing' title='Тут ничего нету!'></div>";
+
 /* Add event listeners */
 
 // when window changes it size, so I change height of fullsceen elements
@@ -52,4 +55,47 @@ function findParentByClassName(childElement, parentClassName) {
 		parentResult = parentResult.parentNode;
 	}
 	return parentResult;
+}
+
+/*
+	Function that pastes 'nothing' block, that says that current page is empty
+	selectorOrElem - selector to get element or directly element where 'nothing' block should be added
+	$isSelector - varriable that defines if selectorOrElem varriable contains selector
+*/
+function showNothingBlc(selectorOrElem, $isSelector = false) {
+	// If the selector was passed, so getting elem and appending 'nothing' block
+	if ($isSelector) document.querySelector(selectorOrElem).innerHTML += nothingBlc;
+	// Else if plain element was passed, so just appending 'nothing' block
+	else selectorOrElem.innerHTML += nothingBlc;
+}
+
+/* 
+	Removing error state from input
+	obj - event or dom obj
+	$isEvent - if its not event, this param should be false
+*/
+function removeErrorMessage(obj, $isEvent = true) {
+	let input = obj;
+	if ($isEvent) input = obj.target;
+	// if input in error state currently
+	if (isError(input)) {
+		input.style.background = 'transparent'; // Making bg normal
+		input.value = ''; // Removing error message value
+		event.target.setAttribute('error', '0'); // Changing value on error attribute
+	}
+}
+
+// Function that turn input into error state
+function showError(input, errorMessage) { 
+	input.style.background = 'rgba(255, 0, 0, 0.3)'; // painting bg into light red
+	input.value = errorMessage; // changing value into error message
+	input.setAttribute('error', '1'); // setting 1 to error attribute (show that its error input)
+	return false;
+}
+
+// Defines if input is in error state
+function isError(input) {
+	// If its error input, so return true, otherwise - false
+	if (input.getAttribute('error') === '1') return true;
+	return false;
 }
