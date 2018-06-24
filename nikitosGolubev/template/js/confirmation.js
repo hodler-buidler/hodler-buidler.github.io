@@ -4,7 +4,8 @@ let confirmTab = document.getElementById('confirmationTab'); // confirmation tab
 
 // Aims and their text codes that can be used (can be expanded)
 let aims = {
-	endChallange: 'endChallange' // Text code MUST be equal to property in window.settings
+	endChallange: 'endChallange', // Text code MUST be equal to property in window.settings
+	removeChallange: 'removeChallange'
 };
 
 /*
@@ -12,7 +13,8 @@ let aims = {
 	text code of aim => function which should be performed if user agreed
 */
 window.settings = {
-  endChallange: 'endChallangeInAdvance'
+  endChallange: 'endChallangeInAdvance',
+  removeChallange: 'removeChallange'
 };
 
 /*

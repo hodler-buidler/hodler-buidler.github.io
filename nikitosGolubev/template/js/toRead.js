@@ -27,8 +27,25 @@ function removeToReadData(event) {
 		// And removing him by method removeChild
 		thisToReadDataBlock.parentNode.removeChild(thisToReadDataBlock);
 
-		// if there are no items(.toReadData) left, so this page is empty, so I show a message to user 
-		if (!document.querySelector('.toReadData')) showNothingBlc('#sortedArticlesContainer', true);
+		// A variable which will contain a number of items left(loaded and not loaded yet)
+		let valueOfNumberOfItemsElem;
+		/*
+			Decreasing value of amount of some articles. Defining what particularly to decrease by checking
+			if the particular block with particular ID is exists on page.
+		*/
+		if (document.getElementById('savedArticlesContainer')) {
+			changeNumberOfSmthAtHTML('.numberOfSavedArticles', "-"); // look main.js for changeNumberOfSmthAtHTML()
+			valueOfNumberOfItemsElem = getValueOfNumberOfSmthAtHTML('.numberOfSavedArticles');
+		}
+		if (document.getElementById('readArticlesContainer')) {
+			changeNumberOfSmthAtHTML('.numberOfReadArticles', "-"); // look main.js for changeNumberOfSmthAtHTML()
+			valueOfNumberOfItemsElem = getValueOfNumberOfSmthAtHTML('.numberOfReadArticles');
+		}
+
+		// if there are no items(.toReadData) left AND the number of items(that are not loaded) equal to 0
+		// So in this case, this page is empty, so I show a message to user 
+		if (!document.querySelector('.toReadData') && !valueOfNumberOfItemsElem)
+			showNothingBlc('#sortedArticlesContainer', true);
 	}
 }
 

@@ -13,45 +13,74 @@ let challangeInputs = {
 
 // A group of events which are related with click on body(so click on some particular class)
 document.getElementById('body').addEventListener('click', (event) => {
-	startSimilarChallange(event);
+	editOrStartSimilarChallange(event);
 	hideCreateChallangeTab(event);
 	showCreateChallangeTab(event);
 });
 
 /*** Event functions ***/
 
-function startSimilarChallange(event) {
-	let obj = event.target;
-	// Check if user clicked on needed btn
-	if (event.target.classList.contains('startSimilarChallange')) {
+/*
+	Function which fills inputs of create challange form with some values which are taken from challange
+	element attributes or they calculates. Depend on what button user clicked.
+*/
+function editOrStartSimilarChallange(event) {
+	let obj = event.target; // current object
+
+	let currentChallange; // will further contain challange
+	// Variables that will contain values that should be set to inputs
+	let challangeName, challangeDays, challangeMaxLostDays, challangeStartDate, challangeEndDate;
+	/*
+		Boolean type. Checks if user clicked on btn that fits purpose of creating
+		'create' challange form with some filled data
+	*/
+	let isAllowedElement = obj.classList.contains('startSimilarChallange') || obj.classList.contains('editChallange');
+
+	// Checking if user clicked on approved element
+	if (isAllowedElement) {
 		// Getting current challange
-		let currentChallange = findParentByClassName(event.target, 'challange'); // look main.js
+		currentChallange = findParentByClassName(event.target, 'challange'); // look main.js
 		// If challange was found
 		if (currentChallange) {
 			// Getting data about challange which is contained in special attributes
-			let challangeName = currentChallange.getAttribute('challangeName');
-			let challangeDays = currentChallange.getAttribute('days');
-			let challangeMaxLostDays = currentChallange.getAttribute('maxLostDays');
+			challangeName = currentChallange.getAttribute('challangeName');
+			challangeDays = currentChallange.getAttribute('days');
+			challangeMaxLostDays = currentChallange.getAttribute('maxLostDays');
+		} else return false;
+	}
 
-			// Getting current date which is by default will be suggested to user when to start challange
-			let challangeStartDate = getCurrentFormatedDate();
-			// Calculating expiring date
-			let challangeEndDate = getCalculatedFormatedDate('+', challangeDays);
+	// To start similar challange
+	if (obj.classList.contains('startSimilarChallange')) {
+		// Getting current date which is by default will be suggested to user when to start challange
+		challangeStartDate = getCurrentFormatedDate();
+		// Calculating expiring date
+		challangeEndDate = getCalculatedFormatedDate('+', challangeDays);
+	}
 
-			// Setting values to inputs
-			challangeInputs.name.value = challangeName;
-			challangeInputs.days.value = challangeDays;
-			challangeInputs.maxLostDays.value = challangeMaxLostDays;
-			challangeInputs.startDate.value = challangeStartDate;
-			challangeInputs.endDate.value = challangeEndDate;
-		}
+	// To edit challange
+	if (obj.classList.contains('editChallange')) {
+		// Getting current values from challange attributes
+		challangeStartDate = currentChallange.getAttribute('startDate');
+		challangeEndDate = currentChallange.getAttribute('endDate');
+	}
+
+	// Checking if user clicked on approved element
+	if (isAllowedElement) {
+		// Setting values to inputs
+		challangeInputs.name.value = challangeName;
+		challangeInputs.days.value = challangeDays;
+		challangeInputs.maxLostDays.value = challangeMaxLostDays;
+		challangeInputs.startDate.value = challangeStartDate;
+		challangeInputs.endDate.value = challangeEndDate;
 	}
 }
 
 // Show create challange tab
 function showCreateChallangeTab(event) {
 	// If right btn was clicked
-	if (event.target.classList.contains('startSimilarChallange') || event.target.classList.contains('startChallange'))
+	if (event.target.classList.contains('startSimilarChallange') 
+		|| event.target.classList.contains('startChallange')
+		|| event.target.classList.contains('editChallange'))
 		makeVisibleFlex('.createChallange'); // look at main.js
 }
 

@@ -18,7 +18,7 @@ const minLengthOfDiaryNoteText = 100;
 const maxLengthOfDiaryNoteText = 3000;
 
 // Object that contains all the inputs which the point progress form is consisted on
-const pointPorgressInputs = {
+let pointPorgressInputs = {
 	dayResult: document.querySelectorAll('.dayResult'), // radio
 	needToMakeDiaryNote: document.getElementById('needToMakeDiaryNote'), // checkbox
 	diaryNoteHeader: document.getElementById('diaryNoteHeader'), // text input

@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Личный кабинет - Мои текущие челленджи - NikitosGolubev</title>
+	<title>Личный кабинет - Мои запланированные челленджи - NikitosGolubev</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" type="text/css" href="template/css/animate.css" />
 	<link rel="stylesheet" type="text/css" href="template/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="template/css/personalCab.css" />
 	<link rel="stylesheet" type="text/css" href="template/css/personalCab/challanges.css" />
-	<link rel="stylesheet" type="text/css" href="template/css/slider.css" />
 	<!-- RESPONSIVITY -->
 	<link rel="stylesheet" type="text/css" href="template/css/responsivity/to932px.css" />
 	<link rel="stylesheet" type="text/css" href="template/css/responsivity/to768_736_667px.css" />
@@ -61,7 +60,7 @@
 					<li>
 						<a href='readArticles.html'>
 							Прочитанные статьи(<span class='numberOfReadArticles'>5</span>)
-						</a>
+					</a>
 					</li>
 					<li>
 						<a href='authorChallanges.html'>
@@ -166,61 +165,6 @@
 				</div>
 			</div>
 		</section>
-		<section id='pointProgressTab'>
-			<div class="delete darkDeleteOpacity"></div>
-			<div class='pointProgressContent'>
-				<div class='progressPointHeader'>
-					<span class='h4_5 dark'>Отметить прогресс в челлендже</span>
-				</div>
-				<div class='progressHelperDangerText'>
-					<span class='danger progressDanger'>ВНИМАНИЕ! После отметки прогресса, его нельзя будет отменить!</span>
-				</div>
-				<div class='progressQuestion'>Как закончился сегодняшний день?</div>
-				<form name='pointProgress' action="#" method="post">
-					<div>
-						<label>
-							<input class='radio dayResult' type="radio" name="dayResult" value='1' checked="checked" />
-							<span class="radioCustom"></span>
-							<span class='label progressLabel'>Успех :)</span>
-						</label>
-						<label>
-							<input class='radio dayResult' type="radio" name="dayResult" value='0' />
-							<span class="radioCustom leftMarginRadio"></span>
-							<span class='label progressLabel'>Провал :(</span>
-						</label>
-					</div>
-					<div>
-						<div class='cancelWritingDiaryNote'>
-							<label>
-								<input id='needToMakeDiaryNote' class='checkbox' type="checkbox" name='needNote' value='1' />
-								<span class="checkboxCustom"></span>
-								<span class='label'>НЕ хочу делать заметку</span>
-							</label>
-						</div>
-						<div>
-							<input id='diaryNoteHeader' class='progressInput' type="text" name='diaryNoteHeader' placeholder="Заголовок" />
-						</div>
-						<div>
-							<textarea id='diaryNoteText' name='diaryNoteText' class='progressTextarea' placeholder="Заметка о даном рубеже(min 100 символов):"></textarea>
-							<input id='challangeIdHiddenInput' type='hidden' name='challangeId' value='' />
-						</div>
-					</div>
-					<div class='startChallangeBtnWrap'>
-						<input type="submit" name="pointProgress" id='pointProgress' class='challangeBtn' value='Отметить прогресс!' />
-					</div>
-				</form>
-			</div>
-		</section>
-		<section class='diaryNoteWindow'>
-			<div class='delete'></div>
-			<div class='diaryNoteContent'>
-				<div class='h4 light'>Заголовок челленджа</div>
-				<div class='dayAndDateOfDiaryNote'>День 322 - 22.06.2018</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis ultrices neque at porttitor. In posuere sapien interdum vestibulum mollis. Nam egestas nisi id nisi fermentum bibendum. In non dapibus velit. Maecenas imperdiet facilisis lectus fermentum mollis. Quisque non molestie odio. Morbi consectetur gravida lacus. Cras euismod dui id aliquam pretium. Ut ut ultrices est, id sollicitudin mi. Nunc gravida risus porta hendrerit pharetra. Ut aliquet, mi volutpat aliquet cursus, dolor ligula dignissim augue, id pretium dui elit vitae tellus. In porta fringilla tellus vitae sodales.</p>
-
-				<p>Vivamus luctus pulvinar malesuada. Praesent vestibulum nec mauris quis aliquet. Praesent efficitur nisl felis. Curabitur sodales molestie luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras libero tortor, lobortis sit amet sollicitudin ut, euismod ut sem. Phasellus posuere metus nec semper ornare. Donec et nunc ut turpis dignissim fringilla vitae at mauris. Mauris condimentum, diam et egestas pretium, diam ipsum maximus diam, et condimentum quam justo at ante. Curabitur rhoncus, nunc sit amet fringilla tempor, mi libero efficitur nunc, in maximus risus mi et velit. Pellentesque semper elit vitae ante accumsan viverra. Nunc in purus vitae dui fermentum consectetur.</p>
-			</div>
-		</section>
 		<section class='mainCabWrapper' id='mainCabWrapperTab'>
 			<div class='cabMenu animated' id='personalCabMenu'>
 				<ul>
@@ -264,12 +208,12 @@
 					<div class='challangesMenu'>
 						<ul>
 							<li>
-								<a href='userChallanges.html' class='activeChallangeMenuLink'>
+								<a href='userChallanges.html'>
 									Текущие(<span class='numberOfCurrentUserChallanges'>1</span>)
 								</a>
 							</li>
 							<li>
-								<a href='userChallangesPlanned.html'>
+								<a href='userChallangesPlanned.html'  class='activeChallangeMenuLink'>
 									Запланированные(<span class='numberOfPlannedUserChallanges'>1</span>)
 								</a>
 							</li>
@@ -283,26 +227,21 @@
 					</div>
 				</div>
 				<div id='challanagesContainer'>
-					<div challangeId='34' days='16' maxLostDays='2' startDate='22.12.2018' endDate='22.12.2018' challangeName='Пить только воду 16 дней' class='challange'>
+					<div challangeId='34' days='16' maxLostDays='2' startDate='26.06.2018' endDate='12.07.2018' challangeName='Пить только воду 16 дней' class='challange'>
 						<div class='challangeHeader'>Пить только воду 16 дней</div>
 						<div class='progressBar'>
-							<div class='progress' style='width: 40%;'></div>
+							<div class='progress'></div>
 						</div>
 						<div class='challangeContent'>
-							<div class='personalChallangeControls'>
+							<div class='personalChallangeControls delayedChallangeControls'>
 								<div>
-									<button class='brownEditBtn pointProgressBtn'>Отметить прогресс</button>
+									<button class='brownEditBtn editChallange'>Редактировать</button>
 								</div>
 								<div>
-									<button class='cancelRedBtn endChallangeBtn'>Досрочно завершить</button>
+									<button class='cancelRedBtn cancelPlannedChallange'>Отменить</button>
 								</div>
 							</div>
-							<div class='challangeControls challangeShlider_1_controls'>
-								<div class='challangeNav gotoSlide' sid='0'>Описание</div>
-								<div class='challangeNav gotoSlide' sid='1'>Прогресс</div>
-								<div class='challangeNav gotoSlide' sid='2'>Дневник записей</div>
-							</div>
-							<div class='challangeData' id='challangeShlider_1'>
+							<div class='challangeData'>
 								<div class='challangeDesc'>
 									<div class='challangeSubHeader'>Описание:</div>
 									<div class='stats'>
@@ -315,73 +254,14 @@
 									</div>
 									<div class='stats'>
 										<div class='statTitle'>Дата начала:</div>
-										<div class='statValue statDate'>22.12.2018</div>
+										<div class='statValue statDate'>26.06.2018</div>
 									</div>
 									<div class='stats'>
 										<div class='statTitle'>Дата конца:</div>
-										<div class='statValue statDate'>22.12.2018</div>
-									</div>
-								</div>
-								<div class='challangeProgress'>
-									<div class='challangeSubHeader'>Прогресс:</div>
-									<div class='stats'>
-										<div class='statTitle'>Завершено на:</div>
-										<div class='statValue'>81%</div>
-									</div>
-									<div class='stats'>
-										<div class='statTitle'>Успешно пройденных дней:</div>
-										<div class='statValue'>13</div>
-									</div>
-									<div class='stats'>
-										<div class='statTitle'>Провальных дней:</div>
-										<div class='statValue'>1</div>
-									</div>
-									<div class='stats'>
-										<div class='statTitle'>Дней до завершения:</div>
-										<div class='statValue'>2</div>
-									</div>
-									<div class='stats'>
-										<div class='statTitle'>Max возможный процент выполнения:</div>
-										<div class='statValue'>94%</div>
-									</div>
-									<div class='stats'>
-										<div class='statTitle'>Min возможный процент выполнения:</div>
-										<div class='statValue'>88%</div>
-									</div>
-								</div>
-								<div class='challangeDiaryWrapper'>
-									<div class='challangeSubHeader centered'>Дневник записей:</div>
-									<div class='challangeDiary'>
-										<div class='diaryNote'>
-											<div class='noteHeader'>День 1. Начало пути!</div>
-											<div class='noteDate'>22.12.2018</div>
-										</div>
-										<div class='diaryNote'>
-											<div class='noteHeader'>День 2. Начало пути!</div>
-											<div class='noteDate'>23.12.2018</div>
-										</div>
-										<div class='diaryNote'>
-											<div class='noteHeader'>День 3. Какой-то специально выдуманный длинный заголовок!</div>
-											<div class='noteDate'>24.12.2018</div>
-										</div>
-										<div class='diaryNote'>
-											<div class='noteHeader'>День 4. Какой-то специально выдуманный длинный заголовок!</div>
-											<div class='noteDate'>25.12.2018</div>
-										</div>
-										<div class='diaryNote'>
-											<div class='noteHeader'>День 5. Начало пути!</div>
-											<div class='noteDate'>26.12.2018</div>
-										</div>
-										<div class='diaryNote'>
-											<div class='noteHeader'>День 6. Начало пути!</div>
-											<div class='noteDate'>27.12.2018</div>
-										</div>
+										<div class='statValue statDate'>12.07.2018</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class='startChallangeBtnWrap'>
-							<button class='challangeBtn startSimilarChallange'>Начать такой же челлендж</button>
 						</div>
 					</div>
 				</div>
@@ -421,18 +301,12 @@
 	</div>
 	<script type="text/javascript" src="template/js/main.js"></script>
 	<script type="text/javascript" src="template/js/menu.js"></script>
-	<script type="text/javascript" src="template/js/slider.js"></script>
 	<script type="text/javascript" src="template/js/personalCabMenu.js"></script>
 	<script type="text/javascript" src="template/js/dateFuncs.js"></script>
 	<script type="text/javascript" src="template/js/startChallange.js"></script>
 	<script type="text/javascript" src="template/js/createChallange.js"></script>
 	<script type="text/javascript" src="template/js/userNotes.js"></script>
-	<script type="text/javascript" src="template/js/diaryNote.js"></script>
 	<script type="text/javascript" src="template/js/confirmation.js"></script>
 	<script type="text/javascript" src="template/js/challanges.js"></script>
-	<script type="text/javascript" src="template/js/pointProgress.js"></script>
-	<script type="text/javascript">
-		slider('challangeShlider_1', 'jackInTheBox', "flex");
-	</script>
 </body>
 </html>

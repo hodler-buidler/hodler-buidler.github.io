@@ -53,10 +53,26 @@
 				<ul class='menuList'>
 					<li><a href='personalCab.html'>Основная страница</a></li>
 					<li><a href='news.html'>Новости</a></li>
-					<li><a href='savedArticles.html'>Отложенные статьи(3)</a></li>
-					<li><a href='readArticles.html'>Прочитанные статьи(11)</a></li>
-					<li><a class='activeMenuElem' href='authorChallanges.html'>Авторские челленджи(4)</a></li>
-					<li><a href='#'>Личные челленджи(15)</a></li>
+					<li>
+						<a href='savedArticles.html'>
+							Отложенные статьи(<span class='numberOfSavedArticles'>3</span>)
+						</a>
+					</li>
+					<li>
+						<a href='readArticles.html'>
+							Прочитанные статьи(<span class='numberOfReadArticles'>5</span>)
+						</a>
+					</li>
+					<li>
+						<a class='activeMenuElem' href='authorChallanges.html'>
+							Авторские челленджи(<span class='numberOfAuthorChallanges'>4</span>)
+						</a>
+					</li>
+					<li>
+						<a href='userChallanges.html'>
+							Личные челленджи(<span class='numberOfUserChallanges'>3</span>)
+						</a>
+					</li>
 					<li><a href='#'>Профиль</a></li>
 					<li><a href='#'>Продление подписки</a></li>
 					<li><a href='#'>Выйти</a></li>
@@ -68,11 +84,11 @@
 			<form name="createChallange" action="#" method="post">
 				<div class='challangeCreationForm'>
 					<div class='creationFormName'>
-						<span class='h3 dark'>Создание нового челленджа</span>
+						<span class='h3 dark'>Разработка челленджа</span>
 					</div>
 					<div class='userNote'>
 						<div class='invitationToLook'>
-							Примечание к созданию челленджа! (README)
+							Примечание к заполнению формы! (README)
 						</div>
 						<div class='noteInnerWrap'>
 							<div class='noteInner'>
@@ -136,7 +152,7 @@
 						</div>
 					</div>
 					<div class='startChallangeBtnWrap'>
-						<input type="button" name="createChallange" id='createChallange' class='challangeBtn' value='Создать челлендж' />
+						<input type="submit" name="createChallange" id='createChallange' class='challangeBtn' value='Разработать челлендж' />
 					</div>
 				</div>
 			</form>
@@ -172,10 +188,34 @@
 				<ul>
 					<li><a href='personalCab.html'><div>Главная страница</div></a></li>
 					<li><a href='news.html'><div>Новости</div></a></li>
-					<li><a href='savedArticles.html'><div>Отложенные статьи(3)</div></a></li>
-					<li><a href='readArticles.html'><div>Прочитанные статьи(11)</div></a></li>
-					<li><a href='authorChallanges.html'><div class='activeCabLink'>Авторские челленджи(4)</div></a></li>
-					<li><a href='#'><div>Личные челленджи(15)</div></a></li>
+					<li>
+						<a href='savedArticles.html'>
+							<div>
+								Отложенные статьи(<span class='numberOfSavedArticles'>3</span>)
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href='readArticles.html'>
+							<div>
+								Прочитанные статьи(<span class='numberOfReadArticles'>5</span>)
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href='authorChallanges.html'>
+							<div class='activeCabLink'>
+								Авторские челленджи(<span class='numberOfAuthorChallanges'>4</span>)
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href='userChallanges.html'>
+							<div>
+								Личные челленджи(<span class='numberOfUserChallanges'>3</span>)
+							</div>
+						</a>
+					</li>
 					<li><a href='#'><div>Профиль</div></a></li>
 					<li><a href='#'><div>Продление подписки</div></a></li>
 					<li><a href='#'><div>Выйти</div></a></li>
@@ -185,13 +225,21 @@
 				<div class="cabMainContent">
 					<div class='challangesMenu'>
 						<ul>
-							<li><a href='authorChallanges.html'>Текущие(2)</a></li>
-							<li><a href='authorChallangesCompleted.html' class='activeChallangeMenuLink'>Завершённые(2)</a></li>
+							<li>
+								<a href='authorChallanges.html'>
+									Текущие(<span class='numberOfCurrentAuthorChallanges'>2</span>)
+								</a>
+							</li>
+							<li>
+								<a href='authorChallangesCompleted.html' class='activeChallangeMenuLink'>
+									Завершённые(<span class='numberOfCompletedAuthorChallanges'>2</span>)
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
 				<div id="challanagesContainer">
-					<div challangeId='3' days='16' maxLostDays='2' challangeName='Пить только воду 16 дней' class='challange'>
+					<div challangeId='3' days='16' maxLostDays='2' startDate='22.12.2018' endDate='22.12.2018' challangeName='Пить только воду 16 дней' class='challange'>
 						<div class='challangeHeader'>Пить только воду 16 дней</div>
 						<div class='progressBar'>
 							<div class='progress' style='width: 40%;'></div>
@@ -282,7 +330,7 @@
 							<button class='challangeBtn startSimilarChallange'>Начать такой же челлендж</button>
 						</div>
 					</div>
-					<div challangeId='4' days='365' maxLostDays='365' challangeName='Какое-то очень длинное название, специально напечатанное для проверки того, как всё будет выглядеть.' class='challange'>
+					<div challangeId='4' days='365' maxLostDays='365' startDate='22.12.2018' endDate='22.12.2018' challangeName='Какое-то очень длинное название, специально напечатанное для проверки того, как всё будет выглядеть.' class='challange'>
 						<div class='challangeHeader'>Какое-то очень длинное название, специально напечатанное для проверки того, как всё будет выглядеть.</div>
 						<div class='progressBar'>
 							<div class='progress' style='width: 10%;'></div>

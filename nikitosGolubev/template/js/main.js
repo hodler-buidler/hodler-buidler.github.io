@@ -81,7 +81,7 @@ function removeErrorMessage(obj, $isEvent = true) {
 	if (isError(input)) {
 		input.style.background = 'transparent'; // Making bg normal
 		input.value = ''; // Removing error message value
-		event.target.setAttribute('error', '0'); // Changing value on error attribute
+		input.setAttribute('error', '0'); // Changing value on error attribute
 	}
 }
 
@@ -98,4 +98,36 @@ function isError(input) {
 	// If its error input, so return true, otherwise - false
 	if (input.getAttribute('error') === '1') return true;
 	return false;
+}
+
+/*
+	Function which increases or decreases value of number which is stored in some html element
+	Created for changing values which contains the numberOfSmth (quantity);
+	selector - selector to get needed element
+	actionType - '+' or '-' = increase or decrease value
+*/
+function changeNumberOfSmthAtHTML(selector, actionType) {
+	// Getting html elements by selector
+	let numberOfSmthElems = document.querySelectorAll(selector);
+
+	// Looping throught the list that I got
+	numberOfSmthElems.forEach((elem) => {
+		let numberOfSmthValue = +elem.innerHTML; // getting current value and turning it into integer
+
+		// Adding or substracting a '1' depend on value of actionType argument
+		if (actionType === '+') numberOfSmthValue++;
+		if (actionType === '-') numberOfSmthValue--;
+
+		// Changing value of element
+		elem.innerHTML = numberOfSmthValue;
+	});
+}
+
+// Function which gets value of html element which contains a number
+function getValueOfNumberOfSmthAtHTML(selector) {
+	// Getting html element by selector
+	let numberOfSmthElems = document.querySelector(selector);
+
+	// Turning elems inner html into integer and returning it
+	return +numberOfSmthElems.innerHTML;
 }

@@ -50,7 +50,7 @@
 	height: 10px;
 	max-width: 950px;
 	border-radius: 10px;
-	margin: 13px 0;
+	margin: 8px 0;
 }
 
 .progress {
@@ -72,8 +72,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-bottom: 15px;
 }
+.delayedChallangeControls {margin-bottom: 0;}
 
 .personalChallangeControls button {
 	font-size: 90%;
@@ -87,10 +87,10 @@
 	transition: 0.4s all;
 }
 
-.pointProgressBtn {background: #703b3b; border: 2px solid #703b3b;}
-.endChallangeBtn {background: #f00; border: 2px solid #f00;}
-.pointProgressBtn:hover {background: #faf4d0; color: #703b3b;}
-.endChallangeBtn:hover {background: #faf4d0; color: #f00;}
+.brownEditBtn {background: #703b3b; border: 2px solid #703b3b;}
+.cancelRedBtn {background: #f00; border: 2px solid #f00;}
+.brownEditBtn:hover {background: #faf4d0; color: #703b3b;}
+.cancelRedBtn:hover {background: #faf4d0; color: #f00;}
 
 .personalChallangeControls button:active {opacity: 0.5;}
 
@@ -102,7 +102,7 @@
 	width: auto;
 	height: auto;
 	border-radius: 0;
-	margin: 0;
+	margin-top: 8px;
 	padding: 10px;
 	font-family: 'Open Sans Light';
 	font-size: 85%;
@@ -124,6 +124,7 @@
 /* Challange stats, progress & a little diary */
 
 .challangeDesc, .challangeProgress, .challangeDiaryWrapper {margin-top: 10px;}
+.delayedChallangeDesc {margin: 0;}
 
 .challangeDesc, .challangeProgress {
 	text-align: center;
