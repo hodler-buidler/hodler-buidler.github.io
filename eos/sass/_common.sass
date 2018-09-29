@@ -1,0 +1,47 @@
+/*** Fonts ***/
+@font-face
+	src: url("../fonts/Montserrat/Montserrat-Regular.ttf")
+	font-family: "Montserrat Regular"
+
+@font-face
+	src: url("../fonts/Montserrat/Montserrat-Italic.ttf")
+	font-family: "Montserrat Italic"
+
+@font-face
+	src: url("../fonts/Montserrat/Montserrat-Bold.ttf")
+	font-family: "Montserrat Bold"
+
+// *** Variables ***
+// Fonts
+$mainFont: "Montserrat Bold"
+$regularFont: "Montserrat Regular"
+$italicFont: "Montserrat Italic"
+
+// Colors
+$mainColor: #fff
+$altLightColor: #18f7ef
+$altDarkColor: #3624ea
+
+
+// *** Bases ***
+
+%fastTransition
+	transition: 0.2s all
+
+%mediumTransition
+	transition: 0.4s all
+
+%slowTransition
+	transition: 0.6s all
+
+// *** Mixins ***
+
+@mixin setCoverBg($path, $bgColor)
+	background: $bgColor url("../images/#{$path}") center center no-repeat
+	background-size: cover
+
+@mixin flex($direction, $justifyContent, $alignItems)
+	display: flex
+	flex-direction: $direction
+	justify-content: $justifyContent
+	align-items: $alignItems

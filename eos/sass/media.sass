@@ -1,0 +1,32 @@
+@import "bootstrap/functions"
+@import "bootstrap/variables"
+@import "bootstrap/mixins"
+
+@mixin set-col-num($num, $size)
+	@include media-breakpoint-up($size)
+		@include make-col($num)
+
+@media screen and (max-device-aspect-ratio: 1000/572)
+	.text-description, .image-gallery
+		@include set-col-num(6, xs)
+
+@media screen and (min-device-aspect-ratio: 1000/425)
+	.text-description, .image-gallery
+		@include set-col-num(6, xs)
+
+@media screen and (max-device-aspect-ratio: 1000/750)
+	.text-description, .image-gallery
+		@include set-col-num(12, xs)
+
+	.self-presentation, .text-description
+		height: auto
+
+	.image-gallery
+		height: 30vh
+		&__item
+			&_portrait
+				&_visible
+					height: 30vh
+				&_invisible
+					display: none
+		

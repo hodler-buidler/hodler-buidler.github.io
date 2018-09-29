@@ -1,0 +1,191 @@
+// Importing packagies and crucial parts
+@import common
+
+/*** Main styles ***/
+body
+	font-family: $mainFont
+	font-size: 2.3vmin
+	color: $mainColor
+
+a
+	text-decoration: none
+	color: $mainColor
+
+	&:hover, &:active
+		text-decoration: none
+		color: $mainColor
+
+p
+	line-height: 2.2
+	padding: 2vmin 0
+	margin: 0
+
+.btn
+	padding: 2vmin 4vmin
+	border: 0.4vmin solid $mainColor
+	text-transform: uppercase
+	outline: none
+	@extend %mediumTransition
+	border-radius: 0
+	font-size: 2.3vmin
+	&:active
+		opacity: 0.7
+		box-shadow: none
+	&_default
+		color: $altDarkColor
+		&:hover
+			border: 0.4vmin solid $altDarkColor
+			background: $altDarkColor
+			color: $mainColor
+	&_reverse
+		color: $mainColor
+		&:hover
+			border: 0.4vmin solid $mainColor
+			background: $mainColor
+			color: $altDarkColor
+
+
+.fullscreen
+	height: 100vh
+
+.container-no-gutters
+	padding: 0
+
+.text
+	&_main
+		color: $mainColor
+	&_alt-light
+		color: $altLightColor
+	&_alt-dark
+		color: $altDarkColor
+	&_regular
+		font-family: $regularFont
+	&_italic
+		font-family: $italicFont
+	&_sm
+		font-size: 1.7vmin
+
+.h1, h1
+	font-size: 5.7vmin
+.h2, h2
+	font-size: 4.7vmin
+.h3, h3
+	font-size: 3.7vmin
+.h4, h4
+	font-size: 3.1vmin
+.h5, h5
+	font-size: 2.6vmin
+.h6, h6
+	font-size: 2.1vmin
+
+/*** Logo ***/
+
+.logo
+	width: 4.5vmax
+	height: 4.5vmax
+	@include setCoverBg("../images/logo.png", transparent)
+
+/*** Page header ***/
+.page-header
+	@include setCoverBg("../images/header-bg.jpg", transparent)
+	background-attachment: fixed
+	box-shadow: inset 1px 1px 100vh 100px #000
+
+	&__content
+		padding: 4% 0
+
+		&_wrap
+			height: 100%
+
+	&__top-header
+		font-size: 10vw
+		opacity: 0.9
+		color: $altLightColor
+		text-shadow: 1px 2px 4px rgba(#fff, 0.5)
+
+	&__mouse
+		width: 4vmin
+		height: 4vmin
+		margin-bottom: 10px
+		background: url("../images/mouse.png") center center no-repeat
+		background-size: contain
+
+.main-navigation
+	&__elem
+		padding: 0 1.5vw
+
+	&__link
+		@extend %mediumTransition
+		white-space: nowrap
+		&:hover
+			color: $altLightColor
+		&_active, &:active
+			color: $altLightColor
+			opacity: 0.8
+
+/*** Self presentation ***/
+
+.text-description, .image-gallery
+	height: 100vh
+
+.text-description
+	background: $altLightColor
+	padding: 7vmin !important
+	&__header
+		font-size: 5.5vmax
+		line-height: 1
+	&__content
+		margin: 5vmin 0
+
+.image-gallery
+	&__item
+		height: 50vh
+
+/*** Additional info ***/
+
+.additional-info
+	height: 60vh
+	
+	&__photographer-decoration, &__content_wrap
+		height: 60vh
+
+	&__photographer-decoration
+		position: relative
+		&_img
+			height: 80%
+			position: absolute
+			bottom: 0
+			right: -7vmin
+			z-index: 1
+
+	&__content
+		max-width: 80vmin
+		&_wrap
+			background: $altDarkColor
+			padding: 1.5vmin !important
+		&_marginer
+			margin:
+				top: 3vmin
+				bottom: 6vmin
+
+/*** Footer ***/
+
+.page-footer
+	@include setCoverBg('../images/footer-bg.jpg', transparent)
+	&__formal-data
+		padding:
+			top: 20vmin
+			bottom: 20vmin
+	&__formal-data
+		margin: 0 15px
+	&__copyright
+		margin-top: 2.5vmin
+	&__navigation
+		padding-bottom: 20vmin
+
+.additional-data
+	padding:
+		top: 20vmin
+		bottom: 20vmin
+	&__header, &_content
+		padding: 0 20px
