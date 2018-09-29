@@ -6,15 +6,15 @@
 	@include media-breakpoint-up($size)
 		@include make-col($num)
 
-@media screen and (max-device-aspect-ratio: 1000/572)
+@media screen and (max-aspect-ratio: 1000/572)
 	.text-description, .image-gallery
 		@include set-col-num(6, xs)
 
-@media screen and (min-device-aspect-ratio: 1000/425)
+@media screen and (min-aspect-ratio: 1000/425)
 	.text-description, .image-gallery
 		@include set-col-num(6, xs)
 
-@media screen and (max-device-aspect-ratio: 1000/750)
+@media screen and (max-aspect-ratio: 1000/750)
 	.text-description, .image-gallery
 		@include set-col-num(12, xs)
 
