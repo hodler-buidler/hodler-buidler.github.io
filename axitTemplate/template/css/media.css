@@ -1,0 +1,326 @@
+/*********TABLET_VERSION***********/
+
+@media screen and (max-width: 961px) {
+
+	/*MAIN_MARGINS*/
+
+	header {padding: 20px 5%;}
+	.upper {padding: 100px 5%;}
+	.up_social_media {padding: 10px 5%;}
+	.w_slider {padding: 100px 5%;}
+	.feature_1 {padding: 80px 5%;}
+	.feature_2 {padding: 100px 5%;}
+	.feature_3 {padding: 100px 5%;}
+	.prices {padding: 100px 5%;}
+	.answers {padding: 100px 5%;}
+	.stylish_axure {padding: 40px 5%;}
+	.contact_us {padding: 100px 5%;}
+
+
+	/*MAIN_SETTINGS*/
+
+	p {font-size: 80%;}
+	h3 {font-size: 100%;}
+
+	/*HEADER*/
+
+	.up_menu menu li {margin: 0 20px;}
+	.up_menu menu li a {font-size: 85%;}
+
+	/*MAIN_TEXT_AND_FORM*/
+
+	.w_form_header {padding: 10px 30px;}
+	.text_up h1 {font-size: 155%;}
+
+	/*SOCIAL_MEDIA*/
+
+	.up_social_icons .fa {font-size: 250%;}
+
+	/*SLIDER*/
+
+	.slide {
+		width: 90px;
+		height: 90px;
+	}
+
+	/*FEATURE_1*/
+
+	.feature_img {width: 50%;}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	/*HEADER*/
+
+	.up_menu menu li a {font-size: 80%;}
+	.up_menu menu li {margin: 0 15px;}
+
+	/*MAIN_SETTINGS*/
+
+	p {font-size: 90%;}
+	h3 {font-size: 110%;}
+	
+	/*MAIN_TEXT_AND_FORM*/
+
+	.w_form {display: none;}
+	.w_text_up {width: auto;}
+	.text_up h1 {font-size: 165%;}
+
+	/*SOCIAL_MEDIA*/
+
+	.up_social_media {align-items: center;}
+	.up_social_text p {display: none;}
+	.up_social_icons {width: 60%;}
+	.up_social_text {max-width: 30%;}
+
+	/*SLIDER*/
+
+	.w_slide_img {display: none;}
+	.slider {justify-content: flex-start;}
+	.w_slide_text{width: calc(100% - 100px); padding-left: 10px;}
+
+	/*FEATURE_1*/
+
+	.feature_1 {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.feature_1 .feature_img {width: 80%; margin-top: 30px;}
+	.first_l {width: 80%;}
+
+	/*FEATURE_2*/
+
+	.left, .right, .center {margin: 0 10px;}
+	.center {margin-top: -30px;}
+
+	/*ANSWERS*/
+
+	.answers_main_side {justify-content: center;}
+	.side_1:last-child {display: none;}
+	.side_1 {margin: 0; margin-left: 20px;}
+	.side_1:first-child {margin-left: 0; margin-right: 20px;}
+
+
+@media screen and (max-width: 736px) {
+
+	/*MAIN_MARGINS*/
+
+	.w_slider {padding: 100px 5%;}
+	.feature_1 {padding: 80px 5%;}
+	.feature_2 {padding: 80px 5%;} /**/
+	.feature_3 {padding: 80px 5%;}
+	.prices {padding: 80px 5%;}
+	.answers {padding: 80px 5%;}
+	.stylish_axure {padding: 40px 5%;}
+	.contact_us {padding: 80px 5%;}	
+
+	/*MAIN_SETTINGS*/
+
+	p {font-size: 80%;}
+	h3 {font-size: 100%;}
+
+	/*HEADER*/
+
+	.up_menu menu li a {font-size: 80%;}
+	.up_menu menu li {margin: 0 10px;}
+
+	/*FEATURE_2*/
+
+	.feature_2 {
+		flex-direction: column;
+		align-items: center;
+	}
+	.feature_2 .feature_img {width: 80%; margin-top: 30px;}
+	.second_l {width: 80%;}
+
+	/*PRICES*/
+
+	.list_possibilities ul li {font-size: 90%;}
+}
+
+/***********MOBILE_PHONES************/
+
+@media screen and (max-width: 667px) {
+	/*MAIN_MARGINS*/
+
+	.upper {padding: 80px 5%;}
+	.w_slider {padding: 80px 5%;}
+	.feature_1 {padding: 60px 5%;}
+	.feature_2 {padding: 60px 5%;}
+	.feature_3 {padding: 60px 5%;}
+	.prices {padding: 60px 5%;}
+	.answers {padding: 60px 5%;}
+	.stylish_axure {padding: 40px 5%;}
+	.contact_us {padding: 60px 5%;}
+
+	/*MAIN_TEXT_AND_IMG*/
+
+	.black_alpha_bg {background-size: 100% 100%;}
+
+
+	/*SOCIAL_MEDIA*/
+
+	.up_social_icons .fa {font-size: 200%;}
+
+	/*FEATURE_3*/
+	
+	.image_main_side {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 30px;
+	}
+
+	.image_main_side .side {
+		width: 80%;
+		margin-top: 30px;
+	}
+
+	/*PRICING*/
+
+	.price_main_side {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 60px;
+	}
+
+	.center {margin: 40px 0;}
+	.header_bot h1 {font-size: 200%;}
+	.white p {font-size: 90%;}
+}
+
+@media screen and (max-width: 600px) {
+	
+	/*MAIN_SETTINGS*/
+
+	p {font-size: 80%;}
+	h3 {font-size: 90%;}
+
+	/*MENU*/
+
+	.black_alpha_bg {background-size: cover;}
+
+	/*SOCIAL_MEDIA*/
+		.up_social_icons {width: 75%;}
+		.up_social_text {max-width: 20%;}
+
+	/*SLIDER*/
+
+	.w_slide_text {
+		margin-left: 0;
+		margin-top: 20px;
+		width: auto;
+	}
+
+	.slider {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.change_slide {display: flex;}
+
+	.slide {
+		border-bottom: none;
+		border-right: 1px solid #c7c7c7;
+	}
+
+	.slide:first-child {
+		border-top-left-radius: 5px;
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 5px;
+	}
+
+	.slide:last-child {
+		border-top-right-radius: 5px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 5px;
+		border-right: none;
+	}
+
+	/*ANSWERS*/
+
+	.answers_main_side {
+		margin-top: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.side_1 {margin: 30px 0;}
+
+	.text_area p {font-size: 80%;}
+	.side_1 {margin-left: 0;}
+	.side_1:first-child {margin: 0;}
+	.side_1:last-child {display: block; margin: 0;}
+
+	.header_bot h1 {font-size: 160%;}
+	.white p {font-size: 80%;}
+
+	/*MENU*/
+
+	.up_mobile_menu menu li a {font-size: 80%;}
+
+	/*CONTACT_US*/
+
+	.inputs, .text_contact {width: 90%;}
+
+	.text_contact {margin-top: 40px;}
+
+	.contact_form {
+		align-items: center;
+		flex-direction: column;
+		margin-top: 50px;
+	}
+
+	/*SCROLL*/
+
+	#scroll_up {
+		width: 60px;
+		height: 60px;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	/*MENU*/
+	.up_mobile_menu menu li a {font-size: 75%;}
+
+	/*SOCIAL_MEDIA*/
+	.up_social_icons .fa {font-size: 170%;}
+	.up_social_icons {width: 100%;}
+	.up_social_text {display: none;}
+
+	/*MAIN_TEXT_AND_FORM*/
+	.text_up h1 {font-size: 125%;}
+
+	/*FOOTER*/
+	.low_social_list {font-size: 130%;}
+}
+
+@media screen and (max-width: 375px) {
+
+	/*MAIN MARGINS*/
+
+	header {padding: 20px 2%;}
+	.upper {padding: 60px 2%;}
+	.w_slider {padding: 60px 2%;}
+	.feature_1 {padding: 50px 2%;}
+	.feature_2 {padding: 50px 2%;}
+	.feature_3 {padding: 50px 2%;}
+	.prices {padding: 50px 2%;}
+	.answers {padding: 50px 2%;}
+	.stylish_axure {padding: 40px 2%;}
+	.contact_us {padding: 50px 2%;}
+
+	/*MAIN_SETTINGS*/
+
+	p {font-size: 75%;}
+	h3 {font-size: 85%;}
+
+	/*ANSWERS*/
+
+	.text_area p {font-size: 75%;}
+	.header_bot h1 {font-size: 140%;}
+	.white p {font-size: 75%;}
+
+}
