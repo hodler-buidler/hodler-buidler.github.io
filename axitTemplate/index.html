@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- SEO и Meta -->
+	<title>AXIT</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Лэндинг AXIT, продажа шаблонов" />
+	<meta name="description" content="Лэндинг AXIT" />
+	<meta name="author" content="Никита Голубев" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Шрифты -->
+	<link href="http://allfont.ru/allfont.css?fonts=open-sans-semibold" rel="stylesheet" type="text/css" /><!-- 'Open Sans Semibold' -->
+	<link href="http://allfont.ru/allfont.css?fonts=open-sans" rel="stylesheet" type="text/css" /><!-- 'Open Sans' -->
+	<link href="http://allfont.ru/allfont.css?fonts=open-sans-bold" rel="stylesheet" type="text/css" /><!-- 'Open Sans Bold' -->
+	<link href="http://allfont.ru/allfont.css?fonts=raleway-regular" rel="stylesheet" type="text/css" /><!-- 'Raleway Regular' -->
+	<link href="http://allfont.ru/allfont.css?fonts=raleway-light" rel="stylesheet" type="text/css" /><!-- 'Raleway Light' -->
+	<link href="http://allfont.ru/allfont.css?fonts=raleway-bold" rel="stylesheet" type="text/css" /><!-- 'Raleway Bold' -->
+	<link href="http://allfont.ru/allfont.css?fonts=raleway-thin" rel="stylesheet" type="text/css" /><!-- 'Raleway Thin' -->
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="template/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="template/css/media.css" />
+	<!-- JS -->
+	<script type="text/javascript" src="template/js/jquery.js"></script>
+	<script type="text/javascript" src="template/js/slider.js"></script>
+	<script type="text/javascript" src="template/js/menu.js"></script>
+	<script type="text/javascript" src="template/js/scroll_up.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div class="w_logo">
+				<div class="logo">
+					<a href="#">
+						<img src="template/images/logo.png" alt="Логотип AXIT" />
+					</a>
+				</div>
+ 			</div>
+			<div class="w_up_menu">
+				<div class="up_menu">
+					<menu>
+						<!-- В ID помещай class элемента к которому надо промотать -->
+						<li id="feature_1" class="up_menu_li">
+							<a onclick="return false" href="#">Features</a>
+						</li>
+						<li id="feature_3" id class="up_menu_li">
+							<a onclick="return false" href="#">About</a>
+						</li>
+						<li id="prices" class="up_menu_li">
+							<a onclick="return false" href="#">Pricing</a>
+						</li>
+						<li id="answers" class="up_menu_li">
+							<a onclick="return false" href="#">Reviews</a>
+						</li>
+						<li id="contact_us" class="up_menu_li">
+							<a onclick="return false" href="#">Contact</a>
+						</li>
+					</menu>
+				</div>
+			</div>
+		</header>
+		<section class="mobile_menu">
+			<div class="up_mobile_menu">
+					<menu>
+						<!-- В ID помещай class элемента к которому надо промотать -->
+						<li id="feature_1" class="up_menu_li">
+							<a onclick="return false" href="#">Features</a>
+						</li>
+						<li id="feature_3" id class="up_menu_li">
+							<a onclick="return false" href="#">About</a>
+						</li>
+						<li id="prices" class="up_menu_li">
+							<a onclick="return false" href="#">Pricing</a>
+						</li>
+						<li id="answers" class="up_menu_li">
+							<a onclick="return false" href="#">Reviews</a>
+						</li>
+						<li id="contact_us" class="up_menu_li">
+							<a onclick="return false" href="#">Contact</a>
+						</li>
+					</menu>
+				</div>
+			</div>
+		</section>
+		<script type="text/javascript">
+			var menu_counter = 0;
+			var menu_delay = 300;
+			if ($(window).width() <= 736) {
+				$w_up_menu = $(".w_up_menu").html();
+				$(".up_menu").empty();
+				$(".up_menu").append("<img width='50' class='menu_mobile_button' src='template/images/mobile_menu.png' alt='Меню' />");
+			}
+			$(".menu_mobile_button").on("click", function() {
+				if (menu_counter % 2 == 0) {
+					$(".mobile_menu").fadeIn(menu_delay);
+				}
+				else $(".mobile_menu").fadeOut(menu_delay);
+				menu_counter++;
+			});
+			$(".up_menu_li").click(menu);
+		</script>
+		<div class="black_alpha_bg">
+			<section class="upper">
+				<div class="w_text_up">
+					<div class="text_up">
+						<div class="big_logo">
+							<a href="#">
+								<img src="template/images/logo.png" alt="Логотип AXIT" />
+							</a>
+						</div>
+						<div class="header">
+							<h1>Modern axure template for beautiful prototypes</h1>
+						</div>
+						<div class="white_line"></div>
+						<div class="main_text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+								euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+								accumsan et viverra justo commodo.</p>
+						</div>
+						<a href="#">
+							<div class="but_download">
+								<span>Download</span>
+							</div>
+						</a>
+					</div>
+	 			</div>
+				<div class="w_form">
+					<div class="form">
+						<form name="reg" action="#" method="post">
+							<div class="w_form_header">
+								<h3 class="form_header">Try your <span class="mark_word" >FREE</span> trial today</h3>
+							</div>
+							<div class="form_input">
+								<input type="text" name="name" placeholder="Name" />
+							</div>
+							<div class="form_input">
+								<input type="email" name="email" placeholder="Email" />
+							</div>
+							<div class="form_input last_input">
+								<input type="password" name="name" placeholder="Password" />
+							</div>
+							<div class="get_started">
+								<input type="submit" name="send" value="Get Started" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
+		<section class="up_social_media">
+			<div class="up_social_text">
+				<h3>Social Media</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+			</div>
+			<div class="up_social_icons">
+				<div class="w_social_list">
+					<ul class="social_list">
+						<li>
+							<a href="#">
+								<span class="fa fa-facebook"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa fa-twitter"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa fa-google-plus"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa fa-pinterest-p"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa fa-instagram"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa fa-stumbleupon"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa fa-rss"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="w_slider">
+			<div class="slider">
+				<!-- У КАЖДОГО СЛАЙДА ЕСТЬ ВТОРОЙ КЛАСС С ЦИФРОЙ, ЕГО НУЖНО УЧИТЫВАТЬ ПРИ ПОДГРУЗКЕ ИЗ БД -->
+				<div class="change_slide">
+					<div class="slide 1"><span>Tab 1</span></div>
+					<div class="slide 2"><span>Tab 2</span></div>
+					<div class="slide 3"><span>Tab 3</span></div>
+				</div>
+				<div class="w_slide_text">
+					<div class="slide_text s1">
+						<div class="slide_header">
+							<h3>Tabs with soft transitioning effect 1.</h3>
+						</div>
+						<div class="slide_main_text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+							bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+							justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+							penatibus et magnis dis parturient montes.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+						</div>
+						<div class="w_orange_download">
+							<a href="#">
+								<div class="orange_download">
+									<span>Download</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="slide_text s2">
+						<div class="slide_header">
+							<h3>Tabs with soft transitioning effect 2.</h3>
+						</div>
+						<div class="slide_main_text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+							bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+							justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+							penatibus et magnis dis parturient montes.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+						</div>
+						<div class="w_orange_download">
+							<a href="#">
+								<div class="orange_download">
+									<span>Download</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="slide_text s3">
+						<div class="slide_header">
+							<h3>Tabs with soft transitioning effect 3.</h3>
+						</div>
+						<div class="slide_main_text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+							bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+							justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+							penatibus et magnis dis parturient montes.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+						</div>
+						<div class="w_orange_download">
+							<a href="#">
+								<div class="orange_download">
+									<span>Download</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="w_slide_img">
+					<div class="slide_img s1">
+						<img src="template/images/one.png" alt="Слайд 1" />
+					</div>
+					<div class="slide_img s2">
+						<img src="template/images/one.png" alt="Слайд 2" />
+					</div>
+					<div class="slide_img s3">
+						<img src="template/images/one.png" alt="Слайд 3" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<script type="text/javascript">
+			$(document).on("click", ".slide", slider);
+		</script>
+		<section class="feature_1">
+			<div class="feature_img first_img">
+				<img src="template/images/two.png" alt="Image 1" />
+			</div>
+			<div class="sub_list first_l">
+					<h3>Sub list section</h3>
+					<div class="main_orange_line"></div>
+					<p class="sub_list_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
+					euismod bibendum laoreet. Proin gravida dolor sit amet lacus 
+					accumsan et viverra justo commodo.</p>
+					<ul class="feature_list">
+						<li>
+							<div class="list_style"></div>
+							<div class="li_text">
+								<h4 class="list_title">Title</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+								Aenean euismod bibendum laoreet.</p>
+							</div>
+						</li>
+						<li>
+							<div class="list_style"></div>
+							<div class="li_text">
+								<h4 class="list_title">Title</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+								Aenean euismod bibendum laoreet. Proin gravida dolor 
+								sit amet lacus accumsan et viverra justo commodo.</p>
+							</div>
+						</li>
+					</ul>
+			</div>
+		</section>
+		<section class="feature_2">
+			<div class="sub_list second_l">
+				<h3>Sub list section</h3>
+				<div class="main_orange_line"></div>
+				<p class="sub_list_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
+				euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan 
+				et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis 
+				natoque penatibus et magnis dis parturient montes.
+				</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+				bibendum laoreet.</p>
+			</div>
+			<div class="feature_img second_img">
+				<img src="template/images/three.png" alt="Image 2" />
+			</div>
+		</section>
+		<section class="feature_3">
+			<div class="header_bot">
+				<h1>Why this is awesome</h1>
+				<div class="main_orange_line"></div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+			<div class="image_main_side">
+				<div class="side">
+					<img src="template/images/prog_1.png" alt="Img 1" />
+					<h3>Thoughtful Design</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+					elit. Aenean euismod bibendum laoreet. Proin gravida 
+					dolor sit amet lacus accumsan et viverra.</p>
+				</div>
+				<div class="side">
+					<img src="template/images/prog_2.png" alt="Img 2" />
+					<h3>Well Crafted</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+					elit. Aenean euismod bibendum laoreet. Proin gravida 
+					dolor sit amet lacus accumsan et viverra.</p>
+				</div>
+				<div class="side">
+					<img src="template/images/prog_3.png" alt="Img 3" />
+					<h3>Easy to Customize</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+					elit. Aenean euismod bibendum laoreet. Proin gravida 
+					dolor sit amet lacus accumsan et viverra.</p>
+				</div>
+			</div>
+		</section>
+		<section class="prices">
+			<div class="header_bot">
+				<h1>Pricing options</h1>
+				<div class="main_orange_line"></div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+			<div class="price_main_side">
+				<div class="side left">
+					<div class="price_header"><h3>Basic</h3></div>
+					<div class="w_cost">
+						<span class="cost"><span class="name_val">$</span><span class="conkret_price">0</span></span>
+						<p class="price_slogan">Free for Life</p>
+					</div>
+					<div class="list_possibilities">
+						<ul>
+							<li>
+								<p>1 gb of space</p>
+							</li>
+							<li>
+								<p>10 gb of bandwidth</p>
+							</li>
+							<li>
+								<p>3 websites</p>
+							</li>
+							<li>
+								<p>Basic Customization</p>
+							</li>
+							<li>
+								<p>wordpress integration</p>
+							</li>
+							<li>
+								<p>email support</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="side center">
+					<div class="price_header"><h3>Professional</h3></div>
+					<div class="w_cost">
+						<span class="cost"><span class="name_val">$</span><span class="conkret_price">19</span></span>
+						<p class="price_slogan">Monthly Payment</p>
+					</div>
+					<div class="best_offer">
+						<span>Our most popular</span>
+					</div>
+					<div class="list_possibilities">
+						<ul>
+							<li>
+								<p>1 gb of space</p>
+							</li>
+							<li>
+								<p>10 gb of bandwidth</p>
+							</li>
+							<li>
+								<p>3 websites</p>
+							</li>
+							<li>
+								<p>Basic Customization</p>
+							</li>
+							<li>
+								<p>wordpress integration</p>
+							</li>
+							<li>
+								<p>email support</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="side right">
+					<div class="price_header"><h3>Enterprise</h3></div>
+					<div class="w_cost">
+						<span class="cost"><span class="name_val">$</span><span class="conkret_price">70</span></span>
+						<p class="price_slogan">Monthly Payment</p>
+					</div>
+					<div class="list_possibilities">
+						<ul>
+							<li>
+								<p>1 gb of space</p>
+							</li>
+							<li>
+								<p>10 gb of bandwidth</p>
+							</li>
+							<li>
+								<p>3 websites</p>
+							</li>
+							<li>
+								<p>Basic Customization</p>
+							</li>
+							<li>
+								<p>wordpress integration</p>
+							</li>
+							<li>
+								<p>email support</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="answers">
+			<div class="header_bot">
+				<h1>What our customers are saying</h1>
+				<div class="main_orange_line"></div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+			<div class="answers_main_side">
+				<div class="side_1">
+					<div class="text_area">
+						<p>Lorem ipsum dolor sit amet, 
+						consectetur adipisicing elit. Doloribus 
+						accusamus expedita repellat similique 
+						odio aspernatur ex, architecto eaque 
+						quo suscipit.</p>
+					</div>
+					<div class="triangle"></div>
+					<div class="foto_name">
+						<div class="customer_foto">
+							<img src="template/images/avatar.png" alt="Аватар пользователя" />
+						</div>
+						<div class="customer_info">
+							<h3>Jeremy H.</h3>
+							<span>Manager</span>
+						</div>
+					</div>
+				</div>
+				<div class="side_1">
+					<div class="text_area">
+						<p>Lorem ipsum dolor sit amet, 
+						consectetur adipisicing elit. Doloribus 
+						accusamus expedita repellat similique 
+						odio aspernatur ex, architecto eaque 
+						quo suscipit.</p>
+					</div>
+					<div class="triangle"></div>
+					<div class="foto_name">
+						<div class="customer_foto">
+							<img src="template/images/avatar.png" alt="Аватар пользователя" />
+						</div>
+						<div class="customer_info">
+							<h3>John S.</h3>
+							<span>Freelancer</span>
+						</div>
+					</div>
+				</div>
+				<div class="side_1">
+					<div class="text_area">
+						<p>Lorem ipsum dolor sit amet, 
+						consectetur adipisicing elit. Doloribus 
+						accusamus expedita repellat similique 
+						odio aspernatur ex, architecto eaque 
+						quo suscipit.</p>
+					</div>
+					<div class="triangle"></div>
+					<div class="foto_name">
+						<div class="customer_foto">
+							<img src="template/images/avatar.png" alt="Аватар пользователя" />
+						</div>
+						<div class="customer_info">
+							<h3>Susan W.</h3>
+							<span>Photographer</span>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="low_alpha_bg">
+			<section class="stylish_axure">
+				<div>
+					<div class="header_bot white">
+						<h1>STYLISH AXURE DESIGN</h1>
+						<div class="white_download_line"></div>
+						<p>Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+					</div>
+					<a href="#">
+						<div class="but_download">
+							<span>Download</span>
+						</div>
+					</a>
+				</div>
+			</section>
+		</div>
+		<section class="contact_us">
+			<div class="header_bot">
+				<h1>Contact us</h1>
+				<div class="main_orange_line"></div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+			<form name="contact_form" action="#" method="post">
+				<div class="contact_form">
+					<div class="inputs">
+						<div>
+							<input type="text" placeholder="Name" name="name_c" />
+						</div>
+						<div>
+							<input type="email" name="email_c" placeholder="Email" />
+						</div>
+						<div>
+							<input type="text" name="subject" placeholder="Subject" />
+						</div>
+					</div>
+					<div class="text_contact">
+						<textarea rows="9" placeholder="Message" name="contact_text"></textarea>
+					</div>
+				</div>
+				<div class="submit_contact">
+					<input type="submit" name="send" value="Send Message">
+				</div>
+			</form>
+		</section>
+		<footer>
+			<div class="w_low_social_icons">
+				<ul class="low_social_list">
+					<li>
+						<a href="#">
+							<span class="fa fa-facebook"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="fa fa-twitter"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="fa fa-google-plus"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="fa fa-pinterest-p"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="fa fa-instagram"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="fa fa-stumbleupon"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="fa fa-rss"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<p>&copy; 2015 Axure Themes</p>
+		</footer>
+		<div id="scroll_up"></div>
+		<script type="text/javascript">
+			$(window).scroll(scrolling);
+			$("#scroll_up").on("click", scroll_up);
+
+			var w_slide_text_height = $(".w_slide_text").height();
+			$(".slide_text").css("min-height", w_slide_text_height + "px");
+		</script>
+	</div>
+</body>
+</html>

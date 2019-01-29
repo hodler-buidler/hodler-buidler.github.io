@@ -1,0 +1,169 @@
+@font-face {
+	font-family: Gramond;
+    src: url(../fonts/gramond.ttf);
+}
+
+@font-face {
+	font-family: Nuptial;
+    src: url(../fonts/nuptial.ttf);
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background: url('../images/bg.png') center top no-repeat, #ffad00;
+	background-size: cover;
+	font-family: Arial;
+	color: #481a00;
+}
+
+a {
+	color: #ce4400;
+}
+
+.logo div {
+	display: inline-block;
+	font-family: Nuptial, sans-serif, Arial;
+	line-height: 0.5;
+}
+
+.logo_text_1 {
+	font-size: 80pt;
+}
+
+.logo_text_2 {
+	font-size: 37pt;
+	color: #ce4400;
+	margin-left: 70px;
+}
+
+.side {
+	display: inline-block;
+}
+
+.menu {
+	text-transform: uppercase;
+	font-family: Gramond;
+	list-style: none;
+	font-size: 17pt;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	margin-top: 35px;
+}
+
+.menu li img {
+	display: inline-block;
+	margin-top: 11px
+}
+
+.left_arrow {
+	float: left;
+}
+
+.right_arrow {
+	float: right;
+}
+
+.menu_wrapper {
+	float: right;
+	margin-right: 40px;
+	margin-top: 13px;
+	line-height: 1.55;
+}
+
+.menu a {
+	color: #481a00;
+	text-decoration: none;
+}
+
+.left {
+	margin-top: 70px;
+	width: 65%;
+}
+
+.right {
+	float: right;
+	background: url('../images/menu_bg.png') top right no-repeat;
+	width: 34%;
+	min-height: 280px;
+}
+
+#header {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.menu li {
+	border-bottom: 1px ridge #f6d24b;
+	border-top: 1px ridge #fffcf0;
+}
+
+.header_text {
+	padding-top: 50px;
+}
+
+.menu img {
+	opacity: 0;
+}
+
+.active a {
+	color: #ef4f00;
+}
+
+.active img {
+	opacity: 1;
+}
+
+.menu li:hover img {
+	opacity: 1;
+}
+
+.menu li:active a {
+	color: #ef4f00;
+}
+
+#mainer {
+	min-height: 550px;
+	margin-left: 5%;
+}
+
+h1 {
+	font-family: Gramond;
+}
+
+h4 {
+	margin: 0;
+	color: #ef4f00;
+}
+
+.article a {
+	text-decoration: none;
+}
+
+.w_article {
+	background: url('../images/article_side.png') no-repeat;
+	margin-top: -10px;
+	min-height: 169px;
+	max-width: 532px;
+}
+
+.last {
+	background: url('../images/article_side_last.png') no-repeat;
+	min-height: 136px;
+}
+
+.article table {
+	width: 100%;
+	padding-top: 10px;
+	padding-left: 5%;
+}
+
+#footer {
+	margin-left: 5%;
+	margin-bottom: 60px;
+}
+
+#wrapper {
+	background: url('../images/beer_glass.png') bottom right no-repeat;
+}
