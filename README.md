@@ -4,6 +4,8 @@
 
 The repository where my front-end projects are hosted.
 
+Репозиторий, где хостятся все мои front-end проекты.
+
 1. https://nikitosgolubev.github.io/myFirstWebsiteTemplate /(2016)
 2. https://nikitosgolubev.github.io/myFirstEmailLetterTemplate/ (2016)
 3. https://nikitosgolubev.github.io/israelTemplate/ (2016)
