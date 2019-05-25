@@ -22,3 +22,4 @@ The repository where my front-end projects are hosted.
 12. https://nikitosgolubev.github.io/eos/ (2018)
 
 13. https://nikitosgolubev.github.io/colingzTemplate/ (2019)
+14. https://nikitosgolubev.github.io/kanbanBoard/ (2019)
