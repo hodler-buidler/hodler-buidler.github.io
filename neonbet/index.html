@@ -15,6 +15,7 @@
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="assets/css/vendors/main.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/pages/index.css" />
 </head>
 <body class="page">
 
@@ -88,6 +89,145 @@
 
 		<!-- Carousel -->
 		<upper-carousel></upper-carousel>
+		<!-- END Carousel -->
+
+		<!-- Main content of the page -->
+		<main class="index-content">
+			<!-- Left column, additional, aside data -->
+			<section class="index-content__aside">
+
+				<!-- Games filter -->
+				<section class="games-filter card">
+					<!-- Games filter header -->
+					<header class="games-filter__header card__header">
+						<div><span class="h3-m0 alternative">Игры</span></div>
+
+						<div class="games-filter__switcher">
+							<div class="games-filter__switcher-sign">Выбрать всё</div>
+							<div class="toggle">
+								<input class="toggle__checkbox" type="checkbox" name="main_games_switcher" id="toggle1" />
+								<label class="toggle__label" for="toggle1">
+									<span class="toggle__switcher"></span>
+								</label>
+							</div>
+						</div>
+					</header>
+
+					<!-- Games filter content -->
+					<scroll classes="games-filter__content">
+						<!-- Particular game filter -->
+						<div class="card__content games-filter__concrete">
+							<div class="games-filter__game-data">
+								<!-- Game logotype with gradient border -->
+								<div class="games-filter__game-logo_wrap games-filter__game-logo_active">
+									<div class="games-filter__game-logo"
+									style="background: url('assets/img/csgo.png') center center no-repeat; background-size: 60%;">
+									</div>
+									<div class="games-filter__game-logo_border"></div>
+								</div>
+
+								<!-- Game name -->
+								<div class="games-filter__game-name">Counter-Strike</div>
+							</div>
+
+							<!-- Games filter switch toggle -->
+							<div class="toggle">
+								<input class="toggle__checkbox" checked type="checkbox" name="main_games_switcher" id="toggle2" />
+								<label class="toggle__label" for="toggle2">
+									<span class="toggle__switcher"></span>
+								</label>
+							</div>
+						</div>
+
+						<!-- Particular game filter -->
+						<div class="card__content games-filter__concrete">
+							<div class="games-filter__game-data">
+								<!-- Game logotype with gradient border -->
+								<div class="games-filter__game-logo_wrap">
+									<div class="games-filter__game-logo"
+										 style="background: url('assets/img/dota2.png') center center no-repeat; background-size: 60%;">
+									</div>
+									<div class="games-filter__game-logo_border"></div>
+								</div>
+
+								<!-- Game name -->
+								<div class="games-filter__game-name">Dota 2</div>
+							</div>
+
+							<!-- Games filter switch toggle -->
+							<div class="toggle">
+								<input class="toggle__checkbox" type="checkbox" name="main_games_switcher" id="toggle3" />
+								<label class="toggle__label" for="toggle3">
+									<span class="toggle__switcher"></span>
+								</label>
+							</div>
+						</div>
+
+						<!-- Particular game filter -->
+						<div class="card__content games-filter__concrete">
+							<div class="games-filter__game-data">
+								<!-- Game logotype with gradient border -->
+								<div class="games-filter__game-logo_wrap">
+									<div class="games-filter__game-logo"
+										 style="background: url('assets/img/callofduty.png') center center no-repeat; background-size: 60%;">
+									</div>
+									<div class="games-filter__game-logo_border"></div>
+								</div>
+
+								<!-- Game name -->
+								<div class="games-filter__game-name">Call Of Duty</div>
+							</div>
+
+							<!-- Games filter switch toggle -->
+							<div class="toggle">
+								<input class="toggle__checkbox" type="checkbox" name="main_games_switcher" id="toggle4" />
+								<label class="toggle__label" for="toggle4">
+									<span class="toggle__switcher"></span>
+								</label>
+							</div>
+						</div>
+
+						<!-- Particular game filter -->
+						<div class="card__content games-filter__concrete">
+							<div class="games-filter__game-data">
+								<!-- Game logotype with gradient border -->
+								<div class="games-filter__game-logo_wrap">
+									<div class="games-filter__game-logo"
+										 style="background: url('assets/img/nba.png') center center no-repeat; background-size: 60%;">
+									</div>
+									<div class="games-filter__game-logo_border"></div>
+								</div>
+
+								<!-- Game name -->
+								<div class="games-filter__game-name">NBA2K</div>
+							</div>
+
+							<!-- Games filter switch toggle -->
+							<div class="toggle">
+								<input class="toggle__checkbox" type="checkbox" name="main_games_switcher" id="toggle5" />
+								<label class="toggle__label" for="toggle5">
+									<span class="toggle__switcher"></span>
+								</label>
+							</div>
+						</div>
+					</scroll>
+
+				</section>
+				<!-- END Games filter -->
+
+
+			</section>
+
+			<!-- Main content, betting options -->
+			<section class="index-content__main">
+				<div class="card">
+					<div class="card__header">
+						<div class="btn btn_outline-simple-fillable">Hello!</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- END main page content -->
 	</div>
 
 	<!-- Scripts -->
