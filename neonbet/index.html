@@ -220,11 +220,461 @@
 
 			<!-- Main content, betting options -->
 			<section class="index-content__main">
-				<div class="card">
-					<div class="card__header">
-						<div class="btn btn_outline-simple-fillable">Hello!</div>
+
+				<!-- Betting line -->
+				<section class="betting-line card">
+					<!-- Betting line header -->
+					<header class="betting-line__header card__header">
+						<div>
+							<span class="btn btn_fillable-gradient-active">Матчи</span>
+							<span class="btn btn_fillable-gradient">Турниры</span>
+						</div>
+						<div>
+							<span class="btn btn_fillable-simple-active">Активные</span>
+							<span class="btn btn_fillable-simple">Результаты</span>
+						</div>
+					</header>
+
+					<!-- Betting line filter nav -->
+					<nav class="card__nav">
+						<ul class="card__nav-list">
+							<li class="card__nav-item card__nav-item_active">Текущие матчи</li>
+							<li class="card__nav-item">Ближайшие матчи</li>
+							<li class="card__nav-item">Завершённые матчи</li>
+						</ul>
+					</nav>
+
+					<!-- Betting line options -->
+					<div class="betting-line__content">
+
+						<!-- Particular option -->
+						<div class="betting-event betting-line__event card__content">
+							<!-- FIRST ROW -->
+							<!-- Team 1 logo -->
+							<div class="betting-event__team-logo betting-event__grid-item"
+								 style="background: url('assets/img/team3.png') center center no-repeat; background-size: auto 80%;">
+							</div>
+
+							<!-- Info about match: game logo, life sensor, mb result -->
+							<div class="betting-event__general-data betting-event__grid-item">
+								<div class="game-logo"
+									 style="background: url('assets/img/csgo.png') center center no-repeat; background-size: 60%;"></div>
+								<a href="#">
+									<div class="life-sensor life-sensor_enabled">
+										<div class="life-sensor__status"></div>
+										<div class="life-sensor__text">Life</div>
+									</div>
+								</a>
+							</div>
+
+							<!-- Team 2 logo -->
+							<div class="betting-event__team-logo betting-event__grid-item"
+								 style="background: url('assets/img/team4.png') center center no-repeat; background-size: auto 80%;">
+							</div>
+							<!-- FIRST ROW END -->
+
+							<!-- SECOND ROW -->
+							<!-- Team 1 name and coefficient, etc... -->
+							<div class="betting-event__team-data betting-event__grid-item">
+								<div class="betting-event__team-name">Navi</div>
+								<div class="coefficient betting-event__coefficient">53%</div>
+							</div>
+
+							<!-- Match time data -->
+							<div class="betting-event__time-data betting-event__grid-item">
+								<div class="betting-event__time-data_first">14:14</div>
+								<div>14 мар</div>
+							</div>
+
+							<!-- Team 2 name and coefficient, etc... -->
+							<div class="betting-event__team-data betting-event__grid-item">
+								<div class="betting-event__team-name">Astralis</div>
+								<div class="coefficient betting-event__coefficient">47%</div>
+							</div>
+							<!-- SECOND ROW END -->
+
+							<!-- THIRD ROW -->
+							<!-- Bet on team1 btn -->
+							<div class="betting-event__grid-item">
+								<div class="btn__outline-gradient-fillable_wrap">
+									<div class="btn btn_sm btn__outline-gradient-fillable">
+										<span class="btn__outline-gradient-fillable_text">Поставить</span>
+									</div>
+									<div class="btn__outline-gradient-fillable_border"></div>
+								</div>
+							</div>
+
+							<!-- Decoration -->
+							<div class="betting-event__versus betting-event__grid-item">vs</div>
+
+							<!-- Bet on team2 btn -->
+							<div class="betting-event__grid-item">
+								<div class="btn__outline-gradient-fillable_wrap">
+									<div class="btn btn_sm btn__outline-gradient-fillable">
+										<span class="btn__outline-gradient-fillable_text">Поставить</span>
+									</div>
+									<div class="btn__outline-gradient-fillable_border"></div>
+								</div>
+							</div>
+							<!-- THIRD ROW END -->
+						</div>
+
+						<!-- Particular option -->
+						<div class="betting-event betting-line__event card__content">
+							<!-- FIRST ROW -->
+							<!-- Team 1 logo -->
+							<div class="betting-event__team-logo betting-event__grid-item"
+								 style="background: url('assets/img/team3.png') center center no-repeat; background-size: auto 80%;">
+							</div>
+
+							<!-- Info about match: game logo, life sensor, mb result -->
+							<div class="betting-event__general-data betting-event__grid-item">
+								<div class="game-logo"
+									 style="background: url('assets/img/csgo.png') center center no-repeat; background-size: 60%;"></div>
+								<a href="#">
+									<div class="life-sensor life-sensor_disabled">
+										<div class="life-sensor__status"></div>
+										<div class="life-sensor__text">Life</div>
+									</div>
+								</a>
+							</div>
+
+							<!-- Team 2 logo -->
+							<div class="betting-event__team-logo betting-event__grid-item"
+								 style="background: url('assets/img/team4.png') center center no-repeat; background-size: auto 80%;">
+							</div>
+							<!-- FIRST ROW END -->
+
+							<!-- SECOND ROW -->
+							<!-- Team 1 name and coefficient, etc... -->
+							<div class="betting-event__team-data betting-event__grid-item">
+								<div class="betting-event__team-name">Navi</div>
+								<div class="coefficient betting-event__coefficient">100%</div>
+							</div>
+
+							<!-- Match time data -->
+							<div class="betting-event__time-data betting-event__grid-item">
+								<div class="betting-event__time-data_first">14:14</div>
+								<div>14 мар</div>
+							</div>
+
+							<!-- Team 2 name and coefficient, etc... -->
+							<div class="betting-event__team-data betting-event__grid-item">
+								<div class="betting-event__team-name">Astralis</div>
+								<div class="coefficient betting-event__coefficient">0%</div>
+							</div>
+							<!-- SECOND ROW END -->
+
+							<!-- THIRD ROW -->
+							<!-- Bet on team1 btn -->
+							<div class="betting-event__grid-item">
+								<div class="btn__outline-gradient-fillable_wrap">
+									<div class="btn btn_sm btn__outline-gradient-fillable">
+										<span class="btn__outline-gradient-fillable_text">Поставить</span>
+									</div>
+									<div class="btn__outline-gradient-fillable_border"></div>
+								</div>
+							</div>
+
+							<!-- Decoration -->
+							<div class="betting-event__versus betting-event__grid-item">vs</div>
+
+							<!-- Bet on team2 btn -->
+							<div class="betting-event__grid-item">
+								<div class="btn__outline-gradient-fillable_wrap">
+									<div class="btn btn_sm btn__outline-gradient-fillable">
+										<span class="btn__outline-gradient-fillable_text">Поставить</span>
+									</div>
+									<div class="btn__outline-gradient-fillable_border"></div>
+								</div>
+							</div>
+							<!-- THIRD ROW END -->
+						</div>
+
+						<!-- Particular option -->
+						<div class="betting-event betting-line__event card__content">
+							<!-- FIRST ROW -->
+							<!-- Team 1 logo -->
+							<div class="betting-event__team-logo betting-event__grid-item"
+								 style="background: url('assets/img/team3.png') center center no-repeat; background-size: auto 80%;">
+							</div>
+
+							<!-- Info about match: game logo, life sensor, mb result -->
+							<div class="betting-event__general-data betting-event__grid-item">
+								<div class="game-logo"
+									 style="background: url('assets/img/csgo.png') center center no-repeat; background-size: 60%;"></div>
+								<a href="#">
+									<div class="life-sensor life-sensor_enabled">
+										<div class="life-sensor__status"></div>
+										<div class="life-sensor__text">Life</div>
+									</div>
+								</a>
+							</div>
+
+							<!-- Team 2 logo -->
+							<div class="betting-event__team-logo betting-event__grid-item"
+								 style="background: url('assets/img/team4.png') center center no-repeat; background-size: auto 80%;">
+							</div>
+							<!-- FIRST ROW END -->
+
+							<!-- SECOND ROW -->
+							<!-- Team 1 name and coefficient, etc... -->
+							<div class="betting-event__team-data betting-event__grid-item">
+								<div class="betting-event__team-name">Navi</div>
+								<div class="coefficient betting-event__coefficient">100%</div>
+							</div>
+
+							<!-- Match time data -->
+							<div class="betting-event__time-data betting-event__grid-item">
+								<div class="clock betting-event__time-data_first"></div>
+								<div>00:47:52</div>
+							</div>
+
+							<!-- Team 2 name and coefficient, etc... -->
+							<div class="betting-event__team-data betting-event__grid-item">
+								<div class="betting-event__team-name">Astralis</div>
+								<div class="coefficient betting-event__coefficient">0%</div>
+							</div>
+							<!-- SECOND ROW END -->
+
+							<!-- THIRD ROW -->
+							<!-- Bet on team1 btn -->
+							<div class="betting-event__grid-item">
+								<div class="btn__outline-gradient-fillable_wrap">
+									<div class="btn btn_sm btn__outline-gradient-fillable">
+										<span class="btn__outline-gradient-fillable_text">Поставить</span>
+									</div>
+									<div class="btn__outline-gradient-fillable_border"></div>
+								</div>
+							</div>
+
+							<!-- Decoration -->
+							<div class="betting-event__versus betting-event__grid-item">vs</div>
+
+							<!-- Bet on team2 btn -->
+							<div class="betting-event__grid-item betting-event__grid-item">
+								<div class="btn__outline-gradient-fillable_wrap">
+									<div class="btn btn_sm btn__outline-gradient-fillable">
+										<span class="btn__outline-gradient-fillable_text">Поставить</span>
+									</div>
+									<div class="btn__outline-gradient-fillable_border"></div>
+								</div>
+							</div>
+							<!-- THIRD ROW END -->
+						</div>
+
+						<!-- Particular option -->
+						<div class="betting-event betting-line__event card__content">
+							<!-- FIRST ROW -->
+							<!-- Team 1 logo -->
+							<div class="betting-event__team-logo betting-event__grid-item"
+								 style="background: url('assets/img/team3.png') center center no-repeat; background-size: auto 80%;">
+							</div>
+
+							<!-- Info about match: game logo, life sensor, mb result -->
+							<div class="betting-event__general-data betting-event__grid-item">
+								<div class="game-logo"
+									 style="background: url('assets/img/csgo.png') center center no-repeat; background-size: 60%;"></div>
+								<div class="score">
+									<div class="score__concrete score_winner">5</div>
+									<div class="score__separator">:</div>
+									<div class="score__concrete">0</div>
+								</div>
+							</div>
+
+							<!-- Team 2 logo -->
+							<div class="betting-event__team-logo betting-event__grid-item"
+								 style="background: url('assets/img/team4.png') center center no-repeat; background-size: auto 80%;">
+							</div>
+							<!-- FIRST ROW END -->
+
+							<!-- SECOND ROW -->
+							<!-- Team 1 name and coefficient, etc... -->
+							<div class="betting-event__team-data betting-event__grid-item">
+								<div class="betting-event__team-name">Navi</div>
+								<div class="trophy betting-event__winner"></div>
+							</div>
+
+							<!-- Match time data -->
+							<div class="betting-event__time-data betting-event__grid-item">
+								<div class="betting-event__time-data_first">14:14</div>
+								<div>14 мар</div>
+							</div>
+
+							<!-- Team 2 name and coefficient, etc... -->
+							<div class="betting-event__team-data betting-event__grid-item">
+								<div class="betting-event__team-name">Astralis</div>
+								<div class="betting-event__loser"></div>
+							</div>
+							<!-- SECOND ROW END -->
+
+							<!-- THIRD ROW -->
+							<!-- Bet on team1 btn -->
+							<div class="betting-event__grid-item">
+								<div class="btn btn_result-disabled">win</div>
+							</div>
+
+							<!-- Decoration -->
+							<div class="betting-event__versus betting-event__grid-item">vs</div>
+
+							<!-- Bet on team2 btn -->
+							<div class="betting-event__grid-item">
+								<div class="btn btn_result-disabled">loss</div>
+							</div>
+							<!-- THIRD ROW END -->
+						</div>
+
+						<!-- Particular option -->
+						<div class="betting-event betting-line__event card__content">
+							<!-- FIRST ROW -->
+							<!-- Team 1 logo -->
+							<div class="betting-event__team-logo betting-event__grid-item"
+								 style="background: url('assets/img/team3.png') center center no-repeat; background-size: auto 80%;">
+							</div>
+
+							<!-- Info about match: game logo, life sensor, mb result -->
+							<div class="betting-event__general-data betting-event__grid-item">
+								<div class="game-logo"
+									 style="background: url('assets/img/csgo.png') center center no-repeat; background-size: 60%;"></div>
+								<a href="#">
+									<div class="life-sensor life-sensor_enabled">
+										<div class="life-sensor__status"></div>
+										<div class="life-sensor__text">Life</div>
+									</div>
+								</a>
+							</div>
+
+							<!-- Team 2 logo -->
+							<div class="betting-event__team-logo betting-event__grid-item"
+								 style="background: url('assets/img/team4.png') center center no-repeat; background-size: auto 80%;">
+							</div>
+							<!-- FIRST ROW END -->
+
+							<!-- SECOND ROW -->
+							<!-- Team 1 name and coefficient, etc... -->
+							<div class="betting-event__team-data betting-event__grid-item">
+								<div class="betting-event__team-name">Navi</div>
+								<div class="coefficient betting-event__coefficient">53%</div>
+							</div>
+
+							<!-- Match time data -->
+							<div class="betting-event__time-data betting-event__grid-item">
+								<div class="betting-event__time-data_first">14:14</div>
+								<div>14 мар</div>
+							</div>
+
+							<!-- Team 2 name and coefficient, etc... -->
+							<div class="betting-event__team-data betting-event__grid-item">
+								<div class="betting-event__team-name">Astralis</div>
+								<div class="coefficient betting-event__coefficient">47%</div>
+							</div>
+							<!-- SECOND ROW END -->
+
+							<!-- THIRD ROW -->
+							<!-- Bet on team1 btn -->
+							<div class="betting-event__grid-item">
+								<div class="btn__outline-gradient-fillable_wrap">
+									<div class="btn btn_sm btn__outline-gradient-fillable">
+										<span class="btn__outline-gradient-fillable_text">Поставить</span>
+									</div>
+									<div class="btn__outline-gradient-fillable_border"></div>
+								</div>
+							</div>
+
+							<!-- Decoration -->
+							<div class="betting-event__versus betting-event__grid-item">vs</div>
+
+							<!-- Bet on team2 btn -->
+							<div class="betting-event__grid-item">
+								<div class="btn__outline-gradient-fillable_wrap">
+									<div class="btn btn_sm btn__outline-gradient-fillable">
+										<span class="btn__outline-gradient-fillable_text">Поставить</span>
+									</div>
+									<div class="btn__outline-gradient-fillable_border"></div>
+								</div>
+							</div>
+							<!-- THIRD ROW END -->
+						</div>
+
+						<!-- Particular option -->
+						<div class="betting-event betting-line__event card__content">
+							<!-- FIRST ROW -->
+							<!-- Team 1 logo -->
+							<div class="betting-event__team-logo betting-event__grid-item"
+								 style="background: url('assets/img/team3.png') center center no-repeat; background-size: auto 80%;">
+							</div>
+
+							<!-- Info about match: game logo, life sensor, mb result -->
+							<div class="betting-event__general-data betting-event__grid-item">
+								<div class="game-logo"
+									 style="background: url('assets/img/csgo.png') center center no-repeat; background-size: 60%;"></div>
+								<a href="#">
+									<div class="life-sensor life-sensor_enabled">
+										<div class="life-sensor__status"></div>
+										<div class="life-sensor__text">Life</div>
+									</div>
+								</a>
+							</div>
+
+							<!-- Team 2 logo -->
+							<div class="betting-event__team-logo betting-event__grid-item"
+								 style="background: url('assets/img/team4.png') center center no-repeat; background-size: auto 80%;">
+							</div>
+							<!-- FIRST ROW END -->
+
+							<!-- SECOND ROW -->
+							<!-- Team 1 name and coefficient, etc... -->
+							<div class="betting-event__team-data betting-event__grid-item">
+								<div class="betting-event__team-name">Navi</div>
+								<div class="coefficient betting-event__coefficient">53%</div>
+							</div>
+
+							<!-- Match time data -->
+							<div class="betting-event__time-data betting-event__grid-item">
+								<div class="betting-event__time-data_first">14:14</div>
+								<div>14 мар</div>
+							</div>
+
+							<!-- Team 2 name and coefficient, etc... -->
+							<div class="betting-event__team-data betting-event__grid-item">
+								<div class="betting-event__team-name">Astralis</div>
+								<div class="coefficient betting-event__coefficient">47%</div>
+							</div>
+							<!-- SECOND ROW END -->
+
+							<!-- THIRD ROW -->
+							<!-- Bet on team1 btn -->
+							<div class="betting-event__grid-item">
+								<div class="btn__outline-gradient-fillable_wrap">
+									<div class="btn btn_sm btn__outline-gradient-fillable">
+										<span class="btn__outline-gradient-fillable_text">Поставить</span>
+									</div>
+									<div class="btn__outline-gradient-fillable_border"></div>
+								</div>
+							</div>
+
+							<!-- Decoration -->
+							<div class="betting-event__versus betting-event__grid-item">vs</div>
+
+							<!-- Bet on team2 btn -->
+							<div class="betting-event__grid-item">
+								<div class="btn__outline-gradient-fillable_wrap">
+									<div class="btn btn_sm btn__outline-gradient-fillable">
+										<span class="btn__outline-gradient-fillable_text">Поставить</span>
+									</div>
+									<div class="btn__outline-gradient-fillable_border"></div>
+								</div>
+							</div>
+							<!-- THIRD ROW END -->
+						</div>
 					</div>
-				</div>
+
+					<footer class="card__footer betting-line__footer">
+						<div class="btn btn_muted-text-change btn_lg">Показать ещё</div>
+					</footer>
+				</section>
+				<!-- END Betting line -->
+
 			</section>
 		</main>
 		<!-- END main page content -->
