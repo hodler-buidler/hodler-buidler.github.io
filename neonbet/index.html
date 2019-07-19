@@ -20,42 +20,12 @@
 <body class="page">
 
 <div  id="app">
-    <base-main>
-        <div class="index-content">
-            <!-- Left column, additional, aside data -->
-            <section class="index-content__aside">
-                <!-- Games filter -->
-                <games-filter base-classes="index-content__section"></games-filter>
-
-                <!-- Social media block -->
-                <round-social-buttons base-classes="index-content__section"></round-social-buttons>
-
-                <!-- User profile section -->
-                <user-profile-card base-classes="index-content__section"></user-profile-card>
-
-                <!-- Top users section -->
-                <top-users base-classes="index-content__section"></top-users>
-            </section>
-
-            <!-- Main content, betting options -->
-            <section class="index-content__main">
-                <!-- Betting line -->
-                <main-betting-line base-classes="index-content__section"></main-betting-line>
-
-                <!-- Additional betting line -->
-                <additional-betting-line base-classes="index-content__section"></additional-betting-line>
-            </section>
-        </div>
-
-        <div slot="page-after">
-            <selected-bets></selected-bets>
-        </div>
-    </base-main>
+    <home-page></home-page>
 </div>
 
 <!-- Scripts -->
-<script src="assets/js/manifest.js"></script>
-<script src="assets/js/vendor.js"></script>
-<script src="assets/js/app.js"></script>
+<script src="assets/js/app/manifest.js"></script>
+<script src="assets/js/app/vendor.js"></script>
+<script src="assets/js/app/app.js"></script>
 </body>
 </html>
