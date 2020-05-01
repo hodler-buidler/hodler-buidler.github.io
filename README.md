@@ -24,3 +24,4 @@ The repository where my front-end projects are hosted.
 13. https://nikitosgolubev.github.io/colingzTemplate/ (2019)
 14. https://nikitosgolubev.github.io/kanbanBoard/ (2019)
 15. https://nikitosgolubev.github.io/neonbet/#/ (2019)
+16. https://nikitosgolubev.github.io/star-wars/#/ (2020)
