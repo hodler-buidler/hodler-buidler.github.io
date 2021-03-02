@@ -27,3 +27,5 @@ The repository where my front-end projects are hosted.
   
 16. https://nikitosgolubev.github.io/star-wars/#/ (2020)
 17. https://nikitosgolubev.github.io/weatherWidget (2020)
+
+18. https://nikitosgolubev.github.io/nethernite-battleground/ (2021)
