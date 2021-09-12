@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9782e692.chunk.css",
+    "main.js": "/static/js/main.71d7ff8c.chunk.js",
+    "main.js.map": "/static/js/main.71d7ff8c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5905bb23.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5905bb23.js.map",
+    "static/css/2.33b15919.chunk.css": "/static/css/2.33b15919.chunk.css",
+    "static/js/2.7ef79517.chunk.js": "/static/js/2.7ef79517.chunk.js",
+    "static/js/2.7ef79517.chunk.js.map": "/static/js/2.7ef79517.chunk.js.map",
+    "static/js/3.6a580239.chunk.js": "/static/js/3.6a580239.chunk.js",
+    "static/js/3.6a580239.chunk.js.map": "/static/js/3.6a580239.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.33b15919.chunk.css.map": "/static/css/2.33b15919.chunk.css.map",
+    "static/css/main.9782e692.chunk.css.map": "/static/css/main.9782e692.chunk.css.map",
+    "static/js/2.7ef79517.chunk.js.LICENSE.txt": "/static/js/2.7ef79517.chunk.js.LICENSE.txt",
+    "static/media/arcx.svg": "/static/media/arcx.5a38c5ca.svg",
+    "static/media/logo.svg": "/static/media/logo.3e5d7052.svg",
+    "static/media/metamask-logo.svg": "/static/media/metamask-logo.45038d58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5905bb23.js",
+    "static/css/2.33b15919.chunk.css",
+    "static/js/2.7ef79517.chunk.js",
+    "static/css/main.9782e692.chunk.css",
+    "static/js/main.71d7ff8c.chunk.js"
+  ]
+}
