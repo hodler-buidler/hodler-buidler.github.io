@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/arc-lending/static/css/main.9782e692.chunk.css",
+    "main.js": "/arc-lending/static/js/main.71d7ff8c.chunk.js",
+    "main.js.map": "/arc-lending/static/js/main.71d7ff8c.chunk.js.map",
+    "runtime-main.js": "/arc-lending/static/js/runtime-main.3d3963d8.js",
+    "runtime-main.js.map": "/arc-lending/static/js/runtime-main.3d3963d8.js.map",
+    "static/css/2.33b15919.chunk.css": "/arc-lending/static/css/2.33b15919.chunk.css",
+    "static/js/2.4e316644.chunk.js": "/arc-lending/static/js/2.4e316644.chunk.js",
+    "static/js/2.4e316644.chunk.js.map": "/arc-lending/static/js/2.4e316644.chunk.js.map",
+    "static/js/3.6a580239.chunk.js": "/arc-lending/static/js/3.6a580239.chunk.js",
+    "static/js/3.6a580239.chunk.js.map": "/arc-lending/static/js/3.6a580239.chunk.js.map",
+    "index.html": "/arc-lending/index.html",
+    "static/css/2.33b15919.chunk.css.map": "/arc-lending/static/css/2.33b15919.chunk.css.map",
+    "static/css/main.9782e692.chunk.css.map": "/arc-lending/static/css/main.9782e692.chunk.css.map",
+    "static/js/2.4e316644.chunk.js.LICENSE.txt": "/arc-lending/static/js/2.4e316644.chunk.js.LICENSE.txt",
+    "static/media/arcx.svg": "/arc-lending/static/media/arcx.5a38c5ca.svg",
+    "static/media/logo.svg": "/arc-lending/static/media/logo.3e5d7052.svg",
+    "static/media/metamask-logo.svg": "/arc-lending/static/media/metamask-logo.45038d58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3d3963d8.js",
+    "static/css/2.33b15919.chunk.css",
+    "static/js/2.4e316644.chunk.js",
+    "static/css/main.9782e692.chunk.css",
+    "static/js/main.71d7ff8c.chunk.js"
+  ]
+}
