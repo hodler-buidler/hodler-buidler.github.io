@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/charts-from-scratch/static/css/main.142622ba.chunk.css",
+    "main.js": "/charts-from-scratch/static/js/main.19550405.chunk.js",
+    "main.js.map": "/charts-from-scratch/static/js/main.19550405.chunk.js.map",
+    "runtime-main.js": "/charts-from-scratch/static/js/runtime-main.80b74858.js",
+    "runtime-main.js.map": "/charts-from-scratch/static/js/runtime-main.80b74858.js.map",
+    "static/css/2.679831fc.chunk.css": "/charts-from-scratch/static/css/2.679831fc.chunk.css",
+    "static/js/2.5e014b2e.chunk.js": "/charts-from-scratch/static/js/2.5e014b2e.chunk.js",
+    "static/js/2.5e014b2e.chunk.js.map": "/charts-from-scratch/static/js/2.5e014b2e.chunk.js.map",
+    "static/js/3.3edec4d9.chunk.js": "/charts-from-scratch/static/js/3.3edec4d9.chunk.js",
+    "static/js/3.3edec4d9.chunk.js.map": "/charts-from-scratch/static/js/3.3edec4d9.chunk.js.map",
+    "index.html": "/charts-from-scratch/index.html",
+    "static/css/2.679831fc.chunk.css.map": "/charts-from-scratch/static/css/2.679831fc.chunk.css.map",
+    "static/css/main.142622ba.chunk.css.map": "/charts-from-scratch/static/css/main.142622ba.chunk.css.map",
+    "static/js/2.5e014b2e.chunk.js.LICENSE.txt": "/charts-from-scratch/static/js/2.5e014b2e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.80b74858.js",
+    "static/css/2.679831fc.chunk.css",
+    "static/js/2.5e014b2e.chunk.js",
+    "static/css/main.142622ba.chunk.css",
+    "static/js/main.19550405.chunk.js"
+  ]
+}
